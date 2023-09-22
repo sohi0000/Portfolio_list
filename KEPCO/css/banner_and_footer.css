@@ -1,0 +1,332 @@
+/* .card_news {
+  width: 690px;
+  height: 410px;
+  padding: 38px 25px;
+  border-radius: 50px;
+  margin-top: 140px;
+  margin-left: 20%;
+  box-shadow: 0px 0px 5px 3px #e7e8f0;
+  position: relative;
+}
+.card_news h4 {
+  font-family: "GmarketSansMedium";
+  color: var(--black);
+  font-size: 1.75rem;
+}
+.card_news p {
+  font-family: "KoPubWorldDotum_Light";
+  color: var(--black);
+  font-size: 1.13rem;
+}
+
+.card_news_swiper {
+  width: 233px;
+  height: 93px;
+  position: absolute;
+  right: 55px;
+  bottom: 45px;
+}
+.card_news_btn_holder {
+  width: 5rem;
+  height: 2rem;
+  margin-top: 8rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: 1.5rem;
+}
+#cnbtn_prev,
+#cnbtn_next {
+  position: absolute;
+}
+#cnbtn_prev::after {
+  content: "<";
+  font-size: 20px;
+}
+#cnbtn_next::after {
+  content: ">";
+  font-size: 20px;
+}
+
+.clay_banner {
+  padding: 38px 25px;
+  box-shadow: 0px 0px 5px 3px #e7e8f0;
+  border-radius: 50px;
+  height: 410px;
+}
+.social_media {
+  width: 690px;
+  margin-left: 2.19rem;
+  position: relative;
+  margin-top: 140px;
+}
+.social_media h4 {
+  font-family: "GmarketSansMedium";
+  font-size: 1.75rem;
+}
+.social_media > .sns_subtitle {
+  font-size: 1.13rem;
+  font-family: "KoPubWorldDotum_Light";
+  color: var(--black);
+}
+.social_media > .img_box {
+  position: absolute;
+  right: 55px;
+  bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+  width: 390px;
+  height: 60px;
+}
+.img_box {
+  height: 270px;
+} */
+footer {
+  font-family: "KoPubWorldDotum_Light";
+  color: #868898;
+  margin-top: 130px;
+  padding-bottom: 5rem;
+}
+footer a {
+  color: #868898;
+  font-family: "KoPubWorldDotum_Light";
+}
+.copyright p {
+  font-family: "KoPubWorldDotum_Light";
+}
+.footer_top {
+  border: 1px solid #868898cc;
+  box-shadow: inset 0 0 3px rgba(134, 136, 152, 0.3);
+}
+.footer_top .inner > .sns_box {
+  display: none;
+}
+.footer_top .inner > ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.footer_lower * {
+  color: #868898;
+}
+.footer_lower > .inner > .copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 42px;
+}
+.footer_lower > .inner > .copyright > .footer_lower3 {
+  display: none;
+}
+.footer_lower > .inner > p {
+  margin-top: 22px;
+}
+.family_site_btn {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #868898cc;
+  text-align: left;
+  line-height: 50px;
+  background-color: #fff;
+  padding-left: 22px;
+  position: relative;
+}
+.family_site_btn > #plus_icon {
+  position: absolute;
+  right: 10px;
+  top: 1rem;
+  transition: 450ms;
+}
+.family_site_btn:hover > #plus_icon {
+  rotate: 45deg;
+}
+#copy_last {
+  display: none;
+}
+
+/* media */
+@media screen and (max-width: 767px) {
+  .inner {
+    width: 100%;
+  }
+  /* cardNews Swiper */
+  /* .card_news {
+    width: 100%;
+    height: auto;
+    background-color: #e7e8f0;
+    margin: 3rem 0 1rem;
+    padding: 2rem;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+  }
+  .card_news_swiper {
+    width: 90%;
+    position: static;
+  }
+  .card_news h4 {
+    font-family: "GS_B";
+  }
+  .card_news_btn_holder {
+    display: none;
+  } */
+  /* 소셜미디어 */
+  /* .social_media {
+    display: none;
+  } */
+  /* footer */
+  footer {
+    margin-top: 6.25rem;
+    font-family: "KoPubWorldDotum_Light";
+    color: #868898;
+    background-color: #e7e8f0;
+  }
+  .footer_top {
+    border: none;
+    box-shadow: none;
+  }
+  .footer_top .inner {
+    height: 100%;
+  }
+  .footer_top .inner > .sns_box {
+    display: block;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  .footer_top .inner > .sns_box > .img_box1 {
+    width: 35%;
+    height: 2.3rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    filter: invert(50%) sepia(20%) saturate(402%) hue-rotate(199deg)
+      brightness(94%) contrast(88%);
+  }
+  .footer_top .inner > .sns_box > .img_box1 > a {
+    display: inline-block;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  .footer_top .inner > .sns_box > .img_box1 > a > img {
+    width: inherit;
+    height: inherit;
+  }
+  .footer_top .inner > ul {
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+    text-decoration-color: #868898cc;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+    position: relative;
+  }
+  .footer_top .inner > ul::before {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    border-bottom: 1px solid #868898;
+    left: calc(50% - 1rem);
+    top: 0;
+  }
+  .footer_top .inner > ul::after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    border-top: 1px solid #868898;
+    bottom: 0;
+    left: calc(50% - 1rem);
+  }
+  .footer_top .inner > ul > li > a {
+    color: #868898;
+    font-family: "KoPubWorldDotum_Light";
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem;
+  }
+
+  .footer_lower > .inner > .copyright {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0;
+  }
+  .footer_lower * {
+    color: #868898;
+  }
+  .footer_lower > .inner > .copyright::before {
+    content: "(우) 58322 전라남도 나주시 전력로 55 (빛가람동 120).안내번호 : 061-345-3114.";
+    display: inline-block;
+    width: 22.3rem;
+    margin: auto;
+    text-align: center;
+    white-space: wrap;
+  }
+  .footer_lower > .inner > .copyright::after {
+    content: "당직상황실(야간 및 주말,공휴일) : 061-345-3203.";
+    display: inline-block;
+    width: 21rem;
+    margin: auto;
+    text-align: center;
+    white-space: wrap;
+  }
+  .footer_lower > .inner > .copyright > .footer_lower1 {
+    order: 1;
+    padding: 0;
+    display: none;
+  }
+  .footer_lower > .inner > .copyright > .footer_lower2 {
+    padding: 0;
+  }
+  .footer_lower > .inner > .footer_lower3 {
+    order: 2;
+    position: relative;
+    color: #e7e8f0;
+  }
+  /* .footer_lower3::before {
+    content: "우) 58322 전라남도 나주시 전력로 55 (빛가람동 120)";
+    position: absolute;
+    color: #868898;
+    text-align: center;
+    display: inline-block;
+    top: -43%;
+    transform: translateX(-7%);
+  } */
+  .footer_lower3::after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    border-top: 1px solid #868898;
+    left: calc(50% - 1rem);
+    top: 60%;
+  }
+  .footer_lower > .inner > .footer_lower4 {
+    display: none;
+  }
+  .copyright p {
+    font-family: "KoPubWorldDotum_Light";
+  }
+  .footer_lower > .inner > p {
+    text-align: center;
+  }
+  .family_site_btn {
+    display: none;
+  }
+  #copy_last {
+    display: block;
+    padding-bottom: 2rem;
+    margin-top: 0.5rem;
+    color: #868898;
+    text-align: center;
+  }
+}
+
+/* 
+밑줄
+text-decoration: underline;
+*/
+/* 
+SNS
+width: 9rem;
+height: 1.56rem;
+ */

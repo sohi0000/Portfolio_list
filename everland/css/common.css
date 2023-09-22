@@ -1,0 +1,46 @@
+:root {
+  /* Colors */
+  --orange: #FF9000;
+  --yellow: #FFE137;
+  --blue: #009CEA;
+  --purple: #AB47FF;
+  --black: #1B1D1F;
+
+  --lightOrange : #ffa90a;
+  /* fontsize */
+}
+/* font */
+html {
+  font-size: 16px;
+}
+.inner {
+  width: 88.54%;
+  margin: auto;
+}
+@media (max-width: 1280px) {
+  .inner {
+    width: 90%;
+    margin: auto;
+  }
+  .section_main_name,.section_main_name point2, .section_main_name point1, .section_main_name point3{
+    font-size: 68px !important;
+  }
+  .section_sub_name{
+    font-size : 40px !important;
+  }
+}
+@media (max-width : 768px) {
+  .inner {
+    width: 95%;
+  }
+  .section_main_name,.section_main_name point2, .section_main_name point1, .section_main_name point3{
+    font-size: 34px !important;
+  }
+  .section_sub_name{
+    font-size : 20px !important;
+  }
+}
+body{
+  box-sizing: border-box;
+  overflow-x: hidden;
+}

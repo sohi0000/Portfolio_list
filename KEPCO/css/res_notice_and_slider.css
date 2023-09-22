@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@media screen and (max-width: 767px) {
+  .notice_and_slider {
+    margin: 3rem 0;
+  }
+  .notice_and_slider > .inner {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+  .notice_and_slider > .inner::before {
+    display: none;
+  }
+  .notice {
+    width: 70%;
+    height: 19.5rem;
+    margin-bottom: 5.5rem;
+    transform: translateX(2.5%);
+    padding: 0.5rem;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 3px #e7e8f0;
+  }
+  .direction_title > a {
+    color: gray;
+  }
+  .direction_title > a.tab_on {
+    color: var(--red);
+  }
+  .bs_slider {
+    height: 23rem;
+  }
+  .beside_btn_holder {
+    display: none;
+  }
+  .tab_sub_title {
+    width: 15rem;
+    font-size: 1rem;
+  }
+  .tab_menu_notice_title > ul > li > a {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+  }
+  .tab_date {
+    font-size: 1rem;
+  }
+  .subject_and_date:last-child {
+    margin-bottom: 0;
+  }
+}

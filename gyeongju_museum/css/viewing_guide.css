@@ -1,0 +1,554 @@
+/* site_link_button */
+.img_inner {
+  background-image: url(../images/viewing_guide_site_link_bg.png);
+}
+/* main */
+.main_img {
+  background-image: url(../images/viewing_guide_main_img.png);
+}
+
+/* time_information */
+.viewing_time {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.viewing_time_img {
+  width: 275px;
+  height: 180px;
+  background-image: url(../images/viewing_time_img.png);
+  position: relative;
+}
+.viewing_time_img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--brownColor4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .3s;
+  opacity: 0;
+  z-index: -1;
+}
+.viewing_time_box {
+  width: 512px;
+  height: 180px;
+  margin-left: 50px;
+  display: flex;
+  padding: 1rem;
+  position: relative;
+  transition: .3s;
+}
+.viewing_time_box::after {
+  content: "";
+  width: 1px;
+  height: 90%;
+  background-color: var(--brownColor2);
+  position: absolute;
+  top: 0;
+  left: 23%;
+}
+.viewing_time_box::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--brownColor2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .3s;
+}
+.viewing_time_box h4 {
+  flex: 1;
+  text-align: center;
+  font-size: var(--FontSize20);
+}
+.viewing_time_box p {
+  flex: 4;
+  margin-left: 2rem;
+  margin-top: auto;
+}
+.viewing_time_box p span {
+  display: block;
+}
+.viewing_time_box p span:first-child {
+  margin-bottom: 1rem;
+}
+.other_information {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.other_information div {
+  width: 33.33%;
+  height: 200px;
+  padding: 1.5rem;
+  position: relative;
+  transition: .3s;
+}
+.other_information div::after {
+  content: "";
+  width: 95%;
+  height: 1px;
+  background-color: var(--brownColor2);
+  position: absolute;
+  top: 30%;
+  right: 0;
+  transition: .3s;
+}
+.other_information div::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--brownColor2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .3s;
+}
+.other_information div h4 {
+  font-size: var(--FontSize20);
+  margin-bottom: 20px;
+}
+.other_information div p span {
+  display: block;
+  margin-bottom: 1rem;
+}
+.other_information div p span br {
+  display: none;
+}
+/* student_group_viewing */
+.student_group_inner .sub_title {
+  display: flex;
+  justify-content: space-between;
+}
+.student_group_inner .sub_title h3 {
+  flex: 8;
+  margin-right: 50px;
+}
+.student_group_inner .sub_title button {
+  flex: 2.5;
+  font-size: var(--FontSize20);
+  font-family: "SunBatang_Bold";
+  border: 0;
+  background-color: var(--brownColor2);
+  border: 1px solid var(--brownColor2);
+  color: #fff;
+  position: relative;
+}
+.student_group_inner .sub_title button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.student_group_inner .sub_title button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--brownColor2);
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  z-index: -1;
+  transition: .3s;
+}
+.student_group_inner .section_text {
+  width: 58%;
+}
+.mobile_btn {
+  display: none;
+  width: 230px;
+  height: 50px;
+  font-size: var(--FontSize18);
+  font-family: "SunBatang_Bold";
+  border: 0;
+  background-color: var(--brownColor2);
+  border: 1px solid var(--brownColor2);
+  color: #fff;
+  position: relative;
+}
+.mobile_btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.mobile_btn::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--brownColor4);
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  z-index: -1;
+  transition: .3s;
+}
+/* notes_for_viewing */
+.notice {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.notice li {
+  height: 198px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  transition: .3s;
+}
+.notice li p {
+  width: 100%;
+  height: 50%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+.notice li::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid var(--brownColor1);
+  transition: .3s;
+  z-index: 2;
+}
+.notice li .img {
+  width: 198px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  transition: .3s;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.notice li:nth-child(1) .img {
+  background-image: url(../images/notice_img_01.png);
+}
+.notice li:nth-child(2) .img {
+  background-image: url(../images/notice_img_02.png);
+}
+.notice li:nth-child(3) .img {
+  background-image: url(../images/notice_img_03.png);
+}
+.notice li:nth-child(4) .img {
+  background-image: url(../images/notice_img_04.png);
+}
+.notice li:nth-child(5) .img {
+  background-image: url(../images/notice_img_05.png);
+}
+.notice li:nth-child(6) .img {
+  background-image: url(../images/notice_img_06.png);
+}
+.notice li:nth-child(7) .img {
+  background-image: url(../images/notice_img_07.png);
+}
+.notice li:nth-child(8) .img {
+  background-image: url(../images/notice_img_08.png);
+}
+/* leaflet */
+.leaflet_content {
+  display: flex;
+  justify-content: space-between;
+}
+.leaflet_btn {
+  width: 66.08%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.leaflet_btn:nth-child(1) {
+  margin-top: auto;
+}
+.leaflet_btn button {
+  height: 80px;
+  border: 0;
+  background-color: var(--lightGray);
+  font-family: "SunBatang_Bold";
+  font-size: var(--FontSize20);
+  text-align: left;
+  padding: 1rem;
+  color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.leaflet_btn button i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/download_01.png);
+  margin-bottom: .5rem;
+  transition: .3s;
+}
+.leaflet_btn button::after {
+  content: "";
+  width: 95%;
+  height: 1px;
+  background-color: var(--brownColor2);
+  position: absolute;
+  right: 0;
+  bottom: 30%;
+}
+.leaflet_btn button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid var(--brownColor2);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: .3s;
+}
+.leaflet_img {
+  width: 340px;
+  height: 400px;
+  background-image: url(../images/leaflet_img.png);
+  position: relative;
+  margin-top: 20px;
+}
+.leaflet_img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--brownColor2);
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  z-index: -1;
+}
+/* hover */
+@media (min-width: 1025px) {
+  /* time_information */
+  .viewing_time_img:hover::after {
+    top: -10px;
+    left: 10px;
+    opacity: 1;
+  }
+  .viewing_time_box:hover {
+    background-color: var(--lightGray);
+  }
+  .viewing_time_box:hover::before {
+    top: 10px;
+    left: -10px;
+  }
+  .other_information div:hover {
+    background-color: var(--lightGray);
+  }
+  .other_information div:hover::after {
+    background-color: var(--brownColor4);
+  }
+  .other_information div:hover::before {
+    left: -10px;
+    top: -10px;
+    border: 1px solid var(--brownColor4);
+  }
+  /* student_group_viewing */
+  .student_group_inner .sub_title button:hover::after {
+    top: -2px;
+    left: -2px;
+  }
+  /* notes_for_viewing */
+  .notice li:hover {
+    background-color: var(--lightGray);
+  }
+  .notice li:hover::after {
+    border: 1px solid var(--brownColor2);
+    left: -10px;
+    top: -10px;
+  }
+  .notice li:nth-child(1):hover .img {
+    background-image: url(../images/notice_img_01_01.png);
+  }
+  .notice li:nth-child(2):hover .img {
+    background-image: url(../images/notice_img_01_02.png);
+  }
+  .notice li:nth-child(3):hover .img {
+    background-image: url(../images/notice_img_01_03.png);
+  }
+  .notice li:nth-child(4):hover .img {
+    background-image: url(../images/notice_img_01_04.png);
+  }
+  .notice li:nth-child(5):hover .img {
+    background-image: url(../images/notice_img_01_05.png);
+  }
+  .notice li:nth-child(6):hover .img {
+    background-image: url(../images/notice_img_01_06.png);
+  }
+  .notice li:nth-child(7):hover .img {
+    background-image: url(../images/notice_img_01_07.png);
+  }
+  .notice li:nth-child(8):hover .img {
+    background-image: url(../images/notice_img_01_08.png);
+  }
+  /* leaflet */
+  .leaflet_btn button:hover::before {
+    top: -10px;
+    left: -10px;
+    opacity: 1;
+  }
+  .leaflet_btn button:hover i {
+    background-image: url(../images/download_02.png);
+  }
+}
+/* responsive tablet */
+@media (max-width: 1024px) {
+  /* time_information */
+  .viewing_time_box {
+    background-color: var(--lightGray);
+  }
+  .viewing_time_box h4 {
+    font-size: var(--FontSize18);
+  }
+  .viewing_time_box p {
+    font-size: var(--FontSize14);
+    margin-bottom: auto;
+  }
+  .other_information {
+    gap: 12px;
+  }
+  .other_information div {
+    padding: 1.5rem 1rem;
+  }
+  .other_information div h4 {
+    font-size: var(--FontSize18);
+  }
+  .other_information div p {
+    font-size: var(--FontSize14);
+  }
+  .other_information div p span br {
+    display: block;
+  }
+  /* student_group_viewing */
+  .student_group_inner .sub_title h3 {
+    flex: 7;
+    margin-right: 50px;
+  }
+  .student_group_inner .sub_title button {
+    flex: 3;
+  }
+  .student_group_inner .section_text {
+    width: 100%;
+  }
+  /* notes_for_viewing */
+  .notice li p {
+    font-size: var(--FontSize14);
+  }
+  .notice li p br:first-child {
+    display: none;
+  }
+  /* leaflet */
+  .leaflet_btn {
+    width: 50%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .leaflet_btn button {
+    font-size: var(--FontSize18);
+  }
+}
+/* responsive mobile */
+@media (max-width: 768px) {
+  /* main */
+  .main_img {
+    background-image: url(../images/viewing_guide_main_img_mobile.png);
+  }
+  /* time_information */
+  .viewing_time {
+    margin-bottom: 20px;
+  }
+  .viewing_time_img {
+    display: none;
+  }
+  .viewing_time_box {
+    width: 100%;
+    height: 130px;
+    margin-left: 0;
+  }
+  .viewing_time_box p {
+    font-size: var(--FontSize12);
+  }
+  .other_information {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .other_information div {
+    width: 100%;
+    height: 130px;
+    padding: 1rem;
+  }
+  .other_information div::after {
+    width: 90%;
+    top: 40%;
+  }
+  .other_information div p {
+    font-size: var(--FontSize12);
+    margin-left: 25%;
+    margin-top: 1.8rem;
+  }
+  .other_information div p span {
+    margin-bottom: 0;
+  }
+  /* student_group_viewing */
+  .student_group_inner .sub_title h3 {
+    flex: 1;
+    margin-right: 0;
+  }
+  .student_group_inner .sub_title button {
+    display: none;
+  }
+  .student_group_inner .section_text br {
+    display: none;
+  }
+  .mobile_btn {
+    display: block;
+  }
+  /* notes_for_viewing */
+  .notice {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  .notice li {
+    height: 80px;
+  }
+  .notice li p {
+    height: 100%;
+    align-items: flex-start;
+    font-size: var(--FontSize12);
+  }
+  .notice li .img {
+    width: 80px;
+  }
+  /* leaflet */
+  .leaflet_btn {
+    width: 100%;
+  }
+  .leaflet_btn button {
+    font-size: var(--FontSize18);
+  }
+  .leaflet_img {
+    display: none;
+  }
+  .leaflet_btn button i {
+    background-image: url(../images/download_02.png);
+  }
+
+
+
+
+
+
+
+
+
+
+}

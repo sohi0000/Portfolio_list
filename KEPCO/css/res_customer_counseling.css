@@ -1,0 +1,268 @@
+@charset "UTF-8";
+@media screen and (max-width: 767px) {
+  /* 기본 반응형 처리 */
+  .inner {
+    width: 100%;
+  }
+  main {
+    margin-top: 0;
+  }
+  #address {
+    display: none;
+  }
+  .counseling_menu {
+    display: none;
+  }
+  .scroll_animation {
+    display: none;
+  }
+  .counseling_caution {
+    display: none;
+  }
+  .post_board > ul > li > a .open_link {
+    display: none;
+  }
+  #counseling_tab_menu {
+    display: none;
+  }
+  /* 상단 main 부 */
+  .counseling_head {
+    width: 100%;
+    height: 100vw;
+    padding: 2rem 2rem 1rem;
+    margin: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .counseling_head::before {
+    content: "";
+    position: absolute;
+    background: url(https://cdn.pixabay.com/photo/2018/03/03/20/02/laptop-3196481_1280.jpg)
+      no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    z-index: -3;
+  }
+  .counseling_head::after {
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(1px);
+  }
+  .counseling_head > .head_title {
+    width: 100%;
+    font-family: "GS_B";
+    font-size: 24px;
+    text-align: left;
+    color: #fff;
+  }
+  .address .liner {
+    border-right: 1px solid #fff;
+  }
+  .address .liner,
+  .address .liner_none {
+    color: white;
+  }
+  .res_customer_menu {
+    display: block;
+    width: 100%;
+    height: 10vw;
+  }
+  #res_menu_list {
+    position: relative;
+    border-bottom: 5px solid #e7e8f0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #now_page {
+    color: white;
+    background-color: var(--pointColor);
+  }
+  #res_menu_list > li {
+    display: inline-block;
+    width: 10rem;
+    padding: 0.75rem;
+    text-align: center;
+    font-family: "GS_B";
+    font-weight: bold;
+    transition: 550ms;
+    cursor: pointer;
+  }
+  .for_open {
+    position: relative;
+  }
+  #res_second_menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 10rem;
+    z-index: 10;
+    height: 0;
+    overflow: hidden;
+  }
+  #res_second_menu.res_slide_up {
+    animation-name: res_slider_up;
+    animation-duration: 550ms;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+  }
+  #res_second_menu.res_slide_down {
+    animation-name: res_slider_dwn;
+    animation-duration: 550ms;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  }
+  @keyframes res_slider_dwn {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: calc(3rem * 7);
+    }
+  }
+  @keyframes res_slider_up {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: calc(3rem * 7);
+    }
+  }
+  #res_second_menu li {
+    background-color: #f3f4f8;
+    display: block;
+    width: 10rem;
+    height: 3rem;
+    line-height: 2rem;
+  }
+  #res_second_menu li > a,
+  #res_third_menu li > a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  #res_third_menu {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    top: 15rem;
+    left: 20rem;
+    width: 8rem;
+    height: 9rem;
+    overflow: hidden;
+  }
+  #ombusman {
+    transition: 350ms;
+  }
+  #res_third_menu.res_slide_down {
+    animation-name: res_inside_slider;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  }
+  #res_third_menu.res_slide_up {
+    animation-name: res_inside_slider;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+  }
+  @keyframes res_inside_slider {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: calc(3rem * 3);
+    }
+  }
+  #res_third_menu li {
+    background-color: #f3f4f8;
+    display: block;
+    width: 8rem;
+    height: 3rem;
+    line-height: 2rem;
+  }
+  #adress_print {
+    background: url(../img/qna_icons/adress/print_white.png) no-repeat;
+    background-size: cover;
+    transform: translateY(20%);
+  }
+  #adress_mail {
+    background: url(../img/qna_icons/adress/mail_white.png) no-repeat;
+    background-size: cover;
+    transform: translateY(20%);
+  }
+  /* 검색 바 */
+  .counseling_desc > .search_bar {
+    width: 100%;
+    height: 3rem;
+  }
+  .counseling_desc > .search_bar > legend {
+    display: block;
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    margin: auto;
+  }
+  .search_bar #select_search {
+    width: 6.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.2rem;
+    border-radius: 10px;
+  }
+  .search_bar #text_search {
+    width: 13rem;
+    font-size: 1rem;
+    padding: 0.2rem;
+    border-radius: 10px;
+  }
+  .search_bar input[type="submit"] {
+    width: 4.5rem;
+    font-size: 1rem;
+    padding: 0.2rem;
+    border-radius: 10px;
+  }
+  /* 게시판 리스트 */
+  .post_board > ul > li > a > p {
+    display: inline-block;
+    width: 22rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .write_post {
+    width: 4.5rem;
+    font-size: 1rem;
+    padding: 0.2rem;
+    border-radius: 10px;
+    left: 103%;
+    top: 10%;
+    height: auto;
+  }
+  .modal_btn {
+    font-size: 0.9rem;
+  }
+  .modal_btn.red {
+    width: 90%;
+  }
+  .post_index {
+    width: 65%;
+    position: relative;
+  }
+  .post_index::before {
+    content: "";
+    display: inline-block;
+  }
+}

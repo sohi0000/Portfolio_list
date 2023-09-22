@@ -1,0 +1,176 @@
+.section5_inner {
+  height: 410px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 130px;
+  width: 1300px;
+}
+.card_news {
+  width: 43.38%;
+  box-shadow: 0 0 5px 3px var(--gray2);
+  border-radius: 50px;
+  padding: 2.25rem;
+}
+.section5_inner > div > h4 {
+  font-size: 1.75rem;
+  font-family: "GS_B";
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.section5_inner > div > p {
+  font-size: 1.13rem;
+}
+.section5_slider {
+  width: 99.19%;
+  margin-top: 70px;
+  overflow: visible;
+}
+.section5_slider .slide_wrap {
+  overflow: hidden;
+}
+.section5_slider .swiper-slide a {
+  display: block;
+  width: 100%;
+  height: 164px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section5_slider .swiper-slide:nth-child(1) a {
+  background-image: url(../img/card_news/banner1.jpg);
+}
+.section5_slider .swiper-slide:nth-child(2) a {
+  background-image: url(../img/card_news/banner2.jpg);
+}
+.section5_slider .swiper-slide:nth-child(3) a {
+  background-image: url(../img/card_news/banner3.jpg);
+}
+.section5_slider .swiper-slide:nth-child(4) a {
+  background-image: url(../img/card_news/banner4.jpg);
+}
+.section5_slider .swiper-slide:nth-child(5) a {
+  background-image: url(../img/card_news/banner5.jpg);
+}
+.section5_slider .swiper-slide:nth-child(6) a {
+  background-image: url(../img/card_news/banner6.jpg);
+}
+.section5_slider .swiper-slide:nth-child(7) a {
+  background-image: url(../img/card_news/banner7.jpg);
+}
+.section5_slider .swiper-slide:nth-child(8) a {
+  background-image: url(../img/card_news/banner8.jpg);
+}
+.section5_slider .swiper-slide:nth-child(9) a {
+  background-image: url(../img/card_news/banner9.jpg);
+}
+.section5_slider .swiper-button-next,
+.section5_slider .swiper-button-prev {
+  top: -1.5rem;
+  left: auto;
+  right: 0;
+  width: 18px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section5_slider .btn_pause {
+  width: 12px;
+  height: 16px;
+  background-image: url(../img/button_center.png);
+  position: absolute;
+  top: -2.9rem;
+  right: 2.7rem;
+  cursor: pointer;
+}
+.section5_slider .btn_pause.on {
+  background-image: url(../img/button_center2.png);
+}
+.section5_slider .swiper-button-prev {
+  right: 5rem;
+  background-image: url(../img/button_left.png);
+}
+.section5_slider .swiper-button-next {
+  background-image: url(../img/button_right.png);
+}
+.section5_slider .swiper-button-next::after,
+.section5_slider .swiper-button-prev::after {
+  display: none;
+}
+.social_media {
+  width: 53.54%;
+  box-shadow: 0 0 5px 3px var(--gray2);
+  border-radius: 50px;
+  padding: 2.25rem;
+  position: relative;
+}
+.social_media .sns_box {
+  width: 62.5%;
+  height: 60px;
+  position: absolute;
+  bottom: 2.25rem;
+  right: 2.25rem;
+}
+.social_media .sns_box ul {
+  display: flex;
+  justify-content: space-between;
+}
+.social_media .sns_box ul li a {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+.sns_box li:nth-child(1) a {
+  background-image: url(../img/instargram.png);
+}
+.sns_box li:nth-child(2) a {
+  background-image: url(../img/blog.png);
+}
+.sns_box li:nth-child(3) a {
+  background-image: url(../img/youtube.png);
+}
+.sns_box li:nth-child(4) a {
+  background-image: url(../img/facebook.png);
+}
+@media (max-width: 768px) {
+  .section5_inner {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 3rem;
+  }
+  .card_news {
+    padding: 1.5rem;
+    width: 100%;
+    height: 180px;
+    background-color: var(--gray2);
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .section5_inner .card_news > h4 {
+    font-size: 1rem;
+  }
+  .section5_inner .card_news > p {
+    display: none;
+  }
+  .section5_slider {
+    width: 496px;
+    margin-top: 18px;
+    overflow: visible;
+  }
+
+  .section5_slider .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 93px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .section5_slider .swiper-button-next,
+  .section5_slider .swiper-button-prev {
+    display: none;
+  }
+  .section5_slider .btn_pause {
+    display: none;
+  }
+  .section5_inner .social_media {
+    display: none;
+  }
+}

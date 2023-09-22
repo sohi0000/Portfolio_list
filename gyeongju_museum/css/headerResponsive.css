@@ -1,0 +1,247 @@
+@media (max-width: 1024px) {
+  .page_btn {
+    display: none;
+  }
+  .logo {
+    margin-left: 0%;
+    width: 139px;
+    height: 30px;
+  }
+  .nav ul li a {
+    padding: 0 10px;
+  }
+  .slidedown_page_btn {
+    background-color: var(--lightGray);
+    width: 100%;
+    height: 80px;
+  }
+  .slidedown_page_btn_inner {
+    height: 100%;
+  }
+  .slidedown_page_btn_inner ul {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+  }
+  .slidedown_page_btn ul li {
+    height: 100%;
+    border-left: 1px solid var(--brownColor2);
+  }
+  .slidedown_page_btn ul li:nth-child(1) {
+    flex: 2;
+  }
+  .slidedown_page_btn ul li:nth-child(2) {
+    flex: 1;
+  }
+  .slidedown_page_btn ul li:nth-child(3) {
+    flex: 1;
+    border-right: 1px solid var(--brownColor2);
+  }
+  .slidedown_page_btn ul li a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--FontSize18);
+    font-family: "GothicA1_Bold";
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slidedown_page_btn ul li:nth-child(2) a {
+    background-image: url(../images/mobile_menu_03.png);
+  }
+  .slidedown_page_btn ul li:nth-child(3) a {
+    background-image: url(../images/mobile_menu_02.png);
+  }
+  .slidedown_page_btn ul li a img {
+    width: 155.83px;
+    height: 32.81px;
+  }
+  .btn_area {
+    display: none;
+  }
+  .slidedown_menu > ul > li {
+    width: 154px;
+  }
+  .submenu li a {
+    font-size: var(--FontSize14);
+    padding: 0.4rem 1.33rem;
+  }
+  .slidedown_menu {
+    width: 100%;
+  }
+  .slidedown_menu_inner {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 85px;
+  }
+  .login_area {
+    display: none;
+  }
+  .site_map {
+    display: none;
+  }
+  .menu_btn {
+    display: block;
+    order: 2;
+  }
+  .nav {
+    display: none;
+  }
+  .search {
+    order: 1;
+  }
+  .slidedown_menu_area {
+    width: 70%;
+    background-color: #fff;
+    position: absolute;
+    right: -70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: none;
+    z-index: 500;
+  } 
+  .slidedown_menu_area.active {
+    right: 0;
+  }
+  .slidedown_menu_inner {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .sub_login {
+    display: block;
+    width: 100%;
+    background-color: var(--brownColor3);
+  }
+  .sub_login ul {
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+  }
+  .sub_login ul li a {
+    color: #fff;
+    font-size: var(--FontSize12);
+    font-family: "GothicA1_Regular";
+    display: block;
+    padding: 0 1rem;
+    height: 100%;
+  }
+  .slidedown_menu ul {
+    flex-direction: column;
+  }
+  .slidedown_menu {
+    height: auto;
+  }
+  .slidedown_menu > ul {
+    height: 100%;
+  }
+  .slidedown_page_btn {
+    order: 2;
+  }
+  .slidedown_menu > ul > li {
+    width: 100%;
+    border-left: 0;
+    position: relative;
+    background-color: #fff;
+  }
+  .slidedown_menu > ul > li > a {
+    border-bottom: 1px solid var(--brownColor2);
+    height: 60px;
+    font-size: var(--FontSize14);
+  }
+  .slidedown_menu > ul > li > a::before,
+  .slidedown_menu > ul > li > a::after {
+    display: none;
+  }
+  .slidedown_menu > ul > li:last-child {
+    border-right: 0;
+  }
+  .submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s;
+    background-color: var(--lightGray);
+  }
+  .submenu.active {
+    max-height: 600px;
+  }
+  .submenu li a {
+    padding: .8rem 2rem;
+    font-family: "SunBatang_Bold";
+    font-size: var(--FontSize12);
+  }
+  .submenu li:last-child a {
+    border-bottom: 1px solid var(--brownColor2);  
+  }
+  .slidedown_page_btn {
+    height: 390px;
+  }
+  .slidedown_page_btn_inner ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .slidedown_menu_inner {
+    height: auto;
+  }
+  .slidedown_page_btn ul li {
+    border-bottom: 1px solid var(--brownColor2);
+  }
+  .slidedown_page_btn ul li:nth-child(1) a {
+    background-image: url(../images/mobile_menu_01.png);
+  }
+  .slidedown_page_btn ul li:nth-child(1) {
+    flex: 1;
+    border-left: 0;
+  }
+  .slidedown_page_btn ul li:nth-child(2) {
+    flex: 1;
+    order: 3;
+  }
+  .slidedown_page_btn ul li:nth-child(3) {
+    flex: 1;
+    border-right: 0;
+  }
+  .keyword_box {
+    display: none;
+  }
+  .search_area_inner {
+    margin: 0;
+    position: relative;
+    width: 100%;
+  }
+  .input_submit {
+    display: none;
+  }
+  .input_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 380px;
+    height: 75px;
+  }
+  .input_box::after {
+    width: 800px;
+    height: 55px;
+  }
+  .input_seach {
+    width: 360px;
+    height: 35px;
+    border: 0;
+    background-color: var(--brownColor1);
+  }
+  input::placeholder {
+    color: var(--black);
+    font-family: "SunBatang_Bold";
+  }
+}

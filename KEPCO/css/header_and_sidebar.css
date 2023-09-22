@@ -1,0 +1,425 @@
+@charset "UTF-8";
+body.stop_scroll {
+  height: 100%;
+  overflow-x: hidden;
+}
+/* Header */
+header {
+  width: 100%;
+  height: 90px;
+  box-shadow: 0 0 4px #868898cc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 83;
+}
+.main_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 1rem 0;
+}
+/* Logo */
+.logo {
+  width: 175px;
+  height: 35px;
+  margin: auto 0;
+  object-fit: cover;
+  object-position: center;
+}
+.logo a {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+}
+.logo a img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+/* GNB */
+.gnb {
+  height: inherit;
+}
+.gnb > ul {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: inherit;
+}
+.gnb > ul > li {
+  padding: 35px 0.8rem;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-family: "GmarketSansMedium";
+  font-weight: bold;
+  cursor: pointer;
+}
+.etc_bar ul li::after,
+.gnb > ul > li::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  top: 65%;
+  left: 0%;
+  z-index: 83;
+}
+.gnb > ul > li:hover::after {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 1px;
+  border-bottom: 3px solid #ff3843;
+  animation-name: gnb_liner;
+  animation-duration: 450ms;
+  animation-fill-mode: forwards;
+}
+@keyframes gnb_liner {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.first_items {
+  position: relative;
+}
+/* gnb 세부메뉴 */
+.header_menu_area {
+  display: none;
+  position: absolute;
+  top: 89px;
+  width: 68vw;
+  height: auto;
+  border-radius: 0 0 10px 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 3px #868898cc;
+  justify-content: space-between;
+  overflow-y: hidden;
+}
+/* 이중메뉴 CSS */
+.header_menu_area > .first_items > li {
+  font-family: "GmarketSansMedium";
+  color: #1d2b98;
+  height: 66px;
+  line-height: 66px;
+  width: 26%;
+  text-align: center;
+  transition: 350ms;
+  cursor: pointer;
+}
+.header_menu_area > .first_items:last-child {
+  border-radius: 0 0 0 10px;
+}
+/* .header_menu_area > .first_items > li:hover {
+  color: white;
+  background-color: var(--pointColor);
+} */
+/* 이중메뉴 세부메뉴 CSS */
+.second_items {
+  display: none;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 74%;
+  height: 100%;
+  padding: 0.3rem;
+  margin-left: 26%;
+  transition: 350ms;
+  font-family: "KoPubWorldDotum";
+  font-size: 1.13rem;
+}
+.second_item {
+  padding: 1rem;
+  height: 20%;
+  position: relative;
+}
+.second_item > a {
+  width: 100%;
+  padding: 0.1rem 0.5rem;
+  height: 100%;
+}
+.second_items.item_grid {
+  display: grid;
+  grid-template-columns: 33% 33%;
+  grid-template-rows: repeat(6, 1fr);
+}
+.second_items.over_seven {
+  display: grid;
+  grid-template-columns: 33%;
+  grid-template-rows: repeat(9, 1fr);
+}
+.second_items.less_seven {
+  display: grid;
+  grid-template-columns: 33%;
+  grid-template-rows: repeat(9, 1fr);
+}
+.second_item > a.liner {
+  animation-name: liner_bottom;
+  animation-duration: 150ms;
+  animation-fill-mode: forwards;
+  border-radius: 2px;
+}
+@keyframes liner_bottom {
+  0% {
+    border-bottom: 1px solid rgba(255, 56, 66, 0.2);
+  }
+  50% {
+    border-bottom: 2px solid rgba(255, 56, 66, 0.6);
+  }
+  100% {
+    border-bottom: 3px solid #ff3843;
+  }
+}
+/* Search... etc */
+.etc_bar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 157px;
+}
+.etc_bar ul li {
+  position: relative;
+  transition: 450ms;
+}
+.etc_bar ul li:hover a {
+  color: var(--black);
+}
+.etc_bar ul li::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  top: 100%;
+  left: 0%;
+  z-index: 83;
+}
+.etc_bar ul li:hover::after {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 1px;
+  border-bottom: 1px solid #ff3843;
+  animation-name: gnb_liner;
+  animation-duration: 450ms;
+  animation-fill-mode: forwards;
+}
+.etc_bar ul li a {
+  font-family: "Outfit", sans-serif;
+  color: #454652;
+  font-size: 0.88rem;
+  font-weight: normal;
+}
+.etc_bar ul li a #search {
+  width: 1.13rem;
+  height: 1.13rem;
+  object-fit: cover;
+  transform: translateY(15%);
+}
+/* header fixed로 인한 공간 확보 */
+#header_area {
+  width: 100%;
+  height: 90px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+}
+/* gnb 내부 최대 5버튼 색상 처리 */
+.gnb_btns {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 9.4rem;
+  height: auto;
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+}
+.gnb_btns button {
+  width: 9.4rem;
+  height: 2.5rem;
+  margin: 0.5rem;
+  line-height: 2.5rem;
+  border-radius: 15px;
+  font-family: "GmarketSansMedium";
+  font-size: 1.13rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #fff;
+  transition: 350ms;
+}
+.gnb_btns button:nth-child(1),
+.gnb_btns button:nth-child(5) {
+  color: var(--pointColor);
+  border: 1px solid var(--pointColor);
+}
+.gnb_btns button:nth-child(1):hover,
+.gnb_btns button:nth-child(5):hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: var(--pointColor);
+}
+.gnb_btns button:nth-child(2),
+.gnb_btns button:nth-child(4) {
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+.gnb_btns button:nth-child(2):hover,
+.gnb_btns button:nth-child(4):hover {
+  border: 1px solid #fff;
+  background-color: var(--red);
+  color: #fff;
+}
+.gnb_btns button:nth-child(3) {
+  border: 1px solid #454652;
+  color: #454652;
+}
+.gnb_btns button:nth-child(3):hover {
+  border: 1px solid #fff;
+  background-color: #454652;
+  color: #fff;
+}
+/* black filter */
+#black_filter {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  z-index: -3;
+  background-color: rgba(58, 63, 88, 0.3);
+  backdrop-filter: blur(5px);
+  transition: 450ms;
+}
+.black_on {
+  display: block;
+  opacity: 1 !important;
+  z-index: 65 !important;
+}
+/* Sidebar */
+#sidebar {
+  position: fixed;
+  top: 150px;
+  right: 23px;
+  width: 120px;
+  height: 300px;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(2, 23, 48, 0.3);
+  z-index: 63;
+}
+#sidebar > #sidebar_cover {
+  width: 100%;
+  height: 60px;
+  font-family: "GmarketSansMedium";
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 65px;
+  color: #fff;
+  border-radius: 30px 30px 0 0;
+  background-color: var(--pointColor);
+}
+#sidebar > #sidebar_cover > img {
+  height: calc(1rem - 3px);
+}
+#sidebar > #sidebar_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 240px;
+  padding: 3px;
+}
+#sidebar_list > .sidebar_menu {
+  margin: auto;
+}
+#sidebar_list > .sidebar_menu > a {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px dashed #d2d3e0;
+  border-radius: 1px;
+  margin: auto;
+  font-family: "KoPubWorldDotum";
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--black);
+  transition: 350ms;
+}
+#sidebar_list > .sidebar_menu:hover a {
+  color: var(--red);
+  font-weight: 700;
+}
+#sidebar_list > .sidebar_menu:last-child a {
+  border: none;
+}
+/* 3btn Banner */
+#btn_banner {
+  background-color: var(--pointColor);
+  border-radius: 3rem;
+  margin-bottom: 150px;
+}
+.btn_banner_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn_banner_wrap > li a * {
+  color: #fff;
+  text-align: center;
+}
+.btn_banner_header {
+  font-family: "GmarketSansMedium";
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+p.third_banner_btn_desc {
+  font-family: "KoPubWorldDotum_Light";
+  font-size: 1.13rem;
+}
+.btn_banner_wrap > li > a > * {
+  transition: 350ms;
+}
+.btn_banner_wrap > li:hover > a > * {
+  text-shadow: 2px 2px 5px rgba(2, 23, 48, 0.7);
+}
+.btn_banner_wrap > li:last-child {
+  flex: 2;
+}
+.btn_banner_wrap > li:last-child a {
+  border: none;
+  padding: 1.7rem 9rem;
+}
+.btn_banner_wrap > li > a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 1.7rem 4rem;
+  border-right: 1px solid #fff;
+}
+.monthly_logo {
+  width: 100px;
+  height: 25px;
+  transform: translateY(7px);
+}
+.third_banner_btn {
+  float: left;
+}
+.grand_prix {
+  width: 103px;
+  height: 99px;
+  float: right;
+}
+#hamburger {
+  display: none;
+}

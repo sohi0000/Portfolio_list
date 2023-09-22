@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bens 리디자인</title>
+
+    <!--  css  -->
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--  js  -->
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/script.js"></script>
+
+    <!--  font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="hd-tp">
+            <div class="hd-tp-left">
+                <ul class="after">
+                    <li class="cell"><a href="#">즐겨찾기</a></li>
+                    <li class="cell"><a href="#">고객센터</a></li>
+                    <li class="cell"><a href="#">무이자 할부 행사</a></li>
+                </ul>
+            </div>
+            <div class="hd-tp-logo">
+                <div class="logo">
+                    <a href="#"><img src="./img/newlogo_03.png" alt=""></a>
+                </div>
+            </div>
+            <div class="hd-tp-right">
+                <ul class="after">
+                    <li class="cell"><a href="#">로그인</a></li>
+                    <li class="cell"><a href="#">회원가입</a></li>
+                    <li class="cell"><a href="#">
+                            <div class="shopping-bag"><img src="./img/01_Main_PC_03.png" alt=""></div>
+                        </a></li>
+                    <li class="cell">
+                        <div class="sch-icon"><img src="./img/01_Main_PC_05.png" alt=""></div>
+                        <div class="cancel-icon"><img src="./img/bens_close.png" alt=""></div>
+                        <div class="sch-box">
+                            <form action="" class="subscribe-box" onsubmit="return false;">
+                                <input type="text">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                            <div class="recommend">
+                                <p>추천검색어</p>
+                                <a href="#">[식탁] 구매율 1위! 세라믹 테이블 '쏠리도'</a><br>
+                                <a href="#">[Series] 베스트 침대 '엘리아'</a><br>
+                                <a href="#">[Series] 벤스의 시그니처 '아담 소파'</a><br>
+                                <a href="#">[Series] 풀 에닐린 프리미엄 소파 '다비드'</a><br>
+                                <a href="#">[매트리스] ITALY'S BEST SLEEP SOLUTION 'INFINITY-ZONE'</a><br>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hd-bt">
+            <div class="con">
+                <ul class="after">
+                    <li class="cell">
+                        <a href="#">거실 가구</a>
+                        <div class="dept2 after">
+                            <h2 class="cell">거실 가구</h2>
+                            <div class="in-menu cell">
+                                <ul>
+                                    <li>
+                                        <a href="#">소파</a>
+                                        <ul>
+                                            <li><a href="#">소파 (2,3인용)</a></li>
+                                            <li><a href="#">소파 (카우치형)</a></li>
+                                            <li><a href="#">소파 (확장형)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">암체어</a></li>
+                                    <li><a href="#">소파테이블</a></li>
+                                    <li><a href="#">거실장</a></li>
+                                    <li><a href="#">장식장</a></li>
+                                </ul>
+                            </div>
+                            <div class="in-img cell-right">
+                                <img src="./img/menu/1.jpg" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell">
+                        <a href="#">침실 가구</a>
+                        <div class="dept2 after">
+                            <h2 class="cell">침실 가구</h2>
+                            <div class="in-menu cell">
+                                <ul>
+                                    <li>
+                                        <a href="#">침대</a>
+                                        <ul>
+                                            <li><a href="#">퀸 침대</a></li>
+                                            <li><a href="#">수퍼킹 침대</a></li>
+                                            <li><a href="#">킹 침대</a></li>
+                                            <li><a href="#">싱글 침대</a></li>
+                                            <li><a href="#">평상형 침대</a></li>
+                                            <li><a href="#">원형 침대</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">매트리스</a></li>
+                                    <li><a href="#">협탁</a></li>
+                                    <li><a href="#">화장대</a></li>
+                                    <li><a href="#">서랍장</a></li>
+                                    <li><a href="#">옷장</a></li>
+                                </ul>
+                            </div>
+                            <div class="in-img cell-right">
+                                <img src="./img/menu/2.jpg" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell">
+                        <a href="#">주방 가구</a>
+                        <div class="dept2 after">
+                            <h2 class="cell">주방 가구</h2>
+                            <div class="in-menu cell">
+                                <ul>
+                                    <li>
+                                        <a href="#">식탁</a>
+                                        <ul>
+                                            <li><a href="#">식탁 (4인용)</a></li>
+                                            <li><a href="#">식탁 (6인용)</a></li>
+                                            <li><a href="#">식탁 (8인용)</a></li>
+                                            <li><a href="#">식탁 (2인용)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">식탁의자</a></li>
+                                </ul>
+                            </div>
+                            <div class="in-img cell-right">
+                                <img src="./img/menu/3.jpg" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell">
+                        <a href="#">인테리어 가구</a>
+                        <div class="dept2 after">
+                            <h2 class="cell">인테리어 가구</h2>
+                            <div class="in-menu cell">
+                                <ul>
+                                    <li><a href="#">데스크</a></li>
+                                    <li><a href="#">화장대</a></li>
+                                    <li><a href="#">서랍장</a></li>
+                                    <li><a href="#">거울</a></li>
+                                    <li><a href="#">조명</a></li>
+                                    <li><a href="#">패브릭 커버</a></li>
+                                    <li><a href="#">액세서리</a></li>
+                                    <li><a href="#">쿠션</a></li>
+                                </ul>
+                            </div>
+                            <div class="in-img cell-right">
+                                <img src="./img/menu/4.jpg" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell"><span class="line"></span></li>
+                    <li class="cell">
+                        <a href="#">베스트 리뷰</a>
+                        <div class="dept2 after">
+                            <h2 class="cell">베스트 리뷰</h2>
+                            <div class="in-menu cell">
+                                <ul>
+                                    <li><a href="#">베스트 후기</a></li>
+                                    <li><a href="#">베스트 포토 후기</a></li>
+                                    <li><a href="#">고객인터뷰</a></li>
+                                </ul>
+                            </div>
+                            <div class="in-img cell-right">
+                                <img src="./img/menu/5.jpg" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell"><a href="#">TV미디어</a></li>
+                    <li class="cell">
+                        <a href="#">SALE&#38;프로모션</a>
+                        <div class="dept2 after">
+                            <h2 class="cell">SALE&#38;프로모션</h2>
+                            <div class="in-menu cell">
+                                <ul>
+                                    <li><a href="#">SALE</a></li>
+                                    <li><a href="#">프로모션</a></li>
+                                </ul>
+                            </div>
+                            <div class="in-img cell-right">
+                                <img src="./img/menu/6.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell">
+                        <a href="#">쇼룸안내</a>
+                        <div class="dept2 after">
+                            <h2 class="cell">쇼룸안내</h2>
+                            <div class="in-menu cell">
+                                <ul>
+                                    <li><a href="#">분당</a></li>
+                                    <li><a href="#">부천</a></li>
+                                    <li><a href="#">부산</a></li>
+                                    <li><a href="#">백화점</a></li>
+                                    <li><a href="#">아울렛</a></li>
+                                </ul>
+                            </div>
+                            <div class="in-img cell-right">
+                                <img src="./img/menu/7.jpg" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell"><span class="line"></span></li>
+                    <li class="cell">
+                        <a href="#">WHY BENS</a>
+                        <div class="dept2 after">
+                            <h2 class="cell">WHY BENS</h2>
+                            <div class="in-menu cell">
+                                <ul>
+                                    <li><a href="#">ABOUT BENS</a></li>
+                                    <li><a href="#">BENS AWARD</a></li>
+                                    <li><a href="#">SELLING CENTER</a></li>
+                                </ul>
+                            </div>
+                            <div class="in-img cell-right">
+                                <img src="./img/menu/8.jpg" alt="">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="visual">
+        <div class="slider-box">
+            <div class="slider">
+                <div class="slide slide1">
+                    <a href="#">
+                        <div class="bg"></div>
+                    </a>
+                </div>
+                <div class="slide slide2">
+                    <a href="#">
+                        <div class="bg"></div>
+                    </a>
+                </div>
+                <div class="slide slide3">
+                    <a href="#">
+                        <div class="bg"></div>
+                    </a>
+                </div>
+                <div class="slide slide4">
+                    <a href="#">
+                        <div class="bg"></div>
+                    </a>
+                </div>
+                <div class="slide slide5">
+                    <a href="#">
+                        <div class="bg"></div>
+                    </a>
+                </div>
+                <div class="slide slide6">
+                    <a href="#">
+                        <div class="bg"></div>
+                    </a>
+                </div>
+                <div class="slide slide7">
+                    <a href="#">
+                        <div class="bg"></div>
+                    </a>
+                </div>
+                <div class="slide slide8">
+                    <a href="#">
+                        <div class="bg"></div>
+                    </a>
+                </div>
+                <div class="slide slide9">
+                    <a href="#">
+                        <div class="bg"></div>
+                    </a>
+                </div>
+                <div class="slide slide10">
+                    <a href="#">
+                        <div class="bg"></div>
+                    </a>
+                </div>
+                <div class="slide slide11">
+                    <a href="#">
+                        <div class="bg"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section1" class="section">
+        <div class="con">
+            <p>BEST ITEM</p>
+            <div class="img-wrap">
+                <a href="#">
+                    <div class="img img-box1">
+                        <div class="hover-img"></div>
+                        <div class="txt-box">
+                            <p>벤스 아담 천연가죽 소파 카우치형</p>
+                            <p>Adam (White Ivory, Black, Gray, Beige, Deep gray, Dark Navy, Light blue, Oatmeal, Sugar brown, Steeple gray)</p>
+                            <div class="span">
+                                <span>1,490,000원</span>
+                                <span>2,508,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img img-box2">
+                        <div class="hover-img"></div>
+                        <div class="txt-box">
+                            <p>벤스 쏠리도 스페인 세라믹 테이블(확장형)</p>
+                            <p>Solido(White ivory,Gray brown)</p>
+                            <div class="span">
+                                <span>799,000원</span>
+                                <span>1,187,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img img-box3">
+                        <div class="hover-img"></div>
+                        <div class="txt-box">
+                            <p>벤스 엘리아 L 502 퀸 침대</p>
+                            <p>Elia L 502 (Wood, White High glossy, Black,European oak,
+                                American walnut)</p>
+                            <div class="span">
+                                <span>318,000원</span>
+                                <span>683,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img img-box4">
+                        <div class="hover-img"></div>
+                        <div class="txt-box">
+                            <p>벤스 인와이드 거실장</p>
+                            <p>Enwide (White, Black, Wood)</p>
+                            <div class="span">
+                                <span>399,000원</span>
+                                <span>637,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img img-box5">
+                        <div class="hover-img"></div>
+                        <div class="txt-box">
+                            <p>벤스 NEW 하임 천연가죽 소파</p>
+                            <p>New Haim(Beige, Deep gray, Dark navy, Light blue, Oatmeal,
+                                Sugar brown, Steeple gray)</p>
+                            <div class="span">
+                                <span>1,440,000원</span>
+                                <span>2,290,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img img-box6">
+                        <div class="hover-img"></div>
+                        <div class="txt-box">
+                            <p>벤스 브리엄 리클라이너 퀸 침대 (라이트그레이)</p>
+                            <p>Brium (Light Gray, Mud Gray, Cream Beige, White ivory)</p>
+                            <div class="span">
+                                <span>699,000원</span>
+                                <span>1,179,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img img-box7">
+                        <div class="hover-img"></div>
+                        <div class="txt-box">
+                            <p>벤스 에코 천연가죽 퀸 침대</p>
+                            <p>Echo (White Ivory, Black)</p>
+                            <p>tvN 드라마 '구미호뎐' 협찬 제품</p>
+                            <div class="span">
+                                <span>685,000원</span>
+                                <span>1,482,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img img-box8">
+                        <div class="hover-img"></div>
+                        <div class="txt-box">
+                            <p>벤스 레나 천연가죽 소파</p>
+                            <p>Renna (White Ivory, Black, Gray, Beige, Deep gray, Dark Navy, Light blue, Oatmeal, Sugar brown,Steeple gray)</p>
+                            <div class="span">
+                                <span>999,000원</span>
+                                <span>2,845,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img img-box9">
+                        <div class="hover-img"></div>
+                        <div class="txt-box">
+                            <p>벤스 데센토 스페인 세라믹 테이블 (확장형)</p>
+                            <p>Desento(Dark brown,White ivory)</p>
+                            <div class="span">
+                                <span>1,199,000원</span>
+                                <span>1,989,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img img-box10">
+                        <div class="hover-img"></div>
+                        <div class="txt-box">
+                            <p>벤스 칸트 4인 식탁</p>
+                            <p>Kant (White)</p>
+                            <div class="span">
+                                <span>499,000원</span>
+                                <span>940,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img img-box11">
+                        <div class="hover-img"></div>
+                        <div class="txt-box">
+                            <p>벤스 노드 천연 가죽 소파 3인용</p>
+                            <p>Norde (White Ivory, Black, Gray,Beige, Deep gray, Navy, Light blue, Oatmeal, Steeple gray)</p>
+                            <div class="span">
+                                <span>1,090,000원</span>
+                                <span>1,583,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img img-box12">
+                        <div class="hover-img"></div>
+                        <div class="txt-box">
+                            <p>벤스 엘가 A 퀸 침대 (월넛)</p>
+                            <p>Elga A (Walnut)</p>
+                            <div class="span">
+                                <span>759,000원</span>
+                                <span>1,189,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section2" class="section after">
+        <a href="#">
+            <div class="left cell"></div>
+        </a>
+        <div class="right cell">
+            <div class="right-tp after">
+                <a href="#">
+                    <div class="tp-left cell">
+                        <div class="triangle"></div>
+                        <div class="txt-box">
+                            <p>모엘르 소파 리클라이너 2-3인용</p>
+                            <p>Moelleux (Ash mint)</p>
+                            <p>생활오염을 방지하는<br>신소재 패브릭</p>
+                            <span>1,598,000원</span>
+                            <span>1,897,000원</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="tp-right cell">
+                        <div class="hover-img"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="right-bt after">
+                <a href="#">
+                    <div class="bt-left cell">
+                        <div class="hover-img"></div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="bt-right cell">
+                        <div class="triangle"></div>
+                        <div class="txt-box">
+                            <p>모엘르 소파 리클라이너 2-3인용</p>
+                            <p>Moelleux (Gray)</p>
+                            <p>생활오염을 방지하는<br>신소재 패브릭</p>
+                            <span>1,598,000원</span>
+                            <span>1,897,000원</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section3" class="section">
+        <p>NEW ARRIVAL</p>
+        <div class="slider-k-1 slider-k con" data-autoplay="Y" data-autoplay-dir="right" data-autoplay-interval="5000">
+            <div class="slides">
+                <div class="active">
+                    <div class="box-1">
+                        <div class="img-box">
+                            <div style="background-image:url(./img/new-arrival/1.jpg);"></div>
+                        </div>
+                        <div class="img-box">
+                            <div style="background-image:url(./img/new-arrival/1-2.jpg);"></div>
+                        </div>
+                        <div class="txt-box-1">
+                            <p class="p1">벤스 NEW 하임 천연가죽 소파</p>
+                            <p class="p2">New Haim(Beige, Deep gray, Dark navy, Light blue, Oatmeal,
+                                Sugar brown, Steeple gray)</p>
+                            <div class="span"><span class="span1">1,440,000원</span>
+                                <span class="span2">2,290,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box-1">
+                        <div class="img-box">
+                            <div style="background-image:url(./img/new-arrival/2.jpg);"></div>
+                        </div>
+                        <div class="img-box">
+                            <div style="background-image:url(./img/new-arrival/2-2.jpg);"></div>
+                        </div>
+                        <div class="txt-box-1">
+                            <p class="p1">벤스 펠리체 원형 대리석 테이블</p>
+                            <p class="p2">Felice (White)</p>
+                            <div class="span"><span class="span1">319,000원</span>
+                                <span class="span2">627,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box-1">
+                        <div class="img-box">
+                            <div style="background-image:url(./img/new-arrival/3.jpg);"></div>
+                        </div>
+                        <div class="img-box">
+                            <div style="background-image:url(./img/new-arrival/3-2.jpg);"></div>
+                        </div>
+                        <div class="txt-box-1">
+                            <p class="p1">벤스 비몬도 거실장</p>
+                            <p class="p2">B.MONDO (Ork)</p>
+                            <div class="span"><span class="span1">487,000원</span>
+                                <span class="span2">999,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box-1">
+                        <div class="img-box">
+                            <div style="background-image:url(./img/new-arrival/4.jpg);"></div>
+                        </div>
+                        <div class="img-box">
+                            <div style="background-image:url(./img/new-arrival/4-2.jpg);"></div>
+                        </div>
+                        <div class="txt-box-1">
+                            <p class="p1">벤스 데센토 스페인 세라믹 테이블 (확장형)</p>
+                            <p class="p2">Desento(Dark brown,White ivory)</p>
+                            <div class="span"><span class="span1">1,199,000원</span>
+                                <span class="span2">1,989,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box-1">
+                        <div class="img-box">
+                            <div style="background-image:url(./img/new-arrival/5.jpg);"></div>
+                        </div>
+                        <div class="img-box">
+                            <div style="background-image:url(./img/new-arrival/5-2.jpg);"></div>
+                        </div>
+                        <div class="txt-box-1">
+                            <p class="p1">벤스 폴센 3단 서랍장</p>
+                            <p class="p2">Polsen(Blue, White, Dark Gray))</p>
+                            <div class="span"><span class="span1">249,000원</span>
+                                <span class="span2">332,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box-1">
+                        <div class="img-box">
+                            <div style="background-image:url(./img/new-arrival/6.jpg);"></div>
+                        </div>
+                        <div class="img-box">
+                            <div style="background-image:url(./img/new-arrival/6-2.jpg);"></div>
+                        </div>
+                        <div class="txt-box-1">
+                            <p class="p1">벤스 모엘르 소파 리클라이너 4인용</p>
+                            <p class="p2">Moelleux (Ash mint)</p>
+                            <p class="p3">tvN 드라마 '청춘기록' 협찬 제품</p>
+                            <div class="span"><span class="span1">2,377,000원</span>
+                                <span class="span2">2,899,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-btns">
+                <div>
+                    <span>
+                        <i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section4" class="section">
+        
+            <div class="txt-box">
+               <a href="#">
+                <p>BENS BRAND STORY</p>
+                <p>
+                    벤스의 미션은 고객의 감동, 공간의 예술화, 고객의 삶의 질 향상에 있으며,
+                    <br>
+                    우리가 살아가면서 자연스럽게 느껴지는 내적 가치를 벤스의 모든 가구에
+                    <br>
+                    포함시킬 수 있도록 하고 있습니다.
+                </p>
+                </a>
+            </div>
+        
+    </div>
+
+    <div id="section5" class="section">
+        <div class="con after">
+            <div class="left cell">
+                <a href="#">
+                    <div class="img-box"></div>
+                </a>
+            </div>
+            <div class="right-slider cell">
+                <div class="sec-5-slider">
+                    <div class="slide slide1">
+                        <img src="./img/slide-promotion/1.jpg" alt="">
+                        <div class="txt-box">
+                            <p>유니크한 라인의 폴센</p>
+                            <p>어느 인테리어에나 조화롭게 어울리는 패브릭 소파</p>
+                            <div class="btn">VIEW MORE</div>
+                        </div>
+                    </div>
+                    <div class="slide slide2">
+                        <img src="./img/slide-promotion/2.jpg" alt="">
+                        <div class="txt-box">
+                            <p>스윙 리클라이너 체어</p>
+                            <p>언제 어디서나 휴식이 되는 멀티 퍼포먼스 체어</p>
+                            <div class="btn">VIEW MORE</div>
+                        </div>
+                    </div>
+                    <div class="slide slide3">
+                        <img src="./img/slide-promotion/3.jpg" alt="">
+                        <div class="txt-box">
+                            <p>스페인 세라믹 테이블 쏠리도</p>
+                            <p>당신의 완벽한 다이닝 공간을 완성하세요.</p>
+                            <div class="btn">VIEW MORE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section6" class="section">
+        <div class="con">
+            <p>MD'S PICK</p>
+            <div class="slider-wrap">
+                <div class="slide slide1">
+                    <img src="./img/md-pick/1.jpg" alt="">
+                    <img src="./img/md-pick/1-2.jpg" alt="">
+                    <div class="txt-box">
+                        <p class="p1">벤스 엘자 거실장</p>
+                        <p class="p2">Elsa (White, Black)</p>
+                        <div class="span"><span class="span1">399,000원</span>
+                            <span class="span2">597,000원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <img src="./img/md-pick/2.jpg" alt="">
+                    <img src="./img/md-pick/2-2.jpg" alt="">
+                    <div class="txt-box">
+                        <p class="p1">벤스 에코 천연가죽 퀸 침대</p>
+                        <p class="p2">Echo (White Ivory, Black)</p>
+                        <p class="p3">tvN 드라마 '구미호뎐' 협찬 제품</p>
+                        <div class="span"><span class="span1">685,000원</span>
+                            <span class="span2">1,482,000원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide3">
+                    <img src="./img/md-pick/3.jpg" alt="">
+                    <img src="./img/md-pick/3-2.jpg" alt="">
+                    <div class="txt-box">
+                        <p class="p1">벤스 칸트 6인 식탁</p>
+                        <p class="p2">Kant (White)</p>
+                        <div class="span"><span class="span1">599,000원</span>
+                            <span class="span2">1,163,000원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide4">
+                    <img src="./img/md-pick/4.jpg" alt="">
+                    <img src="./img/md-pick/4-2.jpg" alt="">
+                    <div class="txt-box">
+                        <p class="p1">벤스 폴센 거실장</p>
+                        <p class="p2">Polsen(Blue, White, Dark Gray)</p>
+                        <div class="span"><span class="span1">769,000원</span>
+                            <span class="span2">1,099,000원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide5">
+                    <img src="./img/md-pick/5.jpg" alt="">
+                    <img src="./img/md-pick/5-2.jpg" alt="">
+                    <div class="txt-box">
+                        <p class="p1">벤스 펠리체 2인 대리석 테이블</p>
+                        <p class="p2">Felice (White)</p>
+                        <div class="span"><span class="span1">199,000원</span>
+                            <span class="span2">587,000원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide6">
+                    <img src="./img/md-pick/6.jpg" alt="">
+                    <img src="./img/md-pick/6-2.jpg" alt="">
+                    <div class="txt-box">
+                        <p class="p1">벤스 플린토 V 체어</p>
+                        <p class="p2">PLINTO (Black, Gray)</p>
+                        <div class="span"><span class="span1">119,000원</span>
+                            <span class="span2">198,000원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide7">
+                    <img src="./img/md-pick/7.jpg" alt="">
+                    <img src="./img/md-pick/7-2.jpg" alt="">
+                    <div class="txt-box">
+                        <p class="p1">벤스 엘리 소파 2-3인용</p>
+                        <p class="p2">Elsa (WhAly(Light Clay,Yellow Ocher,Gray Fabric,Navy Fabric)</p>
+                        <div class="span"><span class="span1">630,000원</span>
+                            <span class="span2">987,000원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide8">
+                    <img src="./img/md-pick/8.jpg" alt="">
+                    <img src="./img/md-pick/8-2.jpg" alt="">
+                    <div class="txt-box">
+                        <p class="p1">벤스 폴센 패브릭 퀸 침대</p>
+                        <p class="p2">Polsen(Gray, Navy)</p>
+                        <p class="p3">tvN 드라마 '구미호뎐' 협찬 제품</p>
+                        <div class="span"><span class="span1">685,000원</span>
+                            <span class="span2">1,147,000원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide9">
+                    <img src="./img/md-pick/9.jpg" alt="">
+                    <img src="./img/md-pick/9-2.jpg" alt="">
+                    <div class="txt-box">
+                        <p class="p1">벤스 오네스 소파테이블</p>
+                        <p class="p2">Ones (Black)</p>
+                        <div class="span"><span class="span1">102,000원</span>
+                            <span class="span2">245,000원</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section7" class="section">
+        <div class="con after">
+            <div class="left cell">
+                <div class="left-tp">
+                    <div class="txt-box">
+                        <p>SWING RECLINOR CHAIR</p>
+                        <p>스윙 천연가죽 리클라이너 체어</p>
+                        <p>언제 어디서나 휴식이 되는 멀티 퍼포먼스 체어.
+                            <br>
+                            쉼 그 이상의 특별함을 선물하세요.
+                        </p>
+                        <div class="btn"><a href="#">+ VIEW MORE</a></div>
+                    </div>
+                </div>
+                <div class="left-bt after">
+                    <div class="bt-left hover cell"><a href="#">
+                            <div class="txt-box1">
+                                <p>쏠리도 스페인 세라믹 테이블</p>
+                                <p>Solido (White Ivory)</p>
+                                <p>스페인 대리석으로
+                                    <br>
+                                    주방에 럭셔리함을 선사합니다.
+                                </p>
+                                <div class="span">
+                                    <span class="span1">799,000원</span>
+                                    <span class="span2">1,187,000원</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="bt-right hover cell"><a href="#">
+                            <div class="txt-box1">
+                                <p>쏠리도 스페인 세라믹 테이블</p>
+                                <p>Solido (Gray Brown)</p>
+                                <p>스페인 대리석으로
+                                    <br>
+                                    주방에 럭셔리함을 선사합니다.
+                                </p>
+                                <div class="span">
+                                    <span class="span1">799,000원</span>
+                                    <span class="span2">1,187,000원</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="right cell">
+                <div class="right-tp after">
+                    <div class="tp-left hover cell"><a href="#">
+                            <div class="txt-box1">
+                                <p>스윙 천연가죽 리클라이너 체어</p>
+                                <p>Swing (Mustard)</p>
+                                <p>휴식, 독서 수유, 회의 등
+                                    <br>
+                                    쉼이 필요한 곳이면 언제나
+                                </p>
+                                <div class="span">
+                                    <span class="span1">833,000원</span>
+                                    <span class="span2">1,398,000</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tp-right hover cell"><a href="#">
+                            <div class="txt-box1">
+                                <p>스윙 천연가죽 리클라이너 체어</p>
+                                <p>Swing (Baby Blue)</p>
+                                <p>몸을 감싸는 맞춘듯한 편안함과
+                                    <br>
+                                    안락함 몸을 완벽하게 지지합니다.
+                                </p>
+                                <div class="span">
+                                    <span class="span1">833,000원</span>
+                                    <span class="span2">1,398,000</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-bt">
+                    <div class="txt-box">
+                        <p>CERAMIC TABLE COLLECTION</p>
+                        <p>세라믹 테이블 컬렉션</p>
+                        <p>당신의 완벽한 다이닝 공간을 완성하는 스페인에서 온
+                            <br>
+                            확장형 세라믹 테이블로 다채로운 라이프 스타일을 만나보세요.
+                        </p>
+                        <div class="btn"><a href="#">+ VIEW MORE</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section8" class="section">
+        <div class="txt-box">
+           <a href="#">
+            <p>BENS SHOW ROOM</p>
+            <p>
+                벤스의 모던한 디자인과 공간의 아름다움을 가장 폭 넓게
+                <br>
+                체험하실 수 있는 플래그쉽 쇼룸입니다.
+            </p>
+            </a>
+        </div>
+    </div>
+
+    <div id="section9" class="section">
+        <div class="con">
+            <p>BEST-REVIEW</p>
+            <div class="slider-wrap">
+                <div class="silde slide1">
+                    <img src="./img/best-review/1.jpg" alt="">
+                    <p>데센토 스페인 세라믹 테이블 (확장형) 구매 후기</p>
+                </div>
+                <div class="silde slide2">
+                    <img src="./img/best-review/2.jpg" alt="">
+                    <p>엘가A 퀸 침대(월넛) 구매 후기</p>
+                </div>
+                <div class="silde slide3">
+                    <img src="./img/best-review/3.jpg" alt="">
+                    <p>아담 천연가죽 소파 카우치형 구매 후기</p>
+                </div>
+                <div class="silde slide4">
+                    <img src="./img/best-review/4.jpg" alt="">
+                    <p>엘리자베스 퀸 천연가죽 침대 구매 후기</p>
+                </div>
+                <div class="silde slide5">
+                    <img src="./img/best-review/5.jpg" alt="">
+                    <p>폴센 패브릭 수퍼킹 침대 구매 후기</p>
+                </div>
+                <div class="silde slide6">
+                    <img src="./img/best-review/6.jpg" alt="">
+                    <p>다비드 패브릭 소파 구매 후기</p>
+                </div>
+                <div class="silde slide7">
+                    <img src="./img/best-review/7.jpg" alt="">
+                    <p>아담 천연가죽 소파 카우치 확장형 구매 후기</p>
+                </div>
+                <div class="silde slide8">
+                    <img src="./img/best-review/8.jpg" alt="">
+                    <p>빈켈 장식장 구매 후기</p>
+                </div>
+                <div class="silde slide9">
+                    <img src="./img/best-review/9.jpg" alt="">
+                    <p>다비드 패브릭 소파 구매 후기</p>
+                </div>
+                <div class="silde slide10">
+                    <img src="./img/best-review/10.jpg" alt="">
+                    <p>레나 천연가죽 카우치형 소파 후기 </p>
+                </div>
+                <div class="silde slide11">
+                    <img src="./img/best-review/11.jpg" alt="">
+                    <p>아담 가죽 소파 후기 </p>
+                </div>
+                <div class="silde slide12">
+                    <img src="./img/best-review/12.jpg" alt="">
+                    <p>바르셀로나C 가죽 수퍼킹 침대</p>
+                </div>
+                <div class="silde slide13">
+                    <img src="./img/best-review/13.jpg" alt="">
+                    <p>아담 가죽 소파 후기</p>
+                </div>
+                <div class="silde slide14">
+                    <img src="./img/best-review/14.jpg" alt="">
+                    <p>칸트 6인 식탁 후기</p>
+                </div>
+                <div class="silde slide15">
+                    <img src="./img/best-review/15.jpg" alt="">
+                    <p>레나 천연가죽 소파 후기</p>
+                </div>
+                <div class="silde slide16">
+                    <img src="./img/best-review/16.jpg" alt="">
+                    <p>모엘르 소파 리클라이너 4인용 후기</p>
+                </div>
+                <div class="silde slide17">
+                    <img src="./img/best-review/17.jpg" alt="">
+                    <p>브리엄 리클라이너 수퍼킹 침대 후기</p>
+                </div>
+                <div class="silde slide18">
+                    <img src="./img/best-review/18.jpg" alt="">
+                    <p>모엘르 리클라이너 소파 베스트 후기</p>
+                </div>
+                <div class="silde slide19">
+                    <img src="./img/best-review/19.jpg" alt="">
+                    <p>아담 가죽소파(확장형) 베스트 후기</p>
+                </div>
+                <div class="silde slide20">
+                    <img src="./img/best-review/20.jpg" alt="">
+                    <p>레나 천연가죽 소파, 브리엄 리클라이너 침대 베스트 후기</p>
+                </div>
+                <div class="silde slide21">
+                    <img src="./img/best-review/21.jpg" alt="">
+                    <p>엘리아 L 502 베스트후기</p>
+                </div>
+                <div class="silde slide22">
+                    <img src="./img/best-review/22.jpg" alt="">
+                    <p>플랑 라운지 체어 베스트후기</p>
+                </div>
+                <div class="silde slide23">
+                    <img src="./img/best-review/23.jpg" alt="">
+                    <p>아담 가죽소파(확장형) 베스트후기</p>
+                </div>
+                <div class="silde slide24">
+                    <img src="./img/best-review/24.jpg" alt="">
+                    <p>레띠 수퍼킹 가죽 침대 베스트후기</p>
+                </div>
+                <div class="silde slide25">
+                    <img src="./img/best-review/25.jpg" alt="">
+                    <p>플레르 소파 베스트후기</p>
+                </div>
+                <div class="silde slide26">
+                    <img src="./img/best-review/26.jpg" alt="">
+                    <p>아담 가죽소파(확장형) 베스트후기</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section10" class="section">
+        <div class="con">
+            <p>MEDIA LOUNGE</p>
+            <div class="media-box after">
+                <div class="img1 cell">
+                    <a href="#"><img src="./img/media-lounge/1.jpg" alt=""></a>
+                </div>
+                <div class="img2 cell">
+                    <div class="img1 cell">
+                        <a href="#"><img src="./img/media-lounge/2.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="img3 cell">
+                    <div class="img1 cell">
+                        <a href="#"><img src="./img/media-lounge/3.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="img4 cell">
+                    <div class="img1 cell">
+                        <a href="#"><img src="./img/media-lounge/4.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="img5 cell">
+                    <div class="img1 cell">
+                        <a href="#"><img src="./img/media-lounge/5.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="img6 cell">
+                    <div class="img1 cell">
+                        <a href="#"><img src="./img/media-lounge/6.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="img7 cell">
+                    <div class="img1 cell">
+                        <a href="#"><img src="./img/media-lounge/7.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="img8 cell">
+                    <div class="img1 cell">
+                        <a href="#"><img src="./img/media-lounge/8.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section11" class="section">
+        <div class="con">
+            <p>INSTAGRAM</p>
+            <p>@bens.official</p>
+            <div class="img-wrap">
+                <div class="img-box img1"><a href="#">
+                        <div class="img"></div>
+                    </a></div>
+                <div class="img-box img2"><a href="#">
+                        <div class="img"></div>
+                    </a></div>
+                <div class="img-box img3"><a href="#">
+                        <div class="img"></div>
+                    </a></div>
+                <div class="img-box img4"><a href="#">
+                        <div class="img"></div>
+                    </a></div>
+                <div class="img-box img5"><a href="#">
+                        <div class="img"></div>
+                    </a></div>
+                <div class="img-box img6"><a href="#">
+                        <div class="img"></div>
+                    </a></div>
+                <div class="img-box img7"><a href="#">
+                        <div class="img"></div>
+                    </a></div>
+                <div class="img-box img8"><a href="#">
+                        <div class="img"></div>
+                    </a></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="ft-tp">
+            <div class="con">
+                <div class="ft-tp-tp after">
+                    <div class="tp-left cell">
+                        <div class="txt-box">
+                            <p>CUSTOMER CENTER</p>
+                            <p>1544-6400</p>
+                            <p>MON-FRI : 09:30 - 18:00
+                                <br>
+                                SAT : 09:30 - 16:00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="line cell"></div>
+                    <div class="tp-center cell">
+                        <div class="txt-box">
+                            <p>A/S CENTER</p>
+                            <p>1544-3506</p>
+                            <p>MON-FRI : 09:30 - 18:00
+                                <br>
+                                SAT : 09:30 - 16:00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="line cell"></div>
+                    <div class="tp-right cell after">
+                        <p>HELP</p>
+                        <div class="box1 cell"><a href="#">NOTICE</a></div>
+                        <div class="box2 cell"><a href="#">제휴 협찬 문의</a></div>
+                        <div class="box3 cell"><a href="#">상품 Q&#38;A</a></div>
+                        <div class="box4 cell"><a href="#">A/S접수</a></div>
+                        <div class="box5 cell"><a href="#">재고 및 배송문의</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-tp-md after">
+                <div class="con">
+                    <div class="md-left cell">
+                        <span><a href="#">회사소개</a></span>
+                        <span><a href="#">수상내역</a></span>
+                        <span><a href="#">쇼룸안내</a></span>
+                        <span class="line"></span>
+                        <span><a href="#">이용약관</a></span>
+                        <span><a href="#">개인정보취급방침</a></span>
+                        <span><a href="#">이용안내</a></span>
+                    </div>
+                    <div class="md-right cell-right">
+                        <span class="cell"></span>
+                        <span class="cell"></span>
+                        <span class="cell"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="con">
+                <div class="ft-tp-bt">
+                    <div class="logo"></div>
+                    <div class="info after">
+                        <span class="cell">상호명 : 주식회사 벤스코리아</span>
+                        <span class="line cell"></span>
+                        <span class="cell">대표자 : 황지현</span>
+                        <span class="line cell"></span>
+                        <span class="cell">대표전화 : 1544-6400</span>
+                        <span class="line cell"></span>
+                        <span class="cell">팩스 : 032-724-0058</span>
+                        <span class="line cell"></span>
+                        <span class="cell">개인정보보호관리책임자 : 황지현</span>
+                        <span class="cell">주소 : 서울특별시 강남구 논현로 132길 12 남송빌딩 3층</span>
+                        <span class="line cell"></span>
+                        <span class="cell">사업자 등록번호 : 130-86-79874</span>
+                        <span class="line cell"></span>
+                        <span class="cell">통신판매업 신고 : 제2017-서울강남-02831호</span>
+                    </div>
+                    <div class="copyright">
+                        <span>Copyright©2007 주식회사 벤스 All right reserved. Design by 벤스</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ft-bt">
+            <div class="con after">
+                <div class="left cell">
+                    <p class="title">벤스 플래그쉽스토어</p>
+                    <p class="name">분당점</p>
+                    <p>경기도 성남시 분당구 양현로 322 (야탑동 344-1) 코리아디자인센터 1F (T.031-8016-0888)</p>
+                    <p class="name">부천점</p>
+                    <p>경기도 부천시 원미구 길주로 81 모건시티 1F (T.032-653-0888)</p>
+                    <p class="name">부산점</p>
+                    <p>부산광역시 수영구 수영로 480, 씨드이빌딩 1F (T.051-611-0087)</p>
+                    <p class="name">제주점</p>
+                    <p>제주시 연삼로 341 (T.064-755-9655)</p>
+                    <p class="name">대전점</p>
+                    <p>대전 서구 둔산동 1366 전자랜드파워센터 대전본점 5F (T.042-478-5570)</p>
+                    <p class="name">군산점</p>
+                    <p>전라북도 군산시 경암동 504-10 전자랜드파워센터 군산본점 1F (T.063-443-5667)</p>
+                    <p class="name">용산점</p>
+                    <p>서울시 용산구 청파로 74 전자랜드파워센터 용산본점 1F (T.02-707-4608)</p>
+                </div>
+                <div class="center cell">
+                    <p class="title">벤스 롯데백화점</p>
+                    <p class="name">김포공항점</p>
+                    <p>서울시 강서구 하늘길 38 롯데백화점 김포공항점 5F (T.02-6116-3514)</p>
+                    <p class="name">미아점</p>
+                    <p>서울시 강북구 도봉로 62, 롯데백화점 8F (T.02-944-2876)</p>
+                    <p class="name">안산점</p>
+                    <p>경기 안산시 단원구 고잔동 537(신관) 3F (T.031-412-2567)</p>
+                    <p class="name">일산점</p>
+                    <p>경기 고양시 일산동구 중앙로 1283, 롯데백화점 8F (T.031-909-3836)</p>
+                    <p class="name">수원점</p>
+                    <p>경기 수원시 권선구 세화로 134 롯데백화점 지하 1F (T.031-8066-0870)</p>
+                </div>
+                <div class="right cell">
+                    <p class="title">벤스 팝업스토어</p>
+                    <p class="name">현대중동점</p>
+                    <p>경기 부천시 길주로 180 현대백화점 7F (T.032-623-2764)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="logo-img">
+            <div class="con">
+                <div class="img">
+                    <img src="./img/new_award02.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body></html>

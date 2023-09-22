@@ -1,0 +1,34 @@
+@charset "UTF-8";
+#index_grid {
+  display: grid;
+  grid-template-areas: 
+  "notice_and_slider" 
+  "btn_banner" 
+  "section4" 
+  "card_news";
+}
+.notice_and_slider {
+  grid-area: notice_and_slider;
+}
+#btn_banner {
+  grid-area: btn_banner;
+}
+.sc4_business_support {
+  grid-area: section4;
+}
+/* .social_media {
+  grid-area: sns;
+} */
+section.section5 {
+  grid-area: card_news;
+}
+@media screen and (max-width: 767px) {
+  #index_grid {
+    grid-template-areas: 
+    "section4" 
+    "card_news"
+    "btn_banner" 
+    "notice_and_slider";
+    overflow: hidden;
+  }
+}

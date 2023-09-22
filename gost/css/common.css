@@ -1,0 +1,73 @@
+/* 폰트 */
+/* akira_font */
+@font-face {
+  font-family: "akira_font";
+  src: url(../font/Akira_Expanded_Demo.otf);
+}
+/* Rubik Mono One */
+@font-face {
+  font-family: "RubikMonoOne";
+  src: url(../font/RubikMonoOne-Regular.ttf);
+}
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+/* 
+font-family: 'Montserrat', sans-serif;
+*/
+/* root */
+:root {
+  /* Colors */
+  --yellow: #FFFF00;
+  /* FontSize */
+  --FontSize18: 1.2rem;
+  --FontSize30: 2rem;
+  --FontSize70: 4.67rem;
+  --FontSize100: 6.67rem;
+  --FontSize150: 10rem;
+  --FontSize200: 13.33rem;
+}
+/* 스크롤바 */
+body::-webkit-scrollbar {
+  width: 20px;  /* 스크롤바의 너비 */
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--yellow); /* 스크롤바의 색상 */
+  
+}
+body::-webkit-scrollbar-track {
+  background: #0000ff;  /*스크롤바 뒷 배경 색상*/
+}
+::-moz-selection {
+  background: #0000ff;
+  color: var(--yellow);
+}
+::selection {
+  background: #0000ff;
+  color: var(--yellow);
+}
+/* 공통 */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  line-height: 1;
+  cursor: none;
+  overflow-x: hidden;
+}
+html {
+  font-size: 15px;
+}
+a {
+  cursor: none;
+}
+.main_inner {
+  width: 84.21%;
+  margin: auto;
+}
+.white {
+  background-color: #fff;
+  mix-blend-mode: difference;
+}
+.text_white {
+  color: #fff;
+  mix-blend-mode: difference;
+}

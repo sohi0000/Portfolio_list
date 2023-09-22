@@ -1,0 +1,266 @@
+.login_wrapper {
+  margin-top: 90px;
+}
+.container {
+  width: 520px;
+  margin: auto;
+}
+.tab_menu {
+  display: flex;
+  justify-content: space-between;
+}
+/* tab button1 */
+.tab_menu > li {
+  background-color: #fff;
+  border-radius: 18px;
+  width: 250px;
+  height: 70px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 6px 6px rgba(9, 46, 230, 0.1);
+}
+/* tab button2 */
+.tab_menu .active {
+  width: 250px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0px 6px 6px rgba(9, 46, 230, 0.1);
+}
+.tab_menu li a {
+  font-size: 1.13rem;
+  font-family: "GmarketSansMedium";
+  font-weight: bold;
+  display: block;
+  line-height: 70px; /* height 맞춰서 가운데 정렬 */
+  width: 250px;
+  height: 70px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 2px solid #d9d9d9;
+  border-radius: 18px;
+}
+.tab_menu li a.active {
+  background-color: #4356e5;
+  color: #fff;
+  border: none;
+}
+.tab_content {
+}
+.tab_content > div {
+  width: 100%;
+  display: none;
+}
+
+/* 통합회원 */
+.tab_content > div label {
+  display: block;
+  font-size: 1.13rem;
+  font-family: "GmarketSansMedium";
+  margin-left: 1rem;
+  margin-top: 3.75rem;
+}
+.tab_content > div .input {
+  width: 100%;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #d9d9d9;
+}
+.tab_content > div .border1,
+.tab_content > div .border2 {
+  margin-top: 2rem;
+}
+.tab_content > .tab1 .btn_login button {
+  width: 100%;
+  height: 70;
+  color: #fff;
+  height: 70px;
+  font-family: "GmarketSansMedium";
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: var(--red);
+  border-radius: 20px;
+  cursor: pointer;
+  border: 0;
+  margin-top: 3.75rem;
+}
+.tab_content > .tab1 .btn_login button:hover,
+.tab_content > .tab2 .btn_login button:hover {
+  background-color: #f7000c;
+}
+.login_list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+.login_list li a {
+  font-size: 12px;
+  font-family: "KoPubWorldDotum_light";
+}
+.login_list li:nth-child(1) {
+  margin-left: 2rem;
+}
+.login_list li:nth-child(2) {
+  margin-left: 1rem;
+}
+.login_list li:nth-child(3) {
+  margin-right: 2rem;
+}
+
+/* focus 효과*/
+.tab_container {
+  position: relative;
+  width: 97%;
+  margin: auto;
+}
+
+.tab_content > div .input {
+  padding: 1rem 1rem; /* 마우스 커서 위치 조정 */
+  transition: all 0.3s ease-in-out;
+}
+
+.tab1 .input + .span_border1,
+.tab2 .input + .span_border2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4356e5;
+  transition: all 0.3s ease-in-out;
+}
+.tab1 .input:focus + .span_border1,
+.tab2 .input:focus + .span_border2 {
+  width: 100%;
+}
+/* 그외 홈페이지 회원 */
+.tab_content .tab2 .btn_login button {
+  width: 100%;
+  height: 70;
+  color: #fff;
+  height: 70px;
+  font-family: "GmarketSansMedium";
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: var(--red);
+  border-radius: 20px;
+  cursor: pointer;
+  border: 0;
+  margin-top: 3.75rem;
+}
+.tab2 form select {
+  width: 100%;
+  font-family: "KoPubWorldDotum_Medium";
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  background-color: #fff;
+  outline: none;
+  border: 2px solid #d9d9d9;
+  border-radius: 5px;
+}
+.tab2 form select > option {
+}
+input::placeholder {
+  font-family: "KoPubWorldDotum_Medium";
+  font-size: 1rem;
+}
+
+/* media */
+@media screen and (max-width: 767px) {
+  .login_wrapper {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    padding: 1.13rem;
+  }
+  .tab_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  /* tab button1 */
+  .tab_menu > li {
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 1rem;
+    box-shadow: 0px 6px 6px rgba(9, 46, 230, 0.1);
+  }
+  /* tab button2 */
+  .tab_menu .active {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 6px 6px rgba(9, 46, 230, 0.1);
+  }
+  .tab_menu li a {
+    font-size: 1rem;
+    font-family: "GmarketSansMedium";
+    font-weight: bold;
+    display: block;
+    line-height: 60px; /* height 맞춰서 가운데 정렬 */
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid #d9d9d9;
+    border-radius: 18px;
+  }
+  /* 통합회원 */
+  .tab_content > div label {
+    display: block;
+    font-size: 1rem;
+    font-family: "GmarketSansMedium";
+    margin-left: 0rem;
+    margin-top: 3.75rem;
+  }
+  .tab_content > div .input {
+    width: 100%;
+    margin-top: 1rem;
+    /* border: none; */
+    outline: none;
+  }
+  .tab_content > div .border1,
+  .tab_content > div .border2 {
+    margin-top: 2rem;
+  }
+  .tab_content > .tab1 .btn_login button {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-family: "GmarketSansMedium";
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--red);
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+    margin-top: 3.75rem;
+  }
+  .login_list li a {
+    font-size: 0.75rem;
+    font-family: "KoPubWorldDotum_light";
+  }
+  /* 그외 홈페이지 회원 */
+  .tab_content .tab2 .btn_login button {
+    width: 100%;
+    color: #fff;
+    height: 50px;
+    font-family: "GmarketSansMedium";
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--red);
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+    margin-top: 3.75rem;
+  }
+  input::placeholder {
+    font-size: 0.75rem;
+  }
+  .tab2 form select > option {
+    width: 50%;
+  }
+}

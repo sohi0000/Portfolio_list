@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css link -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/subpage_common.css">
+  <link rel="stylesheet" href="css/permanent_exhibition.css">
+  <link rel="stylesheet" href="css/permanent_exhibition_responsive.css">
+  <!-- header css -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/headerResponsive.css">
+  <!-- footer css -->
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <!-- login_area -->
+    <div class="login_area">
+      <div class="menu_inner login_inner">
+        <ul>
+          <li><a href="#none">로그인</a></li>
+          <li><a href="#none">회원가입</a></li>
+          <li><a href="#none">언어</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- gnb_area -->
+    <div class="gnb_area">
+      <div class="menu_inner gnb_inner">
+        <div class="search">
+          <img src="images/search_icon.svg" alt="">
+        </div>
+        <div class="page_btn">
+          <ul>
+            <li><a href="#none">
+              <img src="images/children_museum_logo.svg" alt="">
+            </a></li>
+            <li><a href="#none">박물관 소개</a></li>
+            <li><a href="#none">통합예약</a></li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="index.html">
+            <picture>
+              <source srcset="images/main_logo_small.svg" media="(max-width: 1024px)">
+              <img src="images/main_logo.svg" alt="">
+            </picture>
+          </a>
+        </div>
+        <div class="nav">
+          <ul>
+            <li><a href="viewing_guide.html">관람정보</a></li>
+            <li><a href="permanent_exhibition.html">전시</a></li>
+            <li><a href="#none">교육 &#183; 행사</a></li>
+            <li><a href="#none">소장품</a></li>
+            <li><a href="#none">학술</a></li>
+            <li><a href="#none">소식 &#183; 참여</a></li>
+          </ul>
+        </div>
+        <div class="site_map">
+          <a href="#none">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class="menu_btn">
+          <a href="#none">
+            <p></p>
+            <p></p>
+            <p></p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- submenu_area -->
+    <div class="slidedown_menu_area">
+      <div class="slidedown_page_btn">
+        <div class="slidedown_page_btn_inner">
+          <ul>
+            <li><a href="#">
+              <picture>
+                <source media="(max-width: 786px)" srcset="images/children_museum_logo_white.svg">
+                <img src="images/children_museum_logo.svg" alt="">
+            </picture>
+            </a></li>
+            <li><a href="#">박물관 소개</a></li>
+            <li><a href="#">통합예약</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="slidedown_menu_inner">
+        <div class="btn_area">
+          <div class="information_btn">
+            <a href="#none">
+              <span>정보공개</span>
+              <img src="images/arrow.svg" alt="">
+            </a>
+          </div>
+          <div class="data_storage_btn">
+            <a href="#none">
+              <span>자료저장소</span>
+              <img src="images/arrow.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="sub_login">
+          <ul>
+            <li><a href="#none">로그인</a></li>
+            <li><a href="#none">회원가입</a></li>
+            <li><a href="#none">언어</a></li>
+            <li><a href="#none">사이트맵</a></li>
+          </ul>
+        </div>
+        <div class="slidedown_menu">
+          <ul>
+            <li>
+              <a href="#none">관람정보</a>
+              <ul class="submenu">
+                <li><a href="viewing_guide.html">관람안내</a></li>
+                <li><a href="#none">찾아오시는 길</a></li>
+                <li><a href="#none">전시해설</a></li>
+                <li><a href="#none">시설안내</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">전시</a>
+              <ul class="submenu">
+                <li><a href="permanent_exhibition.html">상설전시</a></li>
+                <li><a href="#none">특별전시</a></li>
+                <li><a href="#none">전시관 가상체험</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">교육 &#183; 행사</a>
+              <ul class="submenu">
+                <li><a href="#none">교육 &#183; 행사 소식</a></li>
+                <li><a href="#none">교육 프로그램</a></li>
+                <li><a href="#none">문화행사</a></li>
+                <li><a href="#none">학술행사</a></li>
+                <li><a href="#none">교육 &#183; 행사 자료</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">소장품</a>
+              <ul class="submenu">
+                <li><a href="#none">소장품 검색</a></li>
+                <li><a href="#none">국보 &#183; 보물</a></li>
+                <li><a href="#none">큐레이터 추천 유물</a></li>
+                <li><a href="#none">이달의 문화재</a></li>
+                <li><a href="#none">열람 &#183; 복제</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">학술</a>
+              <ul class="submenu">
+                <li><a href="#none">발간자료</a></li>
+                <li><a href="#none">보존과학</a></li>
+                <li><a href="#none">도서관</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">소식 &#183; 참여</a>
+              <ul class="submenu">
+                <li><a href="#none">새소식</a></li>
+                <li><a href="#none">고시 &#183; 공고</a></li>
+                <li><a href="#none">채용안내</a></li>
+                <li><a href="#none">보도자료</a></li>
+                <li><a href="#none">월간소식지</a></li>
+                <li><a href="#none">자원봉사</a></li>
+                <li><a href="#none">고객민원</a></li>
+                <li><a href="#none">유실물 안내</a></li>
+                <li><a href="#none">설문조사</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- search_area -->
+    <div class="search_area">
+      <div class="search_area_inner">
+        <div class="input_box">
+          <input type="search" class="input_seach" placeholder="검색어를 입력하세요">
+          <input type="submit" class="input_submit" value="">
+        </div>
+        <dl class="keyword_box">
+          <dt>검색키워드</dt>
+          <dd><a href="#none">성덕대왕신종</a></dd>
+          <dd><a href="#none">자원봉사</a></dd>
+          <dd><a href="#none">전시해설</a></dd>
+          <dd><a href="#none">버스시간표</a></dd>
+        </dl>
+      </div>
+    </div>
+    <!-- menu_bg -->
+    <div class="menu_bg"></div>
+  </header>
+
+  <section class="site_link_button">
+    <div class="img_inner">
+      <nav class="site_button">
+        <ul>
+          <li class="active"><a href="#none">상설전시</a></li>
+          <li><a href="#none">특별전시</a></li>
+          <li><a href="#none">전시관 가상체험</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <main>
+    <div class="main_inner">
+      <div class="main_title">
+        <h1>상설전시</h1>
+        <ul>
+          <li><a href="#none">HOME</a></li>
+          <li><a href="#none">관람정보</a></li>
+          <li><a href="#none">관람안내</a></li>
+          <li><button>인쇄</button></li>
+          <li><button>공유</button></li>
+        </ul>
+      </div>
+      <div class="main_content">
+        <div class="main_img"></div>
+        <div class="main_text">
+          <h2>
+            상설전시실
+          </h2>
+          <p>
+            <span>
+              국립경주박물관 상설전시실은 총 5개의 관/장으로 이루어져 있으며,
+              <br>
+              천년왕국 신라의 성장과 찬란한 미술문화, 국보와 보물 등을 만나보실 수 있습니다.
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="permanent_exhibition">
+    <div class="main_inner">
+      <div class="exhibition_tab_btn">
+        <ul>
+          <li>
+            <a href="#exhibition_tab_01" class="active">신라역사관</a>
+          </li>
+          <li>
+            <a href="#exhibition_tab_02">신라미술관</a>
+          </li>
+          <li>
+            <a href="#exhibition_tab_03">월지관</a>
+          </li>
+          <li>
+            <a href="#exhibition_tab_04">신라천년보고</a>
+          </li>
+          <li>
+            <a href="#exhibition_tab_05">옥외전시</a>
+          </li>
+        </ul>
+        <span class="tab_border"></span>
+      </div>
+      <div class="exhibition_tab_content">
+        <div id="exhibition_tab_01" class="exhibition_box active">
+          <div class="exhibition_main_img">
+            <a href="#none">
+              <img src="images/permanent_exhibition_01.png" alt="">
+            </a>
+          </div>
+          <div class="exhibition_text">
+            <h3>신라역사관</h3>
+            <p>
+              신라역사관은 기원전 57년에서 기원후 935년까지 한반도 동남쪽에 있었던 천년왕국 신라를 만날 수 있는 전시관입니다. 신라 천년의 태동을 소개하는 1실, 신라 황금문화를 집중 조명한 2실, 삼국통일과 융성하는 통일신라문화를 다룬 3실(3a, 3b)로 구성되어 있습니다. 또한 문화유산의 아름다운 공유를 몸소 실천한 국은 이양선 박사의 기증 문화재가 전시된 국은기념실을 만나보실 수 있습니다.
+            </p>
+          </div>
+          <div class="exhibition_side_img">
+            <img src="images/permanent_exhibition_side_01.png" alt="">
+          </div>
+          <div class="exhibition_floor_plan_img">
+            <div>
+              <img src="images/permanent_exhibition_floor_plan_01.png" alt=""  data-img="images/floor_plan_data_img_01.png">
+            </div>
+          </div>
+        </div>
+        <div id="exhibition_tab_02" class="exhibition_box">
+          <div class="exhibition_main_img">
+            <a href="#none">
+              <img src="images/permanent_exhibition_02.png" alt="">
+            </a>
+          </div>
+          <div class="exhibition_text">
+            <h3>신라미술관</h3>
+            <p>신라미술관은 신라의 찬란한 미술 문화와 역사를 보여드리는 전시관입니다.
+            1층의 불교조각실은 신라 불교조각의 아름다움과 시각적 다채로움이 역사, 전설, 정토라는 개념 위에서 펼쳐지도록 구성했습니다. 총 3부로 이루어져 있으며, 불교의 힘으로 나라를 지킨다는 믿음, 신라 사람들의 삶 속으로 들어와 위안을 주고 전설이 된 부처와 보살 이야기, 불교적 이상세계인 정토가 전하는 희망과 위안의 메시지를 전합니다.
+            2층의 불교사원실은 신라 최대의 사찰인 황룡사를 비롯해 분황사, 감은사, 사천왕사 등에서 출토된 사리기(감은사 서탑 사리장엄구, 보물), 기와, 전돌, 벽전 등을 소개하고 있습니다.
+            </p>
+          </div>
+          <div class="exhibition_side_img">
+            <img src="images/permanent_exhibition_side_02.png" alt="">
+          </div>
+          <div class="exhibition_floor_plan_img">
+            <div>
+              <img src="images/permanent_exhibition_floor_plan_02_01.png" alt=""  data-img="images/floor_plan_data_img_02_01.png">
+            </div>
+            <div>
+              <img src="images/permanent_exhibition_floor_plan_02_02.png" alt=""  data-img="images/floor_plan_data_img_02_02.png">
+            </div>
+          </div>
+        </div>
+        <div id="exhibition_tab_03" class="exhibition_box">
+          <div class="exhibition_main_img">
+            <a href="#none">
+              <img src="images/permanent_exhibition_03.png" alt="">
+            </a>
+          </div>
+          <div class="exhibition_text">
+            <h3>월지관</h3>
+            <p>
+              월지관은 경주 동궁과 월지(안압지)에서 발견된 약 3만 점의 통일신라시대 문화재 중에서 엄선한 1,100여 점의 문화재를 주제별로 전시하여 통일신라 문화, 특히 왕실의 생활문화 전반을 이해할 수 있도록 구성되어 있습니다.
+            </p>
+          </div>
+          <div class="exhibition_side_img">
+            <img src="images/permanent_exhibition_side_03.png" alt="">
+          </div>
+          <div class="exhibition_floor_plan_img">
+            <div>
+              <img src="images/permanent_exhibition_floor_plan_03_01.png" alt=""  data-img="images/floor_plan_data_img_03_01.png">
+            </div>
+            <div>
+              <img src="images/permanent_exhibition_floor_plan_03_02.png" alt=""  data-img="images/floor_plan_data_img_03_02.png">
+            </div>
+          </div>
+        </div>
+        <div id="exhibition_tab_04" class="exhibition_box">
+          <div class="exhibition_main_img">
+            <a href="#none">
+              <img src="images/permanent_exhibition_04.png" alt="">
+            </a>
+          </div>
+          <div class="exhibition_text">
+            <h3>신라천년보고</h3>
+            <p>
+              신라천년보고는 경상도 지역에서 발굴된 문화재를 안전하고 효율적으로 보관하기 위해 지어진 전용 보관시설입니다.
+              내부에는 관람이 가능한 전시 수장고와 일반 전시실, 소장품 등록실, 열람실이 있으며, 9개의 수장고와 문화재 소독실, 촬영실, 아카이브 자료 보관실 등을 갖추고 있습니다.
+              국립대구박물관, 국립진주박물관, 국립김해박물관 소장 발굴품들도 이곳에서 보관되고 있습니다.
+            </p>
+          </div>
+          <div class="exhibition_side_img">
+            <img src="images/permanent_exhibition_side_04.png" alt="">
+          </div>
+          <div class="exhibition_floor_plan_img">
+            <div>
+              <img src="images/permanent_exhibition_floor_plan_04.png" alt=""  data-img="images/floor_plan_data_img_04.png">
+            </div>
+          </div>
+        </div>
+        <div id="exhibition_tab_05" class="exhibition_box">
+          <div class="exhibition_main_img">
+            <a href="#none">
+              <img src="images/permanent_exhibition_05.png" alt="">
+            </a>
+          </div>
+          <div class="exhibition_text">
+            <h3>옥외전시</h3>
+            <p>
+              국립경주박물관 뜰에는 범종, 석탑, 석불, 석등, 비석받침, 전각 기단 부재 등의 석조품 1,300여 점을 전시하고 있습니다. 이들은 대부분 경주와 그 주변지역의 옛 절터나 궁궐터, 성터 등에서 옮겨 온 것들입니다.
+              대표적인 전시품으로는 우리나라에서뿐만 아니라 세계에서도 가장 빼어난 종으로 평가되는 성덕대왕신종(국보)을 비롯하여 감은사 터 동·서 삼층석탑과 쌍벽을 이루는 통일신라 초기의 고선사 터 삼층석탑(국보), 8세기 통일신라 불교조각의 우수성을 보여주는 낭산 출토 석조관음보살입상 등을 들 수 있습니다.
+            </p>
+          </div>
+          <div class="exhibition_side_img">
+            <img src="images/permanent_exhibition_side_05.png" alt="">
+          </div>
+          <div class="exhibition_floor_plan_img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="modal_wrap">
+    <div class="modal">
+      <div class="modal_close">
+        <p></p>
+        <p></p>
+      </div>
+      <div class="floor_plan">
+        <div class="modal_img">
+          <img src="" alt="">
+          <ul>
+            <li class="floor01 floor_location active">
+              <i class="num1 num">1</i>
+              <i class="num2 num">2</i>
+              <i class="num3 numSpan num">
+                <span>3</span>
+                <span>3</span>
+              </i>
+              <i class="num4 num">4</i>
+              <i class="information_desk"></i>
+              <i class="elevator"></i>
+              <i class="nursing_room"></i>
+            </li>
+            <li class="floor02 floor_location">
+              <i class="num num1">1</i>
+              <i class="num num2">2</i>
+              <i class="num num3">3</i>
+              <i class="num num4">4</i>
+              <i class="num num5">5</i>
+              <i class="information_desk"></i>
+              <i class="elevator"></i>
+              <i class="restroom"></i>
+            </li>
+            <li class="floor03 floor_location">
+              <i class="num num1">1</i>
+              <i class="num num2">2</i>
+              <i class="elevator"></i>
+            </li>
+            <li class="floor04 floor_location">
+              <i class="num num1">1</i>
+              <i class="num num2">2</i>
+              <i class="num num3">3</i>
+              <i class="nursing_room"></i>
+              <i class="elevator"></i>
+            </li>
+            <li class="floor05 floor_location">
+              <i class="num num1">1</i>
+              <i class="num num2">2</i>
+              <i class="num num3">3</i>
+              <i class="elevator"></i>
+            </li>
+            <li class="floor06 floor_location">
+              <i class="num num1">1</i>
+              <i class="num num2">2</i>
+              <i class="num num3">3</i>
+              <i class="num num4">4</i>
+              <i class="information_desk"></i>
+              <i class="restroom"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="floor_explanation">
+          <ul>
+            <li class="floor_text floor_01 active">
+              <div class="info">
+                <p><i class="num1">1</i>1실: 신라의 건국과 성장</p>
+                <p><i class="num2">2</i>2실: 황금의 나라, 신라</p>
+                <p><i class="num3">3</i>3실: 신라의 번영</p>
+                <p><i class="num4">4</i>국은기념실</p>
+              </div>
+              <div class="info_icon">
+                <p><i
+                  class="icon information_desk"></i>안내데스크</p>
+                <p><i
+                  class="icon elevator"></i>엘리베이터</p>
+                <p><i
+                  class="icon nursing_room"></i>수유실</p>
+              </div>
+            </li>
+            <li class="floor_text floor_02_01">
+              <div class="info">
+                <p><i>1</i>불교조각 1실: 역사</p>
+                <p><i>2</i>불교조각 2실: 전설</p>
+                <p><i>3</i>불교조각 3실: 정토</p>
+                <p><i>4</i>디지털 실감체험관</p>
+                <p><i>5</i>문화상품점</p>
+              </div>
+              <div class="info_icon">
+                <p><i
+                  class="icon information_desk"></i>안내데스크</p>
+                <p><i
+                  class="icon elevator"></i>엘리베이터</p>
+                <p><i
+                  class="icon restroom"></i>화장실</p>
+              </div>
+            </li>
+            <li class="floor_text floor_02_02">
+              <div class="info">
+                <p><i>1</i>불교사원실</p>
+                <p><i>2</i>반가사유상 / 약사불</p>
+              </div>
+              <div class="info_icon">
+                <p><i
+                  class="icon elevator"></i>엘리베이터</p>
+              </div>
+            </li>
+            <li class="floor_text floor_03_01">
+              <div class="info">
+                <p><i>1</i>용얼굴무늬기와</p>
+                <p><i>2</i>월지모형</p>
+                <p><i>3</i>풍로</p>
+              </div>
+              <div class="info_icon">
+                <p><i
+                  class="icon elevator"></i>엘리베이터</p>
+                <p><i
+                  class="icon nursing_room"></i>수유실</p>
+              </div>
+            </li>
+            <li class="floor_text floor_03_02">
+              <div class="info">
+                <p><i>1</i>삼존불</p>
+                <p><i>2</i>금동심지가위</p>
+                <p><i>3</i>금동용머리</p>
+              </div>
+              <div class="info_icon">
+                <p><i
+                  class="icon elevator"></i>엘리베이터</p>
+              </div>
+            </li>
+            <li class="floor_text floor_04">
+              <div class="info">
+                <p><i>1</i>로비전시실: 
+                  <br>
+                  박물관 오리엔테이션</p>
+                <p><i>2</i>전시수장고: 
+                  <br>
+                  신라의주요유적과 유물</p>
+                <p><i>3</i>소장품등록실: 
+                  <br>
+                  소장품등록과 정실견</p>
+                <p><i>4</i>열람실: 
+                  <br>
+                  소장품조사와 정실견</p>
+              </div>
+              <div class="info_icon">
+                <p><i
+                  class="icon information_desk"></i>안내데스크</p>
+                <p><i
+                  class="icon restroom"></i>화장실</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- footer -->
+  <footer>
+    <div class="utile_wrap">
+      <div class="main_inner utile_inner">
+        <ul class="utile">
+          <li><a href="#none">개인정보처리방침</a></li>
+          <li><a href="#none">박물관소개</a></li>
+          <li><a href="#none">누리집 지도</a></li>
+          <li><a href="#none">관람안내</a></li>
+          <li><a href="#none">찾아오시는 길</a></li>
+          <li><a href="#none">CCTV운영관리방침</a></li>
+          <li><a href="#none">전시해설</a></li>
+          <li><a href="#none">저작권정책</a></li>
+        </ul>
+        <div class="related_site">
+          <a href="#none">
+            관련사이트 바로가기
+            <i><img src="images/site_arrow.svg" alt=""></i>
+          </a>
+          <ul>
+            <li><a href="#none">국립중앙박물관</a></li>
+            <li><a href="#none">국립광주박물관</a></li>
+            <li><a href="#none">국립전주박물관</a></li>
+            <li><a href="#none">국립대구박물관</a></li>
+            <li><a href="#none">국립부여박물관</a></li>
+            <li><a href="#none">국립공주박물관</a></li>
+            <li><a href="#none">국립진주박물관</a></li>
+            <li><a href="#none">국립청주박물관</a></li>
+            <li><a href="#none">국립김해박물관</a></li>
+            <li><a href="#none">국립제주박물관</a></li>
+            <li><a href="#none">국립춘천박물관</a></li>
+            <li><a href="#none">국립나주박물관</a></li>
+            <li><a href="#none">국립익산박물관</a></li>
+            <li><a href="#none">국립박물관문화재단</a></li>
+            <li><a href="#none">국립중앙박물관회</a></li>
+            <li><a href="#none">사단법인한국박물관회</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main_inner footer_wrap_inner">
+      <div class="footer_wrap">
+        <div class="text_box">
+          <p>
+            국립경주박물관은 신라의
+            <br>
+            문화유산을 한 눈에 살필 수 있는
+            <br>
+            한국의 대표적인 박물관입니다.
+          </p>
+          <div class="footer_logo">
+            <a href="#none">국립경주박물관</a>
+          </div>
+          <div class="copy">
+            Copyright(c)2017 Gyeongju National Museum. All rights reserved.
+          </div>
+        </div>
+        <div class="footer_info">
+          <div class="address">
+            <h4>위치</h4>
+            <p>38171</p>
+            <p>경상북도 경주시 일정로 186</p>
+            <p>국립경주박물관</p>
+          </div>
+          <div class="tel">
+            <h4>연락처</h4>
+            <p>Tel : 054-740-7500</p>
+            <p>Fax : 054-740-7522</p>
+          </div>
+          <div class="sns">
+            <h4>소셜네트워크</h4>
+            <a href="#none">페이스북</a>
+            <a href="#none">인스타그램</a>
+            <a href="#none">블로그</a>
+            <a href="#none">유튜브</a>
+          </div>
+        </div>
+        <div class="mobile_logo">
+          <div class="mobile_footer_logo">
+            <a href="#none">국립경주박물관</a>
+          </div>
+          <div class="mobile_copy">
+            Copyright(c)2017 Gyeongju National Museum. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- javaScript -->
+  <script src="js/permanent_exhibition.js"></script>
+  <!-- header js -->
+  <script src="js/header.js"></script>
+  <!-- footer js -->
+  <script src="js/footer.js"></script>
+</body>
+</html>

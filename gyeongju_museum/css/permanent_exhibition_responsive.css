@@ -1,0 +1,467 @@
+/* responsive tablet */
+@media (max-width: 1024px) {
+  /* permanent_exhibition */
+  .exhibition_tab_btn {
+    width: 100%;
+  }
+  .tab_border {
+    width: calc(100% / 5);
+  }
+  .exhibition_box {
+    grid-template-areas: 
+    "mainimg"
+    "gridtext"
+    "floorplan";
+  }
+  /* exhibition_main_img */
+  .exhibition_main_img {
+    height: 280px;
+  }
+  /* exhibition_side_img */
+  .exhibition_side_img {
+    display: none;
+  }
+  /* exhibition_text */
+  .exhibition_text {
+    margin-left: 10%;
+  }
+
+  .exhibition_text h3 {
+    font-size: var(--FontSize28);
+    padding-right: 5%;
+  }
+  .exhibition_text p {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: var(--FontSize14);
+  }
+  /* exhibition_floor_plan_img */
+  .exhibition_floor_plan_img {
+    margin-top: 5%;
+  }
+  /* modal */
+  .modal {
+    width: 768px;
+    height: 500px;
+  }
+  .modal_close {
+    width: 30px;
+    height: 30px;
+  }
+  .floor_location i:not(.numSpan) {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+  }
+  .floor01 .num3 span {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+  }
+  .floor_text .info p {
+    font-size: var(--FontSize14);
+    margin-bottom: .5rem;
+  }
+  .floor_text .info p i {
+    font-size: var(--FontSize14);
+    margin-right: .5rem;
+  }
+  .info_icon p {
+    font-size: var(--FontSize14);
+  }
+  .info_icon p i {
+    margin-right: .5rem;
+  }
+  .info_icon p:not(:last-child) {
+    margin-bottom: .5rem;
+  }
+  /* icon 위치 */
+  .floor_location .num3 span:nth-child(1) {
+    top: 13.5%;
+    left: 39.5%;
+  }
+  .floor_location .num3 span:nth-child(2) {
+    top: 15%;
+    left: 72.5%;
+  }
+  /* 아이콘 위치 */
+  .floor01 .num1 {
+    top: 54.5%;
+    left: 22.5%;
+  }
+  .floor01 .num2 {
+    top: 56.5%;
+    left: 75%;
+  }
+  .floor01 .num4 {
+    top: 13.5%;
+    left: 22.5%;
+  }
+  .floor01 .information_desk {
+    top: 57.5%;
+    left: 58%;
+  }
+  .floor01 .elevator {
+    top: 26%;
+    left: 14%;
+  }
+  .floor01 .nursing_room {
+    top: 26%;
+    left: 27.5%;
+  }
+  .floor02 .num1 {
+    top: 24%;
+    left: 52.8%;
+  }
+  .floor02 .num2 {
+    top: 47%;
+    left: 14%;
+  }
+  .floor02 .num3 {
+    top: 25%;
+    left: 19%;
+  }
+  .floor02 .num4 {
+    top: 21%;
+    left: 70.8%;
+  }
+  .floor02 .num5 {
+    top: 69.5%;
+    left: 52.5%;
+  }
+  .floor02 .information_desk {
+    top: 40%;
+    left: 66%;
+  }
+  .floor02 .elevator {
+    top: 44.5%;
+    left: 28.3%;
+  }
+  .floor02 .restroom {
+    top: 66%;
+    left: 34.5%;
+  }
+  .floor03 .num1 {
+    top: 27%;
+    left: 18%;
+  }
+  .floor03 .num2 {
+    top: 59.5%;
+    left: 65.5%;
+  }
+  .floor03 .elevator {
+    top: 33%;
+    left: 42.3%;
+  }
+  .floor04 .num1 {
+    top: 36%;
+    left: 36%;
+  }
+  .floor04 .num2 {
+    top: 41%;
+    left: 65%;
+  }
+  .floor04 .num3 {
+    top: 48%;
+    left: 44%;
+  }
+  .floor04 .nursing_room {
+    top: 37%;
+    left: 4%;
+  }
+  .floor04 .elevator {
+    top: 41%;
+    left: 10%;
+  }
+  .floor05 .num1 {
+    top: 38%;
+    left: 38%;
+  }
+  .floor05 .num2 {
+    top: 38%;
+    left: 53%;
+  }
+  .floor05 .num3 {
+    top: 38%;
+    left: 66%;
+  }
+  .floor05 .elevator {
+    top: 46%;
+    left: 9%;
+  }
+  .floor06 .num1 {
+    top: 52%;
+    left: 82%;
+  }
+  .floor06 .num2 {
+    top: 30%;
+    left: 46%;
+  }
+  .floor06 .num3 {
+    top: 54%;
+    left: 14%;
+  }
+  .floor06 .num4 {
+    top: 30%;
+    left: 20%;
+  }
+  .floor06 .information_desk {
+    top: 43%;
+    left: 33.5%;
+  }
+  .floor06 .restroom {
+    top: 33%;
+    left: 73%;
+  }
+}
+/* responsive mobile */
+@media (max-width: 768px) {
+  /* main */
+  .main_img {
+    background-image: url(../images/permanent_exhibition_main_img_mobile.png);
+  }
+  /* permanent_exhibition */
+  .exhibition_tab_btn {
+    height: 30px;
+  }
+  .exhibition_tab_btn ul li a {
+    font-size: var(--FontSize14);
+  }
+  /* exhibition_main_img */
+  .exhibition_main_img {
+    margin-bottom: 0px;
+    height: 130px;
+  }
+  /* exhibition_text */
+  .exhibition_text {
+    margin-left: 0;
+  }
+  .exhibition_text h3 {
+    font-size: var(--FontSize18);
+    padding-right: 0;
+  }
+  .exhibition_text p {
+    font-size: var(--FontSize12);
+    padding: 0;
+  }
+  /* exhibition_floor_plan_img */
+  .exhibition_floor_plan_img {
+    display: flex;
+    flex-direction: column;
+  }
+  .exhibition_floor_plan_img div {
+    width: 100%;
+  }
+  /* modal */
+  .modal {
+    width: 430px;
+    height: 600px;
+  }
+  .modal_close {
+    width: 30px;
+    height: 30px;
+  }
+
+  .modal_img {
+    width: 100%;
+    height: 300px;
+  }
+  .floor_explanation {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .floor_text {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    gap: 10px;
+  }
+  .floor_text .info {
+    padding: 0;
+    flex: 1;
+  }
+  .floor_text .info_icon {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+  }
+  .floor_location i:not(.numSpan) {
+    width: 28px;
+    height: 28px;
+    border-radius: 10px;
+    font-size: var(--FontSize12);
+  }
+  .floor01 .num3 span {
+    width: 28px;
+    height: 28px;
+    border-radius: 10px;
+    font-size: var(--FontSize12);
+  }
+  .floor_text .info p {
+    font-size: var(--FontSize12);
+    margin-bottom: .5rem;
+    padding: 0 .5rem;
+  }
+  .floor_text .info p i {
+    font-size: var(--FontSize12);
+    margin-right: .5rem;
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+  }
+  .floor_text .info p br {
+    display: block;
+  }
+  .info_icon p {
+    font-size: var(--FontSize12);
+  }
+  .info_icon p i {
+    margin-right: .5rem;
+  }
+  .info_icon p:not(:last-child) {
+    margin-bottom: .5rem;
+  }
+  /* icon 위치 */
+  .floor_location .num3 span:nth-child(1) {
+    top: 8.5%;
+    left: 40.5%;
+  }
+  .floor_location .num3 span:nth-child(2) {
+    top: 10%;
+    left: 69.5%;
+  }
+  /* 아이콘 위치 */
+  .floor01 .num1 {
+    top: 54.5%;
+    left: 25.5%;
+  }
+  .floor01 .num2 {
+    top: 57%;
+    left: 72%;
+  }
+  .floor01 .num4 {
+    top: 8.5%;
+    left: 25.5%;
+  }
+  .floor01 .information_desk {
+    top: 58.5%;
+    left: 56.5%;
+  }
+  .floor01 .elevator {
+    top: 23%;
+    left: 18%;
+  }
+  .floor01 .nursing_room {
+    top: 23%;
+    left: 30%;
+  }
+  .floor02 .num1 {
+    top: 18%;
+    left: 52.8%;
+  }
+  .floor02 .num2 {
+    top: 46%;
+    left: 14%;
+  }
+  .floor02 .num3 {
+    top: 19%;
+    left: 19.5%;
+  }
+  .floor02 .num4 {
+    top: 14%;
+    left: 70.8%;
+  }
+  .floor02 .num5 {
+    top: 75.5%;
+    left: 52.5%;
+  }
+  .floor02 .information_desk {
+    top: 37.6%;
+    left: 66%;
+  }
+  .floor02 .elevator {
+    top: 43.5%;
+    left: 28.7%;
+  }
+  .floor02 .restroom {
+    top: 70.5%;
+    left: 35%;
+  }
+  .floor03 .num1 {
+    top: 21%;
+    left: 18%;
+  }
+  .floor03 .num2 {
+    top: 62.3%;
+    left: 65.5%;
+  }
+  .floor03 .elevator {
+    top: 28.6%;
+    left: 42.6%;
+  }
+  .floor04 .num1 {
+    top: 33%;
+    left: 36%;
+  }
+  .floor04 .num2 {
+    top: 39%;
+    left: 65.5%;
+  }
+  .floor04 .num3 {
+    top: 47%;
+    left: 44.5%;
+  }
+  .floor04 .nursing_room {
+    top: 34%;
+    left: 4%;
+  }
+  .floor04 .elevator {
+    top: 39%;
+    left: 10%;
+  }
+  .floor05 .num1 {
+    top: 35%;
+    left: 38.5%;
+  }
+  .floor05 .num2 {
+    top: 35%;
+    left: 53.5%;
+  }
+  .floor05 .num3 {
+    top: 35%;
+    left: 66.5%;
+  }
+  .floor05 .elevator {
+    top: 44.5%;
+    left: 9.5%;
+  }
+  .floor06 .num1 {
+    top: 52.5%;
+    left: 81.5%;
+  }
+  .floor06 .num2 {
+    top: 25%;
+    left: 45.5%;
+  }
+  .floor06 .num3 {
+    top: 54.5%;
+    left: 14%;
+  }
+  .floor06 .num4 {
+    top: 25%;
+    left: 20%;
+  }
+  .floor06 .information_desk {
+    top: 41%;
+    left: 33.5%;
+  }
+  .floor06 .restroom {
+    top: 29%;
+    left: 73.5%;
+  }
+}

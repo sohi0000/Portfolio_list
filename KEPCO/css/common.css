@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* 변수 지정 */
+:root {
+  /* Colors */
+  --pointColor: #4356e5;
+  --red: #ff3843;
+  --black: #021730; /* 기본 시암 블랙 */
+  --gray1: #f3f4f8; /* 데스크탑 배경으로 쓴 가장 옅은 그레이 */
+  --gray2: #e7e8f0; /* 모바일 배경으로 쓴 그레이 */
+}
+/* Font */
+/* Google Font - Outfit */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Google Font - Mukta */
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+/* NunNoo Font - Gmarket Sans */
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* NunNoo Font - GmarketSans */
+@font-face {
+  font-family: "GS_B";
+  src: url(../font/gmarket_sans/GmarketSansTTFBold.ttf);
+}
+@font-face {
+  font-family: "GS_M";
+  src: url(../font/gmarket_sans/GmarketSansTTFMedium.ttf);
+}
+@font-face {
+  font-family: "GS_L";
+  src: url(../font/gmarket_sans/GmarketSansTTFLight.ttf);
+}
+/* NuNoo font- KoPub Dotum */
+@font-face {
+  font-family: "KoPubWorldDotum_Bold";
+  src: url(../font/kopub_dotum/KoPubWorld\ Dotum\ Bold.ttf);
+}
+
+@font-face {
+  font-family: "KoPubWorldDotum_Light";
+  src: url(../font/kopub_dotum/KoPubWorld\ Dotum\ Light.ttf);
+}
+
+@font-face {
+  font-family: "KoPubWorldDotum_Medium";
+  src: url(../font/kopub_dotum/KoPubWorld\ Dotum\ Medium.ttf);
+}
+/* 
+font-family: 'Mukta', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: "GmarketSansMedium";
+font-family: "KoPubWorldDotum_Medium";
+*/
+/* Reset & Common */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--black);
+}
+body {
+  font-size: 16px;
+  background-color: #fff;
+}
+ul,
+li,
+dl,
+dd,
+dt,
+ol {
+  list-style: none;
+}
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--black);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+button {
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--black);
+}
+.inner {
+  width: 68%;
+  margin: auto;
+}

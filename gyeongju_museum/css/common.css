@@ -1,0 +1,91 @@
+/* 폰트 */
+/* SunBatang */
+@font-face {
+  font-family: "SunBatang_Light";
+  src: url(../font/SunBatang/SunBatang-Light.ttf);
+}
+@font-face {
+  font-family: "SunBatang_Medium";
+  src: url(../font/SunBatang/SunBatang-Medium.ttf);
+}
+@font-face {
+  font-family: "SunBatang_Bold";
+  src: url(../font/SunBatang/SunBatang-Bold.ttf);
+}
+  /* GothicA1 */
+@font-face {
+  font-family: "GothicA1_Regular";
+  src: url(../font/GothicA1/GothicA1-Regular.ttf);
+}
+@font-face {
+  font-family: "GothicA1_Medium";
+  src: url(../font/GothicA1/GothicA1-Medium.ttf);
+}
+@font-face {
+  font-family: "GothicA1_Bold";
+  src: url(../font/GothicA1/GothicA1-Bold.ttf);
+}
+/* root */
+:root {
+  /* Colors */
+  --brownColor1: #E5D4BA;
+  --brownColor2: #C1A081;
+  --brownColor3: #A18061;
+  --brownColor4: #816041;
+  --green: #7E803F;
+  --lightGray: #F3F2F0;
+  --black: #404040;
+  --yellow: #E3E07F;
+  --greyBlue: #8180A2;
+  --pink: #C18181;
+  /* FontSize */
+  --FontSize12: .8rem;
+  --FontSize14: .93rem;
+  --FontSize16: 1.07rem;
+  --FontSize18: 1.2rem;
+  --FontSize20: 1.33rem;
+  --FontSize28: 1.87rem;
+  --FontSize36: 2.4rem;
+  --FontSize48: 3.2rem;
+}
+/* 스크롤바 */
+body::-webkit-scrollbar {
+  width: 10px;  /* 스크롤바의 너비 */
+}
+body::-webkit-scrollbar-thumb {
+  background: #C1A081; /* 스크롤바의 색상 */
+  
+}
+body::-webkit-scrollbar-track {
+  background: #E5D4BA;  /*스크롤바 뒷 배경 색상*/
+}
+/* 공통 */
+body {
+  font-family: "SunBatang_Bold";
+  color: var(--black);
+}
+html {
+  font-size: 15px;
+}
+.main_inner {
+  width: 62.50%;
+  margin: auto;
+}
+.menu_inner {
+  width: 94.79%;
+  margin: auto;
+}
+@media (max-width: 1024px) {
+  .main_inner,
+  .menu_inner {
+    width: 90.23%;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .main_inner,
+  .menu_inner {
+    width: 90%;
+    margin: auto;
+  }
+}

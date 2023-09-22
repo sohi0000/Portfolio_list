@@ -1,0 +1,323 @@
+p, span {
+  line-height: 1.5;
+}
+/* 공통 마진 */
+section {
+  margin-bottom: 150px;
+}
+section:last-child {
+  margin-bottom: 200px;
+}
+/* site_link_button */
+/* site_link_button */
+.site_link_button {
+  margin-top: 165px;
+  height: 350px;
+  border-top: 1px solid var(--brownColor2);
+  border-bottom: 1px solid var(--brownColor2);
+  margin-bottom: 50px;
+}
+.img_inner {
+  width: 83.33%;
+  height: 100%;
+  border-left: 1px solid var(--brownColor2);
+  border-right: 1px solid var(--brownColor2);
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.site_button {
+  width: 52.13%;
+  height: 60px;
+  background-color: #00000080;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.site_button ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.site_button ul li {
+  width: 100%;
+}
+.site_button ul li a {
+  color: #fff;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--FontSize20);
+}
+.site_button ul li.active a {
+  background-color: var(--brownColor4);
+  position: relative;
+}
+.site_button ul li.active a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid var(--brownColor1);
+  top: -10px;
+  left: -10px;
+}
+/* main title */
+main {
+  margin-bottom: 150px;
+}
+.main_title {
+  margin-bottom: 2rem;
+}
+.main_title h1 {
+  font-size: var(--FontSize36);
+  color: var(--brownColor4);
+  border-bottom: 1px solid var(--brownColor2);
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-bottom: 8px;
+}
+.main_title ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.main_title ul li {
+  position: relative;
+}
+.main_title ul li a {
+  font-family: "GothicA1_Regular";
+  font-size: var(--FontSize12);
+  margin-left: 15px;
+}
+.main_title ul li:not(:nth-child(3),:nth-child(4),:nth-child(5)):after {
+  content: ">";
+  font-family: "GothicA1_Regular";
+  position: absolute;
+  right: -12px;
+  top: 10%;
+}
+.main_title ul li button {
+  font-family: "GothicA1_Regular";
+  font-size: var(--FontSize12);
+  background-color: transparent;
+  width: 40px;
+  height: 18px;
+  border: 1px solid var(--brownColor1);
+  margin-left: 5px;
+  transition: .3s;
+}
+/* main content */
+.main_content {
+  display: flex;
+  justify-content: space-between;
+}
+.main_img {
+  width: 285px;
+  height: 450px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.main_img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--brownColor2);
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+}
+.main_text {
+  width: 69.96%;
+}
+.main_text h2 {
+  font-size: var(--FontSize36);
+  font-family: "SunBatang_Medium";
+  line-height: 1.5;
+  color: var(--brownColor4);
+  border-bottom: 1px solid var(--brownColor2);
+  padding-bottom: 15px;
+  margin-top: 15%;
+  margin-bottom: 30px;
+  position: relative;
+}
+.main_text h2::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--brownColor2);
+  position: absolute;
+  left: -1rem;
+  top: -.5rem;
+  z-index: -1;
+  transition: .3s;
+}
+.main_text p {
+  font-family: "SunBatang_Medium";
+  line-height: 1.5;
+}
+.main_text p span {
+  display: block;
+  margin-bottom: 1rem;
+}
+/* sub_title */
+.sub_title {
+  height: 60px;
+  margin-bottom: 30px;
+}
+.sub_title h3 {
+  height: 100%;
+  line-height: 60px;
+  font-size: var(--FontSize28);
+  color: var(--brownColor4);
+  border-bottom: 1px solid var(--brownColor2);
+  position: relative;
+}
+.sub_title h3::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--brownColor2);
+  position: absolute;
+  left: -20px;
+  top: 0;
+  z-index: -1;
+}
+.section_text {
+  font-family: "SunBatang_Medium";
+  margin-bottom: 50px;
+}
+/* hover */
+@media (min-width: 1025px) {
+  /* main title */
+  .main_title ul li button:hover {
+    background-color: var(--brownColor1);
+  }
+}
+/* responsive tablet */
+@media (max-width: 1024px) {
+  /* site_link_button */
+  .site_link_button {
+    border: 0;
+  }
+  .img_inner {
+    width: 100%;
+    border: 0;
+  }
+  .site_button {
+    width: 90%;
+  }
+  .site_button ul li.active a::after {
+    left: 10px;
+  }
+  /* main title */
+  .main_title h1 {
+    font-size: var(--FontSize28);
+  }
+  /* main content */
+  .main_text {
+    width: 60%;
+  }
+  .main_text h2 {
+    font-size: var(--FontSize28);
+    margin-top: 25%;
+  }
+  .main_text h2::after {
+    width: 30px;
+    height: 30px;
+    left: -.5rem;
+    top: -.5rem;
+  }
+  .main_text p {
+    font-size: var(--FontSize14);
+  }
+  .main_text p br {
+    display: none;
+  }
+  /* sub_title */
+  .section_text {
+    font-size: var(--FontSize14);
+  }
+}
+/* responsive mobile */
+@media (max-width: 768px) {
+  * {
+    letter-spacing: -.3px;
+  }
+  section {
+    margin-bottom: 100px;
+  }
+  section:last-child {
+    margin-bottom: 150px;
+  }
+  main {
+    margin-top: 120px;
+    margin-bottom: 100px;
+  }
+  /* site_link_button */
+  .site_link_button {
+    display: none;
+  }
+  /* main title */
+  .main_title h1 {
+    font-size: var(--FontSize18);
+    padding-bottom: .6rem;
+  }
+  .main_title ul li:nth-child(1),
+  .main_title ul li:nth-child(2),
+  .main_title ul li:nth-child(3) {
+    display: none;
+  }
+  /* main content */
+  .main_content {
+    flex-direction: column;
+  }
+  .main_img {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+  }
+  .main_img::after {
+    display: none;
+  }
+  .main_text {
+    width: 100%;
+  }
+  .main_text h2 {
+    font-size: var(--FontSize18);
+    border: 0;
+    margin-top: 10%;
+    margin-bottom: 0;
+  }
+  .main_text h2::after {
+    left: -1rem;
+    top: -1rem;
+  }
+  .main_text p {
+    font-size: var(--FontSize12);
+  }
+  /* sub_title */
+  .sub_title {
+    height: 43px;
+    margin-bottom: 10px;
+  }
+  .sub_title h3 {
+    font-size: var(--FontSize18);
+    line-height: 43px;
+  }
+  .sub_title h3::after {
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    top: 0;
+  }
+  .section_text {
+    font-size: var(--FontSize12);
+    margin-bottom: 25px;
+  }
+}

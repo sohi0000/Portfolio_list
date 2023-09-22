@@ -1,0 +1,105 @@
+@charset "UTF-8";
+.notice_and_slider {
+  margin: 150px 0;
+}
+.notice_and_slider > .inner {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+/* Notice */
+.notice {
+  width: 27rem;
+  height: 23rem;
+}
+/* Notice Title */
+.tab_menu_notice_title {
+  border-bottom: 1px solid #bababa;
+  height: auto;
+}
+.tab_menu_notice_title > ul {
+  display: flex;
+  justify-content: space-between;
+  width: 14rem;
+  margin: 1rem;
+}
+.tab_menu_notice_title > ul > li > a {
+  font-size: 1.5rem;
+  font-family: "GS_M";
+  padding: 0.5rem;
+  transition: 350ms;
+}
+/* 동적 처리 */
+.tab_on {
+  color: var(--red);
+}
+/* Notice Subject */
+.subject_and_date {
+  padding: 1rem 0;
+  margin: 1rem 0;
+  border-bottom: 1px dotted lightgray;
+}
+.subject_and_date > a {
+  display: flex;
+  justify-content: space-between;
+}
+.subject_and_date:hover .tab_sub_title {
+  color: var(--red);
+  text-shadow: 2px 2px 2px lightgray;
+}
+.tab_sub_title {
+  font-family: "KoPubWorldDotum_Medium";
+  font-size: 1.13rem;
+  color: var(--black);
+  width: 20rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: 450ms;
+}
+.tab_date {
+  font-family: "KoPubWorldDotum_Medium";
+  font-size: 1.13rem;
+  color: #bababa;
+}
+/* Beside Slider */
+.beside_slider {
+  width: 652px;
+  height: 390px;
+}
+.bs_slider {
+  width: inherit;
+  height: 363px;
+}
+.beside_btn_holder {
+  position: relative;
+  width: 6rem;
+  height: 1.69rem;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+/* Slider Backdrop Filter */
+.notice_and_slider > .inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0rem;
+  width: 40rem;
+  height: 363px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.7) 90%
+  );
+  z-index: 40;
+  /* backdrop-filter: blur(2px); */
+}
+.bs_slider > .swiper-wrapper > .swiper-slide {
+  border-radius: 40px;
+  overflow: hidden;
+  width: 19rem;
+  height: 363px;
+  cursor: pointer;
+  object-fit: cover;
+  object-position: center;
+}

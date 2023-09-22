@@ -1,0 +1,556 @@
+@media (max-width: 1024px) {
+  .sticky_view_information  {
+    display: none;
+  }
+  /* section 공통 */
+  section {
+    margin-top: 100px;
+  }
+  section:last-child {
+    margin-bottom: 100px;
+  }
+  .title {
+    margin-bottom: 60px;
+  }
+  /* 태블릿 모바일 관람안내 영역 */
+  .tab_mobile_view_information_section {
+    display: flex;
+  }
+  /* 교육프로그램 */
+  .edu_program_inner {
+    width: 100%;
+  }
+  .edu_program_inner .title {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .educational_program_swiper {
+    width: 95%;
+    margin-left: 5%;
+    height: 418px;
+  }
+  .edu_slide_wrap {
+    height: 418px;
+  }
+  .edu_slide_wrap .swiper-slide {
+    height: 350px;
+    width: 255px;
+    position: relative;
+  }
+  .edu_slide_box {
+    transform: translateY(30px);
+    width: 255px;
+    height: 100%;
+    bottom: 0;
+  }
+  .edu_slide_img {
+    width: 195px;
+    height: 100%;
+    background-size: cover;
+  }
+  .edu_text_box {
+    width: 230px;
+    height: 180px;
+  }
+  .edu_text_box h4 {
+    font-size: var(--FontSize18);
+  }
+  .edu_text_box p {
+    font-size: var(--FontSize14);
+  }
+  .educational_program_swiper .swiper-pagination-bullet {
+    width: calc(100% / 7);
+  }
+  /* active */
+  .edu_slide_wrap .swiper-slide-active .edu_slide_box {
+    transform: translateY(0);
+  }
+  .edu_slide_wrap .swiper-slide-active .edu_text_box {
+    background-color: #A27F83;
+    border: 0;
+    color: #fff;
+  }
+  /* 상설전시관 */
+  .exhibition_tabmenu {
+    margin-bottom: 0;
+  }
+  .exhibition_tabmenu ul li a {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .exhibition_tabmenu ul li a::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .exhibition_tabmenu ul li a span {
+    font-size: var(--FontSize18);
+    background-color: #816041c0;
+    width: 85%;
+    height: 60px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  .exhibition_tabmenu ul li a span::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--brownColor1);
+    position: absolute;
+    top: -8px;
+    left: -8px;
+  }
+  /* 이미지 포지션 */
+  .exhibition_tabmenu ul li:nth-child(1) a {
+    background-position-x: 73%;
+  }
+  .exhibition_tabmenu ul li:nth-child(2) a {
+    background-position-x: 32%;
+  }
+  .exhibition_tabmenu ul li:nth-child(3) a {
+    background-position-x: 20%;
+  }
+  .exhibition_tabmenu ul li:nth-child(4) a {
+    background-position-x: 19%;
+  }
+  .exhibition_tabmenu ul li:nth-child(5) a {
+    background-position-x: 18%;
+  }
+  .tab_content {
+    display: none;
+  }
+  /* active 클래스 추가 */
+  .tab_menu li a.active span {
+    opacity: 1;
+  }
+  /* 새소식 */
+  .news_section {
+    height: 454px;
+  }
+  .news_inner::before {
+    content: "";
+    width: 97.92%;
+    height: 414px;
+    border: 1px solid var(--brownColor1);
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    z-index: -1;
+  }
+  .news_inner::after {
+    content: "";
+    width: 97.92%;
+    height: 414px;
+    border: 1px solid var(--brownColor2);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  /* 위치 */
+  .news {
+    left: 0;
+    top: 13%;
+    transform: translateY(0);
+  }
+  .press_release {
+    bottom: 0;
+    left: 45%;
+    transform: translateX(0);
+  }
+  .recruitment_guide {
+    top: 0;
+    right: 0;
+  }
+  /* 소식지 */
+  .newsletter_section {
+    width: 100%;
+    height: 350px;
+    position: relative;
+  }
+  .newsletter_section::after {
+    width: 80%;
+  }
+  .newsletter_section a {
+    height: 300px;
+    background-position: center top;
+  }
+  .newsletter_text_box {
+    height: 100%;
+    padding: 2rem 8%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  /* 학술정보 */
+  .academic_information_swiper {
+    height: 488px;
+    overflow: visible;
+  }
+  .academic_info_inner {
+    width: 95%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .academic_info_inner .title {
+    width: 95%;
+  }
+  .info_slide_wrap {
+    margin: auto;
+    width: 100%;
+    height: 475px;
+    overflow: hidden;
+  }
+  .info_slide {
+    width: 245px;
+    height: 465px;
+    flex-wrap: nowrap;
+  }
+  .info_slide a::after {
+    height: 445px;
+    bottom: 0;
+    left: 20%;
+  }
+  .info_img {
+    top: .8rem;
+  }
+  .info_text {
+    padding: 2.5rem .3rem 0;
+  }
+  /* 버튼 */
+  .academic_information_swiper .swiper-button-prev,
+  .academic_information_swiper .swiper-button-next {
+    display: none;
+  }
+  /* active */
+  .info_slide_wrap .swiper-slide-active .info_img {
+    top: 0;
+  }
+  .info_slide_wrap .swiper-slide-active .info_text {
+    border-bottom: 1px solid var(--brownColor4);
+  }
+  .info_slide_wrap .swiper-slide-active.info_slide a::after  {
+    border: 1px solid var(--brownColor4);
+  }
+}
+@media (max-width: 768px) {
+  /* section 공통 */
+  section:last-child {
+    margin-bottom: 150px;
+  }
+  .title {
+    font-size: var(--FontSize18);
+    color: var(--black);
+    height: 32px;
+    margin-bottom: 20px;
+  }
+  .title::before {
+    content: "+";
+    font-family: "GothicA1_Regular";
+    color: var(--brownColor4);
+    font-size: 1.5rem;
+    position: absolute;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    line-height: 23px;
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    transition: .3s;
+    cursor: pointer;
+  }
+  .title h2::before {
+    display: none
+  }
+  .title h2::after {
+    display: none;
+  }
+  /* 태블릿 모바일 관람안내 영역 */
+  .tab_mobile_view_information_section {
+    width: 90%;
+  }
+  .left_text {
+    flex: 4;
+  }
+  /* 교육프로그램 */
+  .educational_program_swiper {
+    height: 225px;
+  }
+  .edu_slide_wrap {
+    height: 200px;
+    width: 155px;
+  }
+  .edu_slide_wrap .swiper-slide {
+    height: 200px;
+    width: 155px;
+  }
+  .edu_slide_box {
+    transform: translateY(0);
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+  }
+  .edu_slide_img {
+    width: 141px;
+    height: 100%;
+    right: 0;
+  }
+  .edu_text_box {
+    width: 141px;
+    height: 80px;
+    bottom: .8rem
+  }
+  .edu_text_box h4 {
+    font-size: var(--FontSize12);
+    overflow: visible;
+    white-space: wrap;
+  }
+  .edu_text_box p {
+    display: none;
+  }
+  /* slide 버튼 커스텀 */
+  .educational_program_swiper .swiper-pagination {
+    height: 3px;
+    width: 80%;
+    left: 0;
+    transform: translateX(0);
+  }
+  /* 상설전시관 */
+  .exhibition_tabmenu ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "li1 li1"
+    "li2 li3"
+    "li4 li5";
+    grid-gap: 1rem;
+  }
+  .exhibition_tabmenu ul li {
+    width: 100%;
+    margin-right: 0;
+  }
+  .exhibition_tabmenu ul li a {
+    height: 150px;
+  }
+  .tab_menu li:nth-child(1) {
+    grid-area: li1;
+  }
+  .tab_menu li:nth-child(2) {
+    grid-area: li2;
+  }
+  .tab_menu li:nth-child(3) {
+    grid-area: li3;
+  }
+  .tab_menu li:nth-child(4) {
+    grid-area: li4;
+  }
+  .tab_menu li:nth-child(5) {
+    grid-area: li5;
+  }
+  .exhibition_tabmenu ul li a span {
+    width: 60%;
+    height: 50px;
+    font-size: var(--FontSize14);
+  }
+  .educational_program_swiper .swiper-pagination-bullet {
+    width: calc(100% / 7);
+    height: 5px;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 1rem;
+  }
+  /* 멈춤버튼 */
+  .swiper-pagination::after {
+    content: "";
+    width: 10px;
+    height: 15px;
+    background-image: url(../images/stop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: -2rem;
+    top: 100%;
+    cursor: pointer;
+  }
+  .swiper-pagination.on::after {
+    background-image: url(../images/start.svg);
+  }
+  /* 새소식 */
+  .news_section {
+    height: 430px;
+  }
+  .news_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .news_inner::before {
+    display: none;
+  }
+  .news_inner::after {
+    width: 100%;
+    height: 450px;
+    left: 10px;
+    transform: translate(0, -50%);
+  }
+  .news_box {
+    width: 100%;
+    height: 130px;
+    position: static;
+  }
+  .news_box_title p:nth-child(1) {
+    font-size: var(--FontSize14);
+  }
+  .news_box_title::after {
+    display: none;
+  }
+  .news_box_title a {
+    width: 16px;
+    height: 16px;
+  }
+  .news_list {
+    padding: 0 1rem;
+  }
+  .news_list li:last-child {
+    display: none;
+  }
+  .news_list .subject {
+    font-size: var(--FontSize12);
+  }
+  .news_list .date {
+    font-size: .7rem;
+  }
+  /* 소식지 */
+  .newsletter_section {
+    height: 300px;
+  }
+  .newsletter_section::after {
+    display: none;
+  }
+  .newsletter_section a {
+    background-image: url(../images/newsletter_mobile.png);
+    background-size: cover;
+  }
+  .newsletter_text_box {
+    width: 90%;
+    padding: 2rem 0;
+  }
+  .newsletter_text_box h3 {
+    font-size: var(--FontSize18);
+  }
+  .newsletter_text_box p {
+    font-size: var(--FontSize12);
+  }
+  .newsletter_text_box span {
+    font-size: var(--FontSize12);
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+  }
+  /* 학술정보 */
+  .academic_information_swiper {
+    height: 235px;
+  }
+  .info_slide_wrap {
+    height: 210px;
+  }
+  .info_slide {
+    width: 150px;
+    height: 210px;
+  } 
+  .info_slide a {
+    width: 100%;
+  }
+  .info_slide a::after {
+    width: 130px;
+    height: 200px;
+    top: 0;
+    left: .7rem;
+  }
+  .info_img {
+    top: auto;
+    bottom: 0;
+    width: 130px;
+    height: 200px;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .info_text {
+    width: 130px;
+    height: 80px;
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    border: 1px solid var(--brownColor2);
+    font-size: var(--FontSize12);
+    padding: .5rem;
+    background-color: #ffffffb6;
+  }
+  .info_text br {
+    display: none;
+  }
+  /* active */
+  .info_slide_wrap .swiper-slide-active .info_img {
+    top: auto;
+    bottom: 0;
+  }
+  .info_slide_wrap .swiper-slide-active .info_text {
+    border: 0;
+    background-color: var(--brownColor4);
+    color: #fff;
+  }
+  .info_slide_wrap .swiper-slide-active.info_slide a::after  {
+    border: 1px solid var(--brownColor1);
+  }
+  /* slide 버튼 커스텀 */
+  .academic_information_swiper .swiper-pagination {
+    height: 3px;
+    width: 100%;
+    left: -2.5rem;
+    bottom: 1rem;
+    transform: translateX(0);
+  }
+  .academic_information_swiper .swiper-pagination-bullet {
+    transition: .3s;
+    width: calc(100% / 7);
+    height: 6px;
+    display: inline-block;
+    border-radius: 0;
+    background: 0;
+    opacity: 1;
+  }
+  .academic_information_swiper .swiper-pagination-bullet:first-child {
+    border-left: 1px solid var(--green);
+  }
+  .academic_information_swiper .swiper-pagination-bullet:last-child {
+    border-right: 1px solid var(--green);
+  }
+  .academic_information_swiper .swiper-pagination-bullet-active {
+    background: var(--green);
+  }
+  .academic_information_swiper .swiper-pagination::after {
+    content: "";
+    width: 10px;
+    height: 15px;
+    position: absolute;
+    right: 1rem;
+  }
+
+
+
+}

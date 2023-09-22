@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>국립경주박물관 리뉴얼</title>
+  <!-- 스와이퍼 link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <!-- css link -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- header css -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/headerResponsive.css">
+  <!-- footer css -->
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <!-- login_area -->
+    <div class="login_area">
+      <div class="menu_inner login_inner">
+        <ul>
+          <li><a href="#none">로그인</a></li>
+          <li><a href="#none">회원가입</a></li>
+          <li><a href="#none">언어</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- gnb_area -->
+    <div class="gnb_area">
+      <div class="menu_inner gnb_inner">
+        <div class="search">
+          <img src="images/search_icon.svg" alt="">
+        </div>
+        <div class="page_btn">
+          <ul>
+            <li><a href="#none">
+              <img src="images/children_museum_logo.svg" alt="">
+            </a></li>
+            <li><a href="#none">박물관 소개</a></li>
+            <li><a href="#none">통합예약</a></li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="index.html">
+            <picture>
+              <source srcset="images/main_logo_small.svg" media="(max-width: 1024px)">
+              <img src="images/main_logo.svg" alt="">
+            </picture>
+          </a>
+        </div>
+        <div class="nav">
+          <ul>
+            <li><a href="viewing_guide.html">관람정보</a></li>
+            <li><a href="permanent_exhibition.html">전시</a></li>
+            <li><a href="#none">교육 &#183; 행사</a></li>
+            <li><a href="#none">소장품</a></li>
+            <li><a href="#none">학술</a></li>
+            <li><a href="#none">소식 &#183; 참여</a></li>
+          </ul>
+        </div>
+        <div class="site_map">
+          <a href="#none">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class="menu_btn">
+          <a href="#none">
+            <p></p>
+            <p></p>
+            <p></p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- submenu_area -->
+    <div class="slidedown_menu_area">
+      <div class="slidedown_page_btn">
+        <div class="slidedown_page_btn_inner">
+          <ul>
+            <li><a href="#">
+              <picture>
+                <source media="(max-width: 786px)" srcset="images/children_museum_logo_white.svg">
+                <img src="images/children_museum_logo.svg" alt="">
+            </picture>
+            </a></li>
+            <li><a href="#">박물관 소개</a></li>
+            <li><a href="#">통합예약</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="slidedown_menu_inner">
+        <div class="btn_area">
+          <div class="information_btn">
+            <a href="#none">
+              <span>정보공개</span>
+              <img src="images/arrow.svg" alt="">
+            </a>
+          </div>
+          <div class="data_storage_btn">
+            <a href="#none">
+              <span>자료저장소</span>
+              <img src="images/arrow.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="sub_login">
+          <ul>
+            <li><a href="#none">로그인</a></li>
+            <li><a href="#none">회원가입</a></li>
+            <li><a href="#none">언어</a></li>
+            <li><a href="#none">사이트맵</a></li>
+          </ul>
+        </div>
+        <div class="slidedown_menu">
+          <ul>
+            <li>
+              <a href="#none">관람정보</a>
+              <ul class="submenu">
+                <li><a href="viewing_guide.html">관람안내</a></li>
+                <li><a href="#none">찾아오시는 길</a></li>
+                <li><a href="#none">전시해설</a></li>
+                <li><a href="#none">시설안내</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">전시</a>
+              <ul class="submenu">
+                <li><a href="permanent_exhibition.html">상설전시</a></li>
+                <li><a href="#none">특별전시</a></li>
+                <li><a href="#none">전시관 가상체험</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">교육 &#183; 행사</a>
+              <ul class="submenu">
+                <li><a href="#none">교육 &#183; 행사 소식</a></li>
+                <li><a href="#none">교육 프로그램</a></li>
+                <li><a href="#none">문화행사</a></li>
+                <li><a href="#none">학술행사</a></li>
+                <li><a href="#none">교육 &#183; 행사 자료</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">소장품</a>
+              <ul class="submenu">
+                <li><a href="#none">소장품 검색</a></li>
+                <li><a href="#none">국보 &#183; 보물</a></li>
+                <li><a href="#none">큐레이터 추천 유물</a></li>
+                <li><a href="#none">이달의 문화재</a></li>
+                <li><a href="#none">열람 &#183; 복제</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">학술</a>
+              <ul class="submenu">
+                <li><a href="#none">발간자료</a></li>
+                <li><a href="#none">보존과학</a></li>
+                <li><a href="#none">도서관</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">소식 &#183; 참여</a>
+              <ul class="submenu">
+                <li><a href="#none">새소식</a></li>
+                <li><a href="#none">고시 &#183; 공고</a></li>
+                <li><a href="#none">채용안내</a></li>
+                <li><a href="#none">보도자료</a></li>
+                <li><a href="#none">월간소식지</a></li>
+                <li><a href="#none">자원봉사</a></li>
+                <li><a href="#none">고객민원</a></li>
+                <li><a href="#none">유실물 안내</a></li>
+                <li><a href="#none">설문조사</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- search_area -->
+    <div class="search_area">
+      <div class="search_area_inner">
+        <div class="input_box">
+          <input type="search" class="input_seach" placeholder="검색어를 입력하세요">
+          <input type="submit" class="input_submit" value="">
+        </div>
+        <dl class="keyword_box">
+          <dt>검색키워드</dt>
+          <dd><a href="#none">성덕대왕신종</a></dd>
+          <dd><a href="#none">자원봉사</a></dd>
+          <dd><a href="#none">전시해설</a></dd>
+          <dd><a href="#none">버스시간표</a></dd>
+        </dl>
+      </div>
+    </div>
+    <!-- menu_bg -->
+    <div class="menu_bg"></div>
+  </header>
+  <!-- main -->
+  <main>
+    <a href="#none">
+      <picture>
+        <source media="(max-width: 786px)" srcset="images/main_visusal_mobile.png">
+        <img src="images/main_visusal.png" alt="">
+      </picture>
+    </a>
+  </main>
+  <div class="index_container">
+    <!-- 관람안내 view_information -->
+    <div class="sticky_view_information">
+      <h4>관람안내</h4>
+      <strong>10:00 - 18:00</strong>
+      <p>
+        토요일 및 공휴일 1시간 연장
+      </p>
+      <p>
+        야간연장개관 - 21:00
+        <br>
+        매달 마지막 수요일,
+        <br>
+        3월 - 12월 중 매주 토요일
+      </p>
+      <p>
+        휴관일 : 1월1일, 설날, 추석
+      </p>
+      <p>
+        ※입장마감:관람 종료 30분전까지
+      </p>
+    </div>
+    <section class="tab_mobile_view_information_section">
+      <div class="left_text">
+        <h4>관람안내</h4>
+        <strong>10:00 - 18:00</strong>
+        <p>
+          토요일 및 공휴일 1시간 연장
+        </p>
+      </div>
+      <div class="right_text">
+        <p>
+          야간연장개관 - 21:00
+          <br>
+          매달 마지막 수요일,
+          <br>
+          3월 - 12월 중 매주 토요일
+        </p>
+        <p>
+          휴관일 : 1월1일, 설날, 추석
+        </p>
+        <p>
+          ※입장마감:관람 종료 30분전까지
+        </p>
+      </div>
+    </section>
+    <section class="educational_program_section">
+      <div class="main_inner edu_program_inner">
+        <div class="title">
+          <h2>교육프로그램</h2>
+        </div>
+        <!-- slide -->
+        <div class="swiper educational_program_swiper">
+          <div class="edu_slide_wrap">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide edu_slide">
+                <a href="#none" class="edu_slide_box">
+                  <div class="edu_slide_img"></div>
+                  <div class="edu_text_box">
+                    <h4>
+                      황금이 번쩍 무늬가 쏙쏙
+                    </h4>
+                    <p>
+                      교육기간
+                      <br>
+                      2023.06.20 - 2023.08.29
+                      <br>
+                      접수기간
+                      <br>
+                      2023.06.13 - 2023.08.22
+                    </p>
+                    <p>
+                      매주 화요일 10:20 - 11:20
+                    </p>
+                  </div>
+                  <div class="edu_keyword family">가족</div>
+                </a>
+              </div>
+              <div class="swiper-slide edu_slide">
+                <a href="#none" class="edu_slide_box">
+                  <div class="edu_slide_img"></div>
+                  <div class="edu_text_box">
+                    <h4>
+                      신라 동물친구와 가까워지는 시간
+                    </h4>
+                    <p>
+                      교육기간
+                      <br>
+                      2023.06.13 - 2023.09.26
+                    </p>
+                    <p>
+                      매주 화요일 
+                      <br>
+                      10:00 - 10:30
+                      <br>
+                      15:00 - 15:30
+                    </p>
+                  </div>
+                  <div class="edu_keyword children">어린이</div>
+                </a>
+              </div>
+              <div class="swiper-slide edu_slide">
+                <a href="#none" class="edu_slide_box">
+                  <div class="edu_slide_img"></div>
+                  <div class="edu_text_box">
+                    <h4>
+                      논쟁하는 신라사
+                    </h4>
+                    <p>
+                      교육기간
+                      <br>
+                      2023.05.11 - 2023.06.08
+                    </p>
+                    <p>
+                      매주 화요일 10:20 - 11:20
+                    </p>
+                  </div>
+                  <div class="edu_keyword adult">어른</div>
+                </a>
+              </div>
+              <div class="swiper-slide edu_slide">
+                <a href="#none" class="edu_slide_box">
+                  <div class="edu_slide_img"></div>
+                  <div class="edu_text_box">
+                    <h4>
+                      구름 위를 다그닥
+                    </h4>
+                    <p>
+                      교육기간
+                      <br>
+                      2023.05.09 - 2023.07.13
+                      <br>
+                      접수기간
+                      <br>
+                      2023.05.02 - 2023.07.12
+                    </p>
+                    <p>
+                      매주 화요일,목요일
+                      <br>
+                      14:00-15:00
+                    </p>
+                  </div>
+                  <div class="edu_keyword children">어린이</div>
+                </a>
+              </div>
+              <div class="swiper-slide edu_slide">
+                <a href="#none" class="edu_slide_box">
+                  <div class="edu_slide_img"></div>
+                  <div class="edu_text_box">
+                    <h4>
+                      박물관 백세 청춘 마당
+                    </h4>
+                    <p>
+                      교육기간
+                      <br>
+                      2023-04-19 ~ 2023-07-26
+                      <br>
+                      접수기간
+                      <br>
+                      2023-04-12 ~ 2023-07-19
+                    </p>
+                    <p>
+                      매주 수요일 14:00 ~ 15:30
+                    </p>
+                  </div>
+                  <div class="edu_keyword class_hope">희망계층</div>
+                </a>
+              </div>
+              <div class="swiper-slide edu_slide">
+                <a href="#none" class="edu_slide_box">
+                  <div class="edu_slide_img"></div>
+                  <div class="edu_text_box">
+                    <h4>
+                      반짝반짝 빛나는 모양들
+                    </h4>
+                    <p>
+                      교육기간
+                      <br>
+                      2023-04-01 ~ 2023-08-27
+                      <br>
+                      접수기간
+                      <br>
+                      2023-04-01 ~ 2023-08-27
+                    </p>
+                    <p>
+                      매주 토·일요일 및 공휴일
+                    </p>
+                  </div>
+                  <div class="edu_keyword children">어린이</div>
+                </a>
+              </div>
+              <div class="swiper-slide edu_slide">
+                <a href="#none" class="edu_slide_box">
+                  <div class="edu_slide_img"></div>
+                  <div class="edu_text_box">
+                    <h4>
+                      신라의 얼굴
+                    </h4>
+                    <p>
+                      교육기간
+                      <br>
+                      2023-03-27 ~ 2023-07-17
+                      <br>
+                      접수기간
+                      <br>
+                      2023-03-27 ~ 2023-07-17
+                    </p>
+                    <p>
+                      매주 월요일마다 오후 2시~ 4시
+                    </p>
+                  </div>
+                  <div class="edu_keyword children">어린이</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="permanent_exhibition_section">
+      <div class="main_inner exhibition_inner">
+        <div class="title">
+          <h2>상설전시관</h2>
+        </div>
+        <!-- tab menu -->
+        <div class="exhibition_tabmenu">
+          <ul class="tab_menu">
+            <li><a href="#tab1" class="active">
+              <span>신라역사관</span>
+            </a></li>
+            <li><a href="#tab2">
+              <span>신라미술관</span>
+            </a></li>
+            <li><a href="#tab3">
+              <span>월지관</span>
+            </a></li>
+            <li><a href="#tab4">
+              <span>신라천년보고</span>
+            </a></li>
+            <li><a href="#tab5">
+              <span>옥외전시</span>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab_content">
+        <div id="tab1" class="active">
+          <a href="#none">
+            <div class="tab_img">
+              <img src="images/permanent_exhibition_01.png" alt="">
+            </div>
+            <div class="tab_text">
+              <h4>신라역사관</h4>
+              <p>기원전 57년에서 기원후 935년까지 한반도 동남쪽에 있었던 천년왕국 신라를 만날 수 있는 전시관입니다.신라의 건국과 번영과정을 네 부분으로 나누어 전시하였고, ‘황금의 나라, 신라＇를 조명하는 전시실을 마련하였습니다.</p>
+            </div>
+          </a>
+        </div>
+        <div id="tab2">
+          <a href="#none">
+            <div class="tab_img">
+              <img src="images/permanent_exhibition_02.png" alt="">
+            </div>
+            <div class="tab_text">
+              <h4>신라미술관</h4>
+              <p>
+                신라미술관은 신라의 찬란한 미술 문화와 역사를 보여드리는 전시관입니다.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div id="tab3">
+          <a href="#none">
+            <div class="tab_img">
+              <img src="images/permanent_exhibition_03.png" alt="">
+            </div>
+            <div class="tab_text">
+              <h4>월지관</h4>
+              <p>
+                월지관은 경주 동궁과 월지(안압지)에서 발견된 약 3만 점의 통일신라시대 문화재 중에서 엄선한 1,100여 점의 문화재를 주제별로 전시하여 통일신라 문화, 특히 왕실의 생활문화 전반을 이해할 수 있도록 구성되어 있습니다.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div id="tab4">
+          <a href="#none">
+            <div class="tab_img">
+              <img src="images/permanent_exhibition_04.png" alt="">
+            </div>
+            <div class="tab_text">
+              <h4>신라천년보고</h4>
+              <p>
+                신라천년보고는 경상도 지역에서 발굴된 문화재를 안전하고 효율적으로 보관하기 위해 지어진 전용 보관시설입니다.
+                내부에는 관람이 가능한 전시 수장고와 일반 전시실, 소장품 등록실, 열람실이 있으며, 9개의 수장고와 문화재 소독실, 촬영실, 아카이브 자료 보관실 등을 갖추고 있습니다.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div id="tab5">
+          <a href="#none">
+            <div class="tab_img">
+              <img src="images/permanent_exhibition_05.png" alt="">
+            </div>
+            <div class="tab_text">
+              <h4>옥외전시</h4>
+              <p>
+              국립경주박물관 뜰에는 범종, 석탑, 석불, 석등, 비석받침, 전각 기단 부재 등의 석조품 1,300여 점을 전시하고 있습니다. 이들은 대부분 경주와 그 주변지역의 옛 절터나 궁궐터, 성터 등에서 옮겨 온 것들입니다.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="news_section">
+      <div class="main_inner news_inner">
+        <div class="news news_box">
+          <div class="news_box_title">
+            <p><a href="#none">새소식</a></p>
+            <a href="#none">
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <ul class="news_list">
+            <li><a href="#none">
+              <p class="subject">제39회 우리 문화재 그리기 대회에 참여하세요</p>
+              <span class="date">2023.07.10</span>
+            </a></li>
+            <li><a href="#none">
+              <p class="subject">국립경주박물관 초등교원연수 (8.7.~8.11.) 참여안내</p>
+              <span class="date">2023.06.14</span>
+            </a></li>
+            <li><a href="#none">
+              <p class="subject">국립경주박물관 어린이박물관 및 신라천년서고 임시 휴관 알림(2023. 6. 5.)</p>
+              <span class="date">2023.05.30</span>
+            </a></li>
+            <li><a href="#none">
+              <p class="subject">대한민국 안전大전환 집중안전점검기간(2023. 4. 17. ~ 6. 16.)</p>
+              <span class="date">2023.05.10</span>
+            </a></li>
+          </ul>
+        </div>
+        <div class="press_release news_box">
+          <div class="news_box_title">
+            <p><a href="#none">보도자료</a></p>
+            <a href="#none">
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <ul class="news_list">
+            <li><a href="#none">
+              <p class="subject">제39회 우리 문화재 그리기 대회 개최</p>
+              <span class="date">2023.07.10</span>
+            </a></li>
+            <li><a href="#none">
+              <p class="subject">관장님이 직접 들려주는 신비한 천마총 이야기</p>
+              <span class="date">2023.06.20</span>
+            </a></li>
+            <li><a href="#none">
+              <p class="subject">황금이 번쩍 무늬가 쏙쏙</p>
+              <span class="date">2023.06.16</span>
+            </a></li>
+            <li><a href="#none">
+              <p class="subject">어린이박물관 특별전 ‘시끌벅적 신라 동물 친구들’ 개최</p>
+              <span class="date">2023.05.30</span>
+            </a></li>
+          </ul>
+        </div>
+        <div class="recruitment_guide news_box">
+          <div class="news_box_title">
+            <p><a href="#none">인재채용</a></p>
+            <a href="#none">
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <ul class="news_list">
+            <li><a href="#none">
+              <p class="subject">2023년 국립경주박물관 기간제근로자(고객관련업무종사자) 채용시험 최종합격자 발표</p>
+              <span class="date">2023.07.04</span>
+            </a></li>
+            <li><a href="#none">
+              <p class="subject">국립경주박물관 학예연구과 공무직(보존처리 및 재질분석) 근로자 채용시험 최종합격자 공고</p>
+              <span class="date">2023.06.30</span>
+            </a></li>
+            <li><a href="#none">
+              <p class="subject">2023년 국립경주박물관 기간제근로자(고객관련업무종사자) 채용시험 서류전형 심사 결과 및 면접일정 발표</p>
+              <span class="date">2023.06.16</span>
+            </a></li>
+            <li><a href="#none">
+              <p class="subject">국립경주박물관 학예연구과 공무직(보존처리 및 재질분석) 근로자 채용 서류전형 합격자 및 면접시험 심사일정 공고</p>
+              <span class="date">2023.06.15</span>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter_section">
+      <a href="#none">
+        <div class="newsletter_text_box main_inner">
+          <h3>국립경주박물관 소식</h3>
+          <p>2023년 06월호</p>
+          <span>88호</span>
+        </div>
+      </a>
+    </section>
+    <section class="academic_information_section">
+      <div class="main_inner academic_info_inner">
+        <div class="title">
+          <h2>학술정보</h2>
+        </div>
+        <!-- slide -->
+        <div class="swiper academic_information_swiper">
+          <div class="info_slide_wrap">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide info_slide">
+                <a href="#none">
+                  <div class="info_img"></div>
+                  <div class="info_text">
+                    <p>
+                      (2023)
+                      <br>
+                      경주 어린이 박물관 학교
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide info_slide">
+                <a href="#none">
+                  <div class="info_img"></div>
+                  <div class="info_text">
+                    제2회 경주지역
+                    <br> 
+                    문화유산 조사·연구성과 
+                    <br>
+                    발표회
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide info_slide">
+                <a href="#none">
+                  <div class="info_img"></div>
+                  <div class="info_text">
+                    <p>
+                      新羅文物硏究
+                      <br>
+                      (신라문물연구)
+                      <br>
+                      15
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide info_slide">
+                <a href="#none">
+                  <div class="info_img"></div>
+                  <div class="info_text">
+                    <p>
+                      2022 신라학 학술대회
+                      <br> 
+                      경주 동궁과 월지 연구의
+                      <br>
+                      현단계와 쟁점
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide info_slide">
+                <a href="#none">
+                  <div class="info_img"></div>
+                  <div class="info_text">
+                    <p>
+                      경주어린이박물관학교: 
+                      <br> 
+                      하늘도 내 교실
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide info_slide">
+                <a href="#none">
+                  <div class="info_img"></div>
+                  <div class="info_text">
+                    <p>
+                      딸랑딸랑
+                      <br>
+                      금령총 이야기
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide info_slide">
+                <a href="#none">
+                  <div class="info_img"></div>
+                  <div class="info_text">
+                    <p>
+                      금령,
+                      <br>
+                      어린 영혼의 길동무
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide info_slide">
+                <a href="#none">
+                  <div class="info_img"></div>
+                  <div class="info_text">
+                    <p>
+                      신라능묘 특별전4:
+                      <br>
+                      금령총 학술 콜로
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="utile_wrap">
+      <div class="main_inner utile_inner">
+        <ul class="utile">
+          <li><a href="#none">개인정보처리방침</a></li>
+          <li><a href="#none">박물관소개</a></li>
+          <li><a href="#none">누리집 지도</a></li>
+          <li><a href="#none">관람안내</a></li>
+          <li><a href="#none">찾아오시는 길</a></li>
+          <li><a href="#none">CCTV운영관리방침</a></li>
+          <li><a href="#none">전시해설</a></li>
+          <li><a href="#none">저작권정책</a></li>
+        </ul>
+        <div class="related_site">
+          <a href="#none">
+            관련사이트 바로가기
+            <i><img src="images/site_arrow.svg" alt=""></i>
+          </a>
+          <ul>
+            <li><a href="#none">국립중앙박물관</a></li>
+            <li><a href="#none">국립광주박물관</a></li>
+            <li><a href="#none">국립전주박물관</a></li>
+            <li><a href="#none">국립대구박물관</a></li>
+            <li><a href="#none">국립부여박물관</a></li>
+            <li><a href="#none">국립공주박물관</a></li>
+            <li><a href="#none">국립진주박물관</a></li>
+            <li><a href="#none">국립청주박물관</a></li>
+            <li><a href="#none">국립김해박물관</a></li>
+            <li><a href="#none">국립제주박물관</a></li>
+            <li><a href="#none">국립춘천박물관</a></li>
+            <li><a href="#none">국립나주박물관</a></li>
+            <li><a href="#none">국립익산박물관</a></li>
+            <li><a href="#none">국립박물관문화재단</a></li>
+            <li><a href="#none">국립중앙박물관회</a></li>
+            <li><a href="#none">사단법인한국박물관회</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main_inner footer_wrap_inner">
+      <div class="footer_wrap">
+        <div class="text_box">
+          <p>
+            국립경주박물관은 신라의
+            <br>
+            문화유산을 한 눈에 살필 수 있는
+            <br>
+            한국의 대표적인 박물관입니다.
+          </p>
+          <div class="footer_logo">
+            <a href="#none">국립경주박물관</a>
+          </div>
+          <div class="copy">
+            Copyright(c)2017 Gyeongju National Museum. All rights reserved.
+          </div>
+        </div>
+        <div class="footer_info">
+          <div class="address">
+            <h4>위치</h4>
+            <p>38171</p>
+            <p>경상북도 경주시 일정로 186</p>
+            <p>국립경주박물관</p>
+          </div>
+          <div class="tel">
+            <h4>연락처</h4>
+            <p>Tel : 054-740-7500</p>
+            <p>Fax : 054-740-7522</p>
+          </div>
+          <div class="sns">
+            <h4>소셜네트워크</h4>
+            <a href="#none">페이스북</a>
+            <a href="#none">인스타그램</a>
+            <a href="#none">블로그</a>
+            <a href="#none">유튜브</a>
+          </div>
+        </div>
+        <div class="mobile_logo">
+          <div class="mobile_footer_logo">
+            <a href="#none">국립경주박물관</a>
+          </div>
+          <div class="mobile_copy">
+            Copyright(c)2017 Gyeongju National Museum. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 스와이퍼 js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- javaScript -->
+  <script src="js/script.js"></script>
+  <!-- header js -->
+  <script src="js/header.js"></script>
+  <!-- footer js -->
+  <script src="js/footer.js"></script>
+</body>
+</html>
