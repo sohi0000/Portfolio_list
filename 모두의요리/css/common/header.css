@@ -1,0 +1,243 @@
+body {
+  padding-top: 100px;
+}
+header {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, .05);
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+}
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.leftNav {
+  font-size: 18px;
+  font-weight: bold;
+}
+.leftNav li {
+  margin-right: 30px;
+}
+.rightNav li {
+  margin-left: 20px;
+}
+.rightNav li a {
+  font-size: 14px;
+  color:var(--gray2);
+}
+.searchBoxLi {
+  position: relative;
+  width: 280px;
+  height: 40px;
+}
+.searchBox {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+  outline: none;
+  border: 2px solid var(--maincolor);
+  border-radius: 100px;
+}
+.rightNav .searchBox::placeholder {
+  font-size: 12px;
+  color: var(--lightgray2);
+}
+.rightNav .searchBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.rightNav .searchBtn img {
+  display: inline-block;
+  width: 15px;
+  right: 10px;
+}
+/* logout */
+.logout {
+  display: none;
+}
+.logout.active {
+  display: flex;
+}
+.logout .loginBtn {
+  cursor: pointer;
+}
+/* login */
+.login {
+  display: none;
+}
+.login.active {
+  display: flex;
+}
+.rightNav ul,
+.rightNav ul li {
+  justify-content: center;
+  align-items: center;
+}
+.rightNav ul li {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.login li {
+  display: flex;
+}
+.login .noti {
+  position: relative;
+  cursor: pointer;
+  width: 18px;
+}
+.login .noti::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: '3';
+  position: absolute;
+  top: -10%;
+  right: -40%;
+  background-color: var(--maincolor);
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  font-size: 11px;
+  color: #fff;
+}
+.login .userImg {
+  margin-right: 5px;
+}
+.login .userName {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login .userName img {
+  width: 8px;
+}
+.login .userName span {
+  display: inline-block;
+  height: 100%;
+  font-size: 14px;
+  color: #000;
+  margin-right: 8px;
+}
+.login .uploadRecipe {
+  width: 120px;
+  height: 40px;
+  margin-right: 0;
+}
+.login .uploadRecipe a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--maincolor);
+  color: #fff;
+  border-radius: 40px;
+  font-size: 15px;
+}
+.notiList {
+  position: absolute;
+  width: 400px;
+  height: 0;
+  overflow: hidden;
+  right: -30%;
+  bottom: -80%;
+  transform: translateY(100%);
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 0 10px;
+  transition: .5s;
+}
+.notiList.active {
+  height: 378px;
+  border: 1px solid var(--lightgray3);
+}
+.login .notiList li {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid var(--lightgray3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 0;
+  padding: 0 20px;
+}
+.login .notiList li:last-of-type {
+  border: none;
+}
+.notiList li img {
+  width: 46px;
+  height: 46px;
+  margin-right: 10px;
+}
+.notiList li p {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+.notiList li p span {
+  color: #000;
+  font-size: 14px;
+  line-height: 120%;
+}
+.notiList li p .notiTime {
+  font-size: 12px;
+  color: var(--lightgray2);
+  margin-top: 10px;
+}
+.account {
+  position: relative;
+}
+.account .accountMenu.active {
+  display: flex;
+  height: 153px;
+  border: 1px solid var(--lightgray3);
+  padding: 10px 0;
+}
+.account .accountMenu {
+  justify-content: space-between;
+  position: absolute;
+  bottom: -50%;
+  transform: translateY(100%);
+  width: 110px;
+  height: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: .3s;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+.account .accountMenu li {
+  height: calc(153px / 4);
+  width: 100%;
+  margin-right: 0;
+}
+.account .accountMenu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #242A33;
+  font-size: 14px;
+}

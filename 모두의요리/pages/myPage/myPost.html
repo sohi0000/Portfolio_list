@@ -1,0 +1,38 @@
+<div class="myPageTitle">
+  <span>내가 쓴 게시물</span>
+  <span class="number"></span>
+</div>
+<div class="searchRegister flexBetween">
+  <div class="recipeSearch">
+    <input type="text" placeholder="검색" class="recipeSrch">
+    <button class="searchBtn">
+      <img src="/img/icon/search.png" alt="search button">
+    </button>
+  </div>
+  <div class="regDel flex">
+    <button class="regBtn">+ 게시물 등록</button>
+    <button class="delBtn flexCenter">
+      <img src="/img/icon/delete.png" alt="delete img">
+      <span>게시물 삭제</span>
+    </button>
+  </div>
+</div>
+<!-- content -->
+<div class="myPostContent tableContent flexCol">
+  <div class="tableName flex">
+    <p class="postTitle">제목</p>
+    <p class="postDate">등록일</p>
+    <p class="postView">조회수</p>
+  </div>
+  <ul>
+    <!-- <li class="myPostList flex">
+      <p class="postTitle">
+        <span></span>
+        <span class="comment">()</span>
+      </p>
+      <p class="postDate"></p>
+      <p class="postView"></p>
+    </li> -->
+  </ul>
+  <div id="myPostPagination" class="flexCenter pagination"></div>
+</div>

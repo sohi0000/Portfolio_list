@@ -1,0 +1,356 @@
+.searchFilter {
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.searchFilter > p {
+  margin-bottom: 25px;
+}
+/* dishesSearch */
+.dishesSearch {
+  height: 60px;
+  position: relative;
+}
+.dishesSearch input {
+  width: 600px;
+  height: 100%;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 100px;
+  padding: 0 20px;
+}
+.dishesSearch input::placeholder {
+  font-size: 15px;
+  color: var(--lightgray2);
+}
+.dishesSearch .searchBtn {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: calc(50% - 290px);
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.searchBtn img {
+  display: inline-block;
+  width: 100%;
+  right: 100%;
+}
+/* iconMenu */
+.iconMenu {
+  height: 100px;
+  margin-top: 50px;
+}
+.iconMenu ul {
+  width: 100%;
+}
+.iconMenu li {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 1px solid var(--gray3);
+  transition: .3s;
+}
+.iconMenu li a {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.iconMenu li a span {
+  transition: .2s;
+}
+.iconMenu li a .iconImg {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.iconMenu li:hover,
+.iconMenu li.active {
+  background-color: var(--maincolor);
+  border: 1px solid var(--maincolor);
+}
+.iconMenu li:hover span,
+.iconMenu li.active span {
+  color: #fff;
+}
+.iconImgAll {
+  background-image: var(--iconDefaultAll);
+}
+.iconImg1 {
+  background-image: var(--iconDefault1);
+}
+.iconImg2 {
+  background-image: var(--iconDefault2);
+}
+.iconImg3 {
+  background-image: var(--iconDefault3);
+}
+.iconImg4 {
+  background-image: var(--iconDefault4);
+}
+.iconImg5 {
+  background-image: var(--iconDefault5);
+}
+.iconImg6 {
+  background-image: var(--iconDefault6);
+}
+.iconImg7 {
+  background-image: var(--iconDefault7);
+}
+.iconImg8 {
+  background-image: var(--iconDefault8);
+}
+.iconImg9 {
+  background-image: var(--iconDefault9);
+}
+.iconImg10 {
+  background-image: var(--iconDefault10);
+}
+a:hover .iconImgAll,
+li.active a .iconImgAll {
+  background-image: var(--iconHoverAll);
+}
+a:hover .iconImg1,
+li.active a .iconImg1 {
+  background-image: var(--iconHover1);
+}
+a:hover .iconImg2,
+li.active a .iconImg2 {
+  background-image: var(--iconHover2);
+}
+a:hover .iconImg3,
+li.active a .iconImg3 {
+  background-image: var(--iconHover3);
+}
+a:hover .iconImg4,
+li.active a .iconImg4 {
+  background-image: var(--iconHover4);
+}
+a:hover .iconImg5,
+li.active a .iconImg5 {
+  background-image: var(--iconHover5);
+}
+a:hover .iconImg6,
+li.active a .iconImg6 {
+  background-image: var(--iconHover6);
+}
+a:hover .iconImg7,
+li.active a .iconImg7 {
+  background-image: var(--iconHover7);
+}
+a:hover .iconImg8,
+li.active a .iconImg8 {
+  background-image: var(--iconHover8);
+}
+a:hover .iconImg9,
+li.active a .iconImg9 {
+  background-image: var(--iconHover9);
+}
+a:hover .iconImg10,
+li.active a .iconImg10 {
+  background-image: var(--iconHover10);
+}
+.iconMenu li a span {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--black);
+  margin-top: 5px;
+}
+/* recommendedDishes */
+.recommendedDishes {
+  height: 560px;
+  align-items: start;
+  border-bottom: 2px dashed var(--lightgray2);
+  padding-bottom: 80px;
+}
+.recommendedDishes > p {
+  margin-bottom: 50px;
+}
+.cooklist ul {
+  width: 100%;
+}
+.cooklist .cooklistPage {
+  width: 386px;
+  height: 390px;
+  cursor: pointer;
+}
+.cooklist .cooklistPage a {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.cooklist .cooklistPage a img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cooklist .cooklistPage .user {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 0 5px;
+}
+.user span {
+  color: #fff;
+  display: inline-block;
+  margin: 0 5px;
+}
+.user .userIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.user .userName {
+  flex-grow: 1;
+}
+.user .viewIcon,
+.user .heartIcon,
+.user .chatIcon {
+  font-size: 14px;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.user .viewIcon {
+  background: url(/img/icon/view.png) no-repeat center / contain;
+  transform: scale(70%);
+}
+.user .heartIcon {
+  background: url(/img/icon/love.png) no-repeat center / contain;
+}
+.user .chatIcon {
+  background: url(/img/icon/chat.png) no-repeat center / contain;
+}
+.cooklist .cooklistPage div {
+  width: 100%;
+  height: 90px;
+  padding: 10px 10px;
+}
+.cooklist .cooklistPage div p span:first-child {
+  color: var(--gray2);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.cooklist .cooklistPage div p span:last-child {
+  color: var(--black);
+}
+.cooklist .cooklistPage .bookmark {
+  display: inline-block;
+  width: 20px;
+  height: 28px;
+  background: url(/img/icon/bookmarkW.png) no-repeat center / contain;
+  cursor: pointer;
+  transition: .3s;
+}
+.cooklist .cooklistPage .bookmark.active,
+.cooklist .cooklistPage .bookmark:hover {
+  background: url(/img/icon/bookmarkC.png) no-repeat center / contain;
+}
+/* allDishes */
+.allDishes {
+  margin-bottom: 150px;
+}
+.allDishesTitle {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.allDishes ul {
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+.allDishes ul .cooklistPage {
+  width: calc(25% - 15px);
+  gap: 15px;
+}
+.allDishes ul .cooklistPage .user {
+  width: 100%;
+  height: 75px;
+  flex-wrap: wrap;
+}
+.allDishes ul .cooklistPage .user .reaction {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.allDishes .cooklistPage div p span:first-child {
+  width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.filterBtn {
+  width: 120px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: var(--lightgray4);
+  cursor: pointer;
+}
+.filterBtn img {
+  transform: scale(50%);
+}
+.collectBtn {
+  height: 40px;
+}
+.collectBtn img {
+  transform: scale(50%);
+}
+/* pagination.js */
+#pagination {
+  width: 290px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#pagination .paginationjs {
+  width: 100%;
+  height: 100%;
+}
+#pagination ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#pagination li a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+#pagination li.active a {
+  color: #fff;
+  background-color: var(--maincolor);
+  border-radius: 100%;
+}
+.paginationjs-prev a,
+.paginationjs-next a {
+  text-indent: -9999px;
+  background-size: 5px 10px;
+}
+.paginationjs-prev a {
+  background: url(/img/icon/paginationPrev1.png) no-repeat center;
+  transform: scale(50%);
+}
+.paginationjs-next a {
+  background: url(/img/icon/paginationNext1.png) no-repeat center;
+  transform: scale(50%);
+}
+
+
+
+

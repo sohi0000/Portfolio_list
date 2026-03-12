@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/common/global.css">
+  <link rel="stylesheet" href="/css/pages/myPage.css">
+  <title>모두의 요리</title>
+</head>
+<body>
+  <header id="header"></header>
+
+  <main>
+    <section class="bgImg"></section>
+    <section class="userInfo innerMain flexBetween">
+      <!-- <div class="userImg">
+        <img src="/img/icon/userB.png" alt="user img">
+      </div>
+      <div class="info">
+        <div class="flex">
+          <span class="userName">한식왕님</span>
+        </div>
+        <p>안녕하세요. 한식위주로 레시피 올려요. 아직 많이 부족합니다</p>
+      </div>
+      <div class="recipeSub flex">
+        <div class="flexCenter flexCol line">
+          <p>레시피</p>
+          <p class="count">24</p>
+        </div>
+        <div class="flexCenter flexCol">
+          <p>구독자</p>
+          <p class="count">28</p>
+        </div>
+      </div> -->
+    </section>
+    <div class="contentWrap innerMain flexBetween">
+      <aside class="sideMenu">
+        <p>메뉴</p>
+        <ul>
+          <li data-page="myRecipe" class="active">나의 레시피</li>
+          <li data-page="subRecipe">찜한 레시피</li>
+          <li data-page="subscribers">나의 구독자</li>
+          <li data-page="myPost">내가 쓴 게시글</li>
+          <li data-page="myAsk">나의 문의</li>
+          <li data-page="myNoti">나의 알림</li>
+        </ul>
+        <button>로그아웃</button>
+      </aside>
+      <section class="content"></section>
+    </div>
+  </main>
+
+  <footer id="footer"></footer>
+  <!-- script -->
+  <script src="/js/common/jquery-4.0.0.min.js"></script>
+  <script src="/js/common/pagination.min.js"></script>
+  <script src="/js/common/header.js"></script>
+  <script src="/js/common/footer.js"></script>
+  <script type="module" src="/js/pages/myPage.js"></script>
+</body>
+</html>

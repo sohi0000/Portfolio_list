@@ -1,0 +1,37 @@
+:root {
+  --black :#000;
+  --gray1:#333;
+  --gray2:#777;
+  --gray3:#dfdfdf;
+  --lightgray1:#6B7B94;
+  --lightgray2:#B7BFC7;
+  --lightgray3:#DEE5EC;
+  --lightgray4:#F5F6F8;
+  --lightgray5:#6B7583;
+  --maincolor:#FF5863;
+
+  /* default icon */
+  --iconDefaultAll: url(/img/icon/iconC_all.png);
+  --iconDefault1: url(/img/icon/iconC_1.png);
+  --iconDefault2: url(/img/icon/iconC_2.png);
+  --iconDefault3: url(/img/icon/iconC_3.png);
+  --iconDefault4: url(/img/icon/iconC_4.png);
+  --iconDefault5: url(/img/icon/iconC_5.png);
+  --iconDefault6: url(/img/icon/iconC_6.png);
+  --iconDefault7: url(/img/icon/iconC_7.png);
+  --iconDefault8: url(/img/icon/iconC_8.png);
+  --iconDefault9: url(/img/icon/iconC_9.png);
+  --iconDefault10: url(/img/icon/iconC_10.png);
+  /* hover active icon  */
+  --iconHoverAll: url(/img/icon/iconW_all.png);
+  --iconHover1: url(/img/icon/iconW_1.png);
+  --iconHover2: url(/img/icon/iconW_2.png);
+  --iconHover3: url(/img/icon/iconW_3.png);
+  --iconHover4: url(/img/icon/iconW_4.png);
+  --iconHover5: url(/img/icon/iconW_5.png);
+  --iconHover6: url(/img/icon/iconW_6.png);
+  --iconHover7: url(/img/icon/iconW_7.png);
+  --iconHover8: url(/img/icon/iconW_8.png);
+  --iconHover9: url(/img/icon/iconW_9.png);
+  --iconHover10: url(/img/icon/iconW_10.png);
+}

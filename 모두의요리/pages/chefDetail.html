@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/common/global.css">
+  <link rel="stylesheet" href="/css/pages/chefDetail.css">
+  <title>모두의 요리</title>
+</head>
+<body>
+  <header id="header"></header>
+
+  <main>
+    <section class="bgImg"></section>
+    <section class="userInfo innerMain flexBetween">
+      <!-- <div class="userImg">
+        <img src="/img/icon/userB.png" alt="user img">
+      </div>
+      <div class="info">
+        <div class="flex">
+          <span class="userName">한식왕님</span>
+          <button class="subBtn">구독</button>
+        </div>
+        <p>안녕하세요. 한식위주로 레시피 올려요. 아직 많이 부족합니다</p>
+      </div>
+      <div class="recipeSub flex">
+        <div class="flexCenter flexCol line">
+          <p>레시피</p>
+          <p class="count">24</p>
+        </div>
+        <div class="flexCenter flexCol">
+          <p>구독자</p>
+          <p class="count">28</p>
+        </div>
+      </div> -->
+    </section>
+    <section class="search innerMain flexEnd">
+      <div>
+        <input type="text" placeholder="요리명을입력해주세요." class="searchBox">
+        <button class="searchBtn">
+          <img src="/img/icon/search.png" alt="search button">
+        </button>
+      </div>
+    </section>
+    <section class="recipeList innerMain">
+      <div class="recipeCon flexRow flexBetween"></div>
+      <div id="pagination" class="flexCenter"></div>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+  <!-- script -->
+  <script src="/js/common/jquery-4.0.0.min.js"></script>
+  <script src="/js/common/pagination.min.js"></script>
+  <script src="/js/common/header.js"></script>
+  <script src="/js/common/footer.js"></script>
+  <script type="module" src="/js/pages/chefDetail.js"></script>
+</body>
+</html>

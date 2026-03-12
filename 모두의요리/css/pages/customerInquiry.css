@@ -1,0 +1,153 @@
+/* banner */
+.banner {
+  width: 100%;
+  height: 200px;
+  background-color: #F2F7E0;
+  margin-bottom: 20px;
+}
+.banner div {
+  height: 100%;
+  position: relative;
+}
+.banner p {
+  color: #3E3E3E;
+}
+.banner .bannerImg1,
+.banner .bannerImg2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.banner .bannerImg1 {
+  top: 65%;
+  right: 0;
+  width: 160px;
+}
+.banner .bannerImg2 {
+  top: 40%;
+  right: 18%;
+  width: 100px;
+}
+/* search */
+.search {
+  position: relative;
+  margin-bottom: 20px;
+}
+.search input {
+  width: 350px;
+  height: 48px;
+  background-color: var(--lightgray4);
+  border: 1px solid var(--lightgray3);
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.search input::placeholder {
+  font-size: 15px;
+  color: var(--lightgray2);
+}
+.search button {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  right: 0%;
+}
+.search button img {
+  width: 20px;
+  height: 20px;
+}
+/* inquiryList */
+.inquiry {
+  margin-bottom: 180px;
+}
+.inquiryList .tableName {
+  height: 70px;
+  background-color: var(--lightgray4);
+  border-top: 2px solid #000;
+  border-bottom: 1px solid var(--lightgray2);
+  padding: 0 10px;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.inquiryList ul {
+  margin-bottom: 40px;
+}
+.inquiryList p {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.postTitle {
+  width: 100%;
+  cursor: pointer;
+}
+.postNum,
+.postStatus,
+.postUser,
+.postDate {
+  width: 180px;
+  justify-content: center;
+}
+.postStatus,
+.postDate {
+  margin-left: 50px;
+}
+.inquiryList .tableList {
+  height: 70px;
+  border-bottom: 1px solid var(--lightgray2);
+  padding: 0 10px;
+  gap: 10px;
+}
+.inquiryList .tableList p {
+  color: #000;
+  font-size: 18px;
+}
+.inquiryList .tableList .postStatus {
+  color: var(--lightgray5);
+  font-size: 14px;
+  font-weight: bold;
+}
+.inquiryList .tableList .postStatus.ans {
+  color: var(--maincolor);
+}
+/* pagination */
+#pagination {
+  width: 290px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#pagination .paginationjs {
+  width: 100%;
+  height: 100%;
+}
+#pagination ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#pagination li a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+#pagination li.active a {
+  color: #fff;
+  background-color: var(--maincolor);
+  border-radius: 100%;
+}
+.paginationjs-prev a,
+.paginationjs-next a {
+  text-indent: -9999px;
+  background-size: 5px 10px;
+}
+.paginationjs-prev a {
+  background: url(/img/icon/paginationPrev1.png) no-repeat center;
+  transform: scale(50%);
+}
+.paginationjs-next a {
+  background: url(/img/icon/paginationNext1.png) no-repeat center;
+  transform: scale(50%);
+}

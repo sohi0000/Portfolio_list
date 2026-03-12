@@ -1,0 +1,191 @@
+.chefSearch {
+  margin-top: 60px;
+  text-align: center;
+  padding-bottom: 80px;
+  position: relative;
+}
+.chefSearch::after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 8px;
+  background-color: #f2f2f2;
+  left: 0;
+  bottom: 0;
+}
+.chefSearch > p {
+  margin-bottom: 25px;
+}
+/* chefSearch */
+.chefSearch div {
+  height: 60px;
+  position: relative;
+}
+.chefSearch div input {
+  width: 600px;
+  height: 100%;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 100px;
+  padding: 0 20px;
+}
+.chefSearch div input::placeholder {
+  font-size: 15px;
+  color: var(--lightgray2);
+}
+.chefSearch div .searchBtn {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: calc(50% - 290px);
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.searchBtn img {
+  display: inline-block;
+  width: 100%;
+  right: 100%;
+}
+/* bestChef */
+.bestChef {
+  margin-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 2px dashed var(--lightgray2);
+}
+.bestChef ul {
+  margin-top: 35px;
+  height: 375px;
+}
+.bestChef ul .bestIcon {
+  transform: scale(50%);
+}
+.bestChef ul a {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.bestChef ul .chefImg {
+  width: 100%;
+  height: 100%;
+}
+.bestChef ul .chefId {
+  margin-bottom: 6px;
+}
+.subBtn {
+  width: 60px;
+  height: 25px;
+  border-radius: 25px;
+  border: 1px solid var(--lightgray2);
+  transition: .3s;
+  position: relative;
+}
+.subBtn:hover,
+.subBtn.active {
+  border: 1px solid var(--maincolor);
+  background-color: var(--maincolor);
+  color: #fff;
+}
+.subBtn.active {
+  width: 80px;
+  padding-left: 10px;
+}
+.subBtn.active::before {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: 13px;
+  height: 13px;
+  background: url(/img/icon/check2.png) no-repeat center / contain;
+  left: 15%;
+}
+/* chefList */
+.chefList {
+  margin: 100px 0;
+}
+.filterBtn {
+  width: 120px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: var(--lightgray4);
+  cursor: pointer;
+}
+.filterBtn img {
+  transform: scale(50%);
+}
+.chefTitle .chefCount {
+  color: var(--maincolor);
+}
+.chefTitle {
+  margin-bottom: 50px;
+}
+.chefList .chefListItem {
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 50px;
+  gap: 50px;
+}
+.chefList .chefListItem li {
+  text-align: center;
+  width: 200px;
+}
+.chefList .chefListItem li .chefImg {
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 200px;
+  overflow: hidden;
+}
+.chefList .chefListItem li .chefName {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.chefList .chefListItem li .chefImg img {
+  width: 100%;
+  height: 100%;
+}
+/* pagination.js */
+#pagination {
+  width: 290px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#pagination .paginationjs {
+  width: 100%;
+  height: 100%;
+}
+#pagination ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#pagination li a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+#pagination li.active a {
+  color: #fff;
+  background-color: var(--maincolor);
+  border-radius: 100%;
+}
+.paginationjs-prev a,
+.paginationjs-next a {
+  text-indent: -9999px;
+  background-size: 5px 10px;
+}
+.paginationjs-prev a {
+  background: url(/img/icon/paginationPrev1.png) no-repeat center;
+  transform: scale(50%);
+}
+.paginationjs-next a {
+  background: url(/img/icon/paginationNext1.png) no-repeat center;
+  transform: scale(50%);
+}

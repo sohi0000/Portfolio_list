@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/common/global.css">
+  <link rel="stylesheet" href="/css/pages/chef.css">
+  <title>모두의 요리</title>
+</head>
+<body>
+  <header id="header"></header>
+
+  <main class="innerMain">
+    <section class="chefSearch">
+      <p class="largeTitle">셰프</p>
+      <div>
+        <input type="text" placeholder="레시피 명을 입력해주세요.">
+        <button class="searchBtn">
+          <img src="/img/icon/search.png" alt="search button">
+        </button>
+      </div>
+    </section>
+    <section class="bestChef">
+      <p class="largeTitle">베스트 셰프</p>
+      <ul class="flexBetween">
+        <li class="flexCol flexBetween">
+          <img src="/img/icon/best.png" alt="best icon" class="bestIcon">
+          <a href="/pages/chefDetail.html?id=0">
+            <img src="/img/Sample_img/chef.png" alt="chef image" class="chefImg">
+          </a>
+          <p class="headlineText chefId">다이어트레시피왕</p>
+          <button class="footerText subBtn">구독</button>
+        </li>
+        <li class="flexCol flexBetween">
+          <img src="/img/icon/best.png" alt="best icon" class="bestIcon">
+          <a href="/pages/chefDetail.html?id=0">
+            <img src="/img/Sample_img/chef.png" alt="chef image" class="chefImg">
+          </a>
+          <p class="headlineText chefId">다이어트레시피왕</p>
+          <button class="footerText subBtn">구독</button>
+        </li>
+        <li class="flexCol flexBetween">
+          <img src="/img/icon/best.png" alt="best icon" class="bestIcon">
+          <a href="/pages/chefDetail.html?id=0">
+            <img src="/img/Sample_img/chef.png" alt="chef image" class="chefImg">
+          </a>
+          <p class="headlineText chefId">다이어트레시피왕</p>
+          <button class="footerText subBtn">구독</button>
+        </li>
+        <li class="flexCol flexBetween">
+          <img src="/img/icon/best.png" alt="best icon" class="bestIcon">
+          <a href="/pages/chefDetail.html?id=0">
+            <img src="/img/Sample_img/chef.png" alt="chef image" class="chefImg">
+          </a>
+          <p class="headlineText chefId">다이어트레시피왕</p>
+          <button class="footerText subBtn">구독</button>
+        </li>
+      </ul>
+    </section>
+    <section class="chefList">
+      <div class="chefTitle flexBetween">
+        <p class="largeTitle">
+          <span class="largeTitle">셰프 목록</span>
+          <span class="chefCount">464</span>
+        </p>
+        <div class="flexBetween">
+          <span class="filterBtn flexCenter">
+            <img src="/img/icon/filter.png" alt="인기순 필터 아이콘">
+            <span>인기순</span>
+          </span>
+        </div>
+      </div>
+      <ul class="flexBetween chefListItem">
+        <!-- <li>
+          <a href="#none" class="chefImg">
+            <img src="/img/Sample_img/chef.png" alt="chef image">
+          </a>
+          <a href="#none" class="chefName headlineText">다이어트레시피왕</a>
+          <button class="footerText subBtn">구독</button>
+        </li> -->
+      </ul>
+      <div id="pagination" class="flexCenter"></div>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+  
+  <!-- script -->
+  <script src="/js/common/jquery-4.0.0.min.js"></script>
+  <script src="/js/common/pagination.min.js"></script>
+  <script src="/js/common/header.js"></script>
+  <script src="/js/common/footer.js"></script>
+  <script type="module" src="/js/pages/chef.js"></script>
+</body>
+</html>

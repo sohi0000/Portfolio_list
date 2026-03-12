@@ -1,0 +1,289 @@
+main {
+  position: relative;
+  border: 1px solid transparent;
+}
+/* bgImg */
+.bgImg {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(/img/bgImg/bgImg1.png) no-repeat center / cover;
+  z-index: -1;
+  opacity: .5;
+}
+/* userInfo */
+.userInfo {
+  margin-top: 100px;
+  height: 200px;
+  background-color: rgba(249, 251, 254, 0.5);
+  backdrop-filter: blur(40px);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.051);
+  border-radius: 10px;
+  padding: 0 55px;
+}
+.userImg {
+  width: 100px;
+  height: 100px;
+  margin-right: 25px;
+}
+.info {
+  margin-right: auto;
+}
+.info .userName {
+  color: #000;
+  font-size: 32px;
+  font-weight: bold;
+}
+.info p {
+  margin-top: 8px;
+  color: #000;
+}
+.subBtn {
+  margin-left: 20px;
+  width: 60px;
+  height: 25px;
+  border-radius: 25px;
+  border: 1px solid var(--lightgray2);
+  transition: .3s;
+  position: relative;
+}
+.subBtn:hover,
+.subBtn.active {
+  border: 1px solid var(--maincolor);
+  background-color: var(--maincolor);
+  color: #fff;
+}
+.subBtn.active {
+  width: 80px;
+  padding-left: 10px;
+}
+.subBtn.active::before {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: 13px;
+  height: 13px;
+  background: url(/img/icon/check2.png) no-repeat center / contain;
+  left: 15%;
+}
+.recipeSub div {
+  margin: 0 35px;
+}
+.recipeSub .line {
+  position: relative;
+}
+.recipeSub .line::after {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -35px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 40px;
+  background-color: var(--lightgray2);
+}
+.recipeSub p {
+  color: #000;
+  font-weight: 500;
+}
+.recipeSub .count {
+  color: var(--maincolor);
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+/* search */
+.search {
+  margin: 20px auto;
+  height: 40px;
+}
+.search div {
+  position: relative;
+  width: 280px;
+  height: 100%;
+}
+.searchBox {
+  width: 100%;
+  height: 100%;
+  
+  font-size: 16px;
+  padding: 0 10px;
+  outline: none;
+  border: 2px solid var(--maincolor);
+  border-radius: 100px;
+}
+.searchBox::placeholder {
+  font-size: 15px;
+  color: var(--lightgray2);
+}
+.searchBtn {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.searchBtn img {
+  display: inline-block;
+  width: 15px;
+  right: 10px;
+}
+/* recipeList */
+.recipeList {
+  margin-bottom: 230px;
+}
+.recipeCon {
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.recipeList .recipePage a {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 288px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.recipeList .recipePage a img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.recipeList .recipePage .user {
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 0 5px;
+}
+.user span {
+  color: #fff;
+  display: inline-block;
+  margin: 0 5px;
+}
+.user .userIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.user .userName {
+  flex-grow: 1;
+}
+.user .viewIcon,
+.user .heartIcon,
+.user .chatIcon {
+  font-size: 14px;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.user .viewIcon {
+  background: url(/img/icon/view.png) no-repeat center / contain;
+  transform: scale(70%);
+}
+.user .heartIcon {
+  background: url(/img/icon/love.png) no-repeat center / contain;
+}
+.user .chatIcon {
+  background: url(/img/icon/chat.png) no-repeat center / contain;
+}
+.recipeList .recipePage div {
+  width: 100%;
+  height: 90px;
+  padding: 10px 10px;
+}
+.recipeList .recipePage div p span:first-child {
+  color: var(--gray2);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.recipeList .recipePage div p span:last-child {
+  color: var(--black);
+}
+.recipeList .recipePage .bookmark {
+  display: inline-block;
+  width: 20px;
+  height: 28px;
+  background: url(/img/icon/bookmarkW.png) no-repeat center / contain;
+  cursor: pointer;
+  transition: .3s;
+}
+.recipeList .recipePage .bookmark.active,
+.recipeList .recipePage .bookmark:hover {
+  background: url(/img/icon/bookmarkC.png) no-repeat center / contain;
+}
+.recipePage {
+  width: calc(25% - 15px);
+  gap: 15px;
+}
+.recipePage .user {
+  width: 100%;
+  height: 75px;
+  flex-wrap: wrap;
+}
+.recipePage .user .reaction {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recipePage div p span:first-child {
+  width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* pagination.js */
+#pagination {
+  width: 290px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#pagination .paginationjs {
+  width: 100%;
+  height: 100%;
+}
+#pagination ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#pagination li a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+#pagination li.active a {
+  color: #fff;
+  background-color: var(--maincolor);
+  border-radius: 100%;
+}
+.paginationjs-prev a,
+.paginationjs-next a {
+  text-indent: -9999px;
+  background-size: 5px 10px;
+}
+.paginationjs-prev a {
+  background: url(/img/icon/paginationPrev1.png) no-repeat center;
+  transform: scale(50%);
+}
+.paginationjs-next a {
+  background: url(/img/icon/paginationNext1.png) no-repeat center;
+  transform: scale(50%);
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/common/global.css">
+  <link rel="stylesheet" href="/css/pages/detail.css">
+  <title>모두의 요리</title>
+</head>
+<body>
+  <header id="header"></header>
+
+  <main>
+    <!-- <div id="detail"></div> -->
+    <main class="innerMain">
+      <section class="category flex">
+        <span>홈</span>
+        <img src="/img/icon/paginationNext1.png" alt="right arrow">
+        <span>요리/조리</span>
+        <img src="/img/icon/paginationNext1.png" alt="right arrow">
+        <span>반찬</span>
+        <img src="/img/icon/paginationNext1.png" alt="right arrow">
+        <span class="item"></span>
+      </section>
+      <section class="food flexBetween" id="detail"></section>
+      <!-- <section class="food flexBetween" id="detail">
+        <div class="foodImg">
+          <img src="/img/Sample_img/food.png" alt="food img">
+        </div>
+        <div class="foodDesc flexBetween flexCol">
+          <p class="short">어른도 아이도 먹기좋은</p>
+          <div class="foodName flex">
+            <p>시금치 계란찜</p>
+            <img src="/img/icon/bookmarkW.png" alt="bookmark">
+          </div>
+          <div class="user flexBetween flexCol">
+            <div class="userInfo flex">
+              <div class="pic">
+                <img src="/img/icon/user.png" alt="user icon">
+              </div>
+              <p class="userName">요리왕</p>
+              <button class="subBtn">구독</button>
+            </div>
+            <div class="reactionBtn flex">
+              <button class="like flexCenter">
+                <img src="/img/icon/loveC.png" alt="heart icon">
+              </button>
+              <button class="share flexCenter">
+                <img src="/img/icon/share.png" alt="share icon">
+              </button>
+            </div>
+            <div class="reaction flex">
+              <span class="viewIcon"><img src="/img/icon/viewC.png" alt="view icon"></span>
+              <span class="view">315</span>
+              <span class="heartIcon"><img src="/img/icon/loveC.png" alt="heart icon"></span>
+              <span class="heart">4</span>
+              <span class="chatIcon"><img src="/img/icon/chatC.png" alt="chat cion"></span>
+              <span class="chat">125</span>
+            </div>
+          </div>
+          <div class="recipeIntro">
+            계란은 단백질이 풍부하고 칼로리가 낮아 다이어트에 좋은 식품! 또 계란 노른자에는 루테인 성분이 풍부하여 눈 건강에도 도움이 되며 탈모 예방에도 효과적이라고 해요. 이렇게 몸에 좋은 두 가지 재료를 함께 볶아낸다면 얼마나 맛있게요? ​시금치 계란 볶음 레시피 바로 시작할게요.
+          </div>
+          <div class="recipeInfo">
+            <p class="title2Text">조리 정보</p>
+            <div class="flex">
+              <div class="standard flex">
+                <img src="/img/icon/cook_1.png" alt="cook icon">
+                <p class="flexCol">
+                  <span class="small">기준</span>
+                  <span>4인분</span>
+                </p>
+              </div>
+              <div class="cookingTime flex">
+                <img src="/img/icon/cook_2.png" alt="cook icon">
+                <p class="flexCol">
+                  <span class="small">조리 시간</span>
+                  <span>30분 이내</span>
+                </p>
+              </div>
+              <div class="diffLevel flex">
+                <img src="/img/icon/cook_3.png" alt="cook icon">
+                <p class="flexCol">
+                  <span class="small">난이도</span>
+                  <span class="star">
+                    <span class="color"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  -->
+      <section class="ingredients">
+        <p class="title2Text flexCenter">재료</p>
+        <div class="flexCenter ingredientContent">
+          <div class="utensil">
+            <p>[요리도구]</p>
+            <ul>
+              <li>뚝배기</li>
+              <li>숟가락</li>
+              <li>그릇2개</li>
+            </ul>
+          </div>
+          <div class="seasoning">
+            <p>[양념 재료]</p>
+            <ul>
+              <li>
+                <span>올리브유</span>
+                <span>1T</span>
+              </li>
+              <li>
+                <span>소금</span>
+                <span>한꼬집</span>
+              </li>
+              <li>
+                <span>후추</span>
+                <span>두번 톡톡</span>
+              </li>
+              <li>
+                <span>다시마</span>
+                <span>작은 한장</span>
+              </li>
+              <li>
+                <span>고춧가루</span>
+                <span>한꼬집</span>
+              </li>
+            </ul>
+          </div>
+          <div class="basic">
+            <p>[기본 재료]</p>
+            <ul>
+              <li>
+                <span>시금치</span>
+                <span>150g</span>
+              </li>
+              <li>
+                <span>계란</span>
+                <span>4개 </span>
+              </li>
+              <li>
+                <span>버터</span>
+                <span>20g</span>
+              </li>
+              <li>
+                <span>다진마늘</span>
+                <span>1T</span>
+              </li>
+              <li>
+                <span>소금</span>
+                <span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="cookingSteps">
+        <p class="stepTitle">조리 순서</p>
+        <ul>
+          <li>
+            <img src="/img/Sample_img/food.png" alt="food img">
+            <div>
+              <p>
+                <span>STEP</span>
+                <span class="color">1</span>
+              </p>
+              <p>끓는 물에 소금(0.3)과 손질한 시금치를 넣고 숨이 죽을 정도로 데친 뒤 찬물에 헹궈 물기를 꼭 짜고,</p>
+            </div>
+          </li>
+          <li>
+            <img src="/img/Sample_img/food.png" alt="food img">
+            <div>
+              <p>
+                <span>STEP</span>
+                <span class="color">2</span>
+              </p>
+              <p>데친 시금치는 3cm 길이로 썰어 시금치 밑간에 버무리고,</p>
+            </div>
+          </li>
+          <li>
+            <img src="/img/Sample_img/food.png" alt="food img">
+            <div>
+              <p>
+                <span>STEP</span>
+                <span class="color">3</span>
+              </p>
+              <p>달걀은 소금(약간)을 넣고 곱게 풀어 맛술(1),새우젓(0.5),다진 마늘(0.5), 후춧가루를 넣어 섞고,</p>
+            </div>
+          </li>
+          <li>
+            <img src="/img/Sample_img/food.png" alt="food img">
+            <div>
+              <p>
+                <span>STEP</span>
+                <span class="color">4</span>
+              </p>
+              <p>뚝배기에 물(1½컵)과 육수 재료를 넣고 중간 불에서 끓어오르면 약한 불로 줄여 5분 정도 더 끓인 뒤 건더기를 건지고,</p>
+            </div>
+          </li>
+          <li>
+            <img src="/img/Sample_img/food.png" alt="food img">
+            <div>
+              <p>
+                <span>STEP</span>
+                <span class="color">5</span>
+              </p>
+              <p>중간 불로 올려 육수가 다시 끓어오르면 곱게 푼 달걀물을 저어가며 부어 끓이고,</p>
+            </div>
+          </li>
+          <li class="last">
+            <img src="/img/Sample_img/food.png" alt="food img">
+            <div>
+              <p>
+                <span>STEP</span>
+                <span class="color">6</span>
+              </p>
+              <p>달걀물이 반 이상 익으면 중간에 시금치무침을 얹고 고춧가루를 뿌린 뒤 뚜껑을 덮고 약한 불로 줄여 달걀 전체가 다 익도록 끓여 마무리.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="cmtPost">
+        <p class="headlineText">댓글 작성</p>
+        <div class="flexBetween">
+          <textarea placeholder="댓글을남겨주세요" class="cmt"></textarea>
+          <button>등록</button>
+        </div>
+      </section>
+      <section class="allCmt">
+        <div class="flexBetween allCmtTitle">
+          <span class="headlineText">전체 댓글 </span>
+          <button><img src="/img/icon/filter.png" alt="filter icon">인기순</button>
+        </div>
+        <ul>
+          <li class="sampleCmt1 sampleCmt">
+            <div class="cmtUser flex">
+              <img src="/img/icon/user.png" alt="user img">
+              <span class="userName">망금술사</span>
+              <span class="userId">akdrma10**</span>
+              <span class="date">2023.01.23</span>
+            </div>
+            <p class="cmtContent">
+              레시피대로 했는데 좀 짜네요 짠맛 싫어하시는분들은 소금 덜 넣어도 될 것 같습니다.
+            </p>
+            <div class="reactionBtn">
+              <button class="like"><img src="/img/icon/like.png" alt="like icon"></button>
+              <span class="likeCount">4</span>
+              <button class="reCmtBtn">답글쓰기</button>
+            </div>
+            <div class="reCmt">
+              <div class="reply flex">
+                <input type="text" placeholder="댓글을남겨주세요">
+                <button>등록</button>
+              </div>
+              <ul>
+                <li>
+                  <div class="cmtUser flex">
+                    <img src="/img/icon/user.png" alt="user img">
+                    <span class="userName">요리왕</span>
+                    <span class="userId">cookki**</span>
+                    <span class="date">2023.01.23</span>
+                  </div>
+                  <p class="cmtContent">
+                    ?평소에 순두부만 먹고 사세요?
+                  </p>
+                  <div class="reactionBtn">
+                    <button class="like"><img src="/img/icon/likeC.png" alt="like icon"></button>
+                    <span class="likeCount">21</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sampleCmt2 sampleCmt">
+            <div class="cmtUser flex">
+              <img src="/img/icon/user.png" alt="user img">
+              <span class="userName">닉네임1</span>
+              <span class="userId">id12345**</span>
+              <span class="date">2023.01.23</span>
+            </div>
+            <p class="cmtContent">
+              아래 댓글 무시하세요 셰프님^^ 항상 맛있게 잘 먹고있습니다. 힘내세요
+            </p>
+            <div class="reactionBtn">
+              <button class="like"><img src="/img/icon/like.png" alt="like icon"></button>
+              <span class="likeCount">0</span>
+              <button class="reCmtBtn">답글쓰기</button>
+            </div>
+          </li>
+          <li class="sampleCmt3 sampleCmt">
+            <div class="cmtUser flex">
+              <img src="/img/icon/user.png" alt="user img">
+              <span class="userName">닉네임2</span>
+              <span class="userId">id12345**</span>
+              <span class="date">2023.01.23</span>
+            </div>
+            <p class="cmtContent">
+              이거 맛이 왜이래요? 레시피 잘못된거 아니에요?검증 좀 하고 등록하세요.
+            </p>
+            <div class="reactionBtn">
+              <button class="like"><img src="/img/icon/like.png" alt="like icon"></button>
+              <span class="likeCount">0</span>
+              <button class="reCmtBtn">답글쓰기</button>
+            </div>
+          </li>
+        </ul>
+        <div class="pagination flexCenter">
+          <ul class="flexBetween">
+            <li><img src="/img/icon/paginationPrev2.png" alt="Prev icon"></li>
+            <li><img src="/img/icon/paginationPrev1.png" alt="Prev icon"></li>
+            <li class="number active">1</li>
+            <li class="number">2</li>
+            <li class="number">3</li>
+            <li class="number">4</li>
+            <li class="number">5</li>
+            <li><img src="/img/icon/paginationNext1.png" alt="Prev icon"></li>
+            <li><img src="/img/icon/paginationNext2.png" alt="Prev icon"></li>
+          </ul>
+      </div>
+      </section>
+    </main>
+  </main>
+
+  <footer id="footer"></footer>
+  <!-- script -->
+  <script src="/js/common/header.js"></script>
+  <script src="/js/common/footer.js"></script>
+  <script type="module" src="/js/pages/detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/common/global.css">
+  <link rel="stylesheet" href="/css/pages/cooking.css">
+  <title>모두의 요리</title>
+</head>
+<body>
+  <header id="header"></header>
+
+  <main class="innerMain">
+    <section class="searchFilter">
+    <p class="largeTitle">요리/조리</p>
+    <div class="dishesSearch">
+      <input type="text" placeholder="레시피 명을 입력해주세요.">
+      <button class="searchBtn">
+        <img src="/img/icon/search.png" alt="search button">
+      </button>
+    </div>
+    <div class="dishesFilter iconMenu">
+      <ul class="flexBetween">
+        <li class="active">
+          <a href="#none" class="flexCol flexCenter">
+            <span class="iconImg iconImgAll"></span>
+            <span>전체</span>
+          </a>
+        </li>
+        <li>
+          <a href="#none" class="flexCol flexCenter">
+            <span class="iconImg iconImg1"></span>
+            <span>밥</span>
+          </a>
+        </li>
+        <li>
+          <a href="#none" class="flexCol flexCenter">
+            <span class="iconImg iconImg2"></span>
+            <span>찌개</span>
+          </a>
+        </li>
+        <li>
+          <a href="#none" class="flexCol flexCenter">
+            <span class="iconImg iconImg3"></span>
+            <span>반찬</span>
+          </a>
+        </li>
+        <li>
+          <a href="#none" class="flexCol flexCenter">
+            <span class="iconImg iconImg4"></span>
+            <span>찜</span>
+          </a>
+        </li>
+        <li>
+          <a href="#none" class="flexCol flexCenter">
+            <span class="iconImg iconImg5"></span>
+            <span>도시락</span>
+          </a>
+        </li>
+        <li>
+          <a href="#none" class="flexCol flexCenter">
+            <span class="iconImg iconImg6"></span>
+            <span>면</span>
+          </a>
+        </li>
+        <li>
+          <a href="#none" class="flexCol flexCenter">
+            <span class="iconImg iconImg7"></span>
+            <span>샐러드</span>
+          </a>
+        </li>
+        <li>
+          <a href="#none" class="flexCol flexCenter">
+            <span class="iconImg iconImg8"></span>
+            <span>안주/야식</span>
+          </a>
+        </li>
+        <li>
+          <a href="#none" class="flexCol flexCenter">
+            <span class="iconImg iconImg9"></span>
+            <span>베이킹</span>
+          </a>
+        </li>
+        <li>
+          <a href="#none" class="flexCol flexCenter">
+            <span class="iconImg iconImg10"></span>
+            <span>디저트</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </section>
+    <section class="recommendedDishes cooklist flexCol flexBetween">
+      <p class="largeTitle">모두의 추천 요리</p>
+      <ul class="flexRow flexBetween">
+        <li class="cooklistPage">
+          <a href="/pages/detail.html?id=0">
+            <img src="/img/Sample_img/food.png" alt="food img">
+            <span class="user flexBetween">
+              <span class="userIcon"></span>
+              <span class="userName">다이어트레시피왕</span>
+              <span class="viewIcon"></span>
+              <span class="view">315</span>
+              <span class="heartIcon"></span>
+              <span class="heart">4</span>
+              <span class="chatIcon"></span>
+              <span class="chat">125</span>
+            </span>
+          </a>
+          <div class="flexBetween">
+            <p class="flexCol">
+              <span>간단하면서도 그리운맛</span>
+              <span class="headlineText">김치볶음밥</span>
+            </p>
+            <span class="bookmark"></span>
+          </div>
+        </li>
+        <li class="cooklistPage">
+          <a href="/pages/detail.html?id=1">
+            <img src="/img/Sample_img/food.png" alt="food img">
+            <span class="user flexBetween">
+              <span class="userIcon"></span>
+              <span class="userName">다이어트레시피왕</span>
+              <span class="viewIcon"></span>
+              <span class="view">315</span>
+              <span class="heartIcon"></span>
+              <span class="heart">4</span>
+              <span class="chatIcon"></span>
+              <span class="chat">125</span>
+            </span>
+          </a>
+          <div class="flexBetween">
+            <p class="flexCol">
+              <span>간단하면서도 그리운맛</span>
+              <span class="headlineText">김치볶음밥</span>
+            </p>
+            <span class="bookmark"></span>
+          </div>
+        </li>
+        <li class="cooklistPage">
+          <a href="/pages/detail.html?id=2">
+            <img src="/img/Sample_img/food.png" alt="food img">
+            <span class="user flexBetween">
+              <span class="userIcon"></span>
+              <span class="userName">다이어트레시피왕</span>
+              <span class="viewIcon"></span>
+              <span class="view">315</span>
+              <span class="heartIcon"></span>
+              <span class="heart">4</span>
+              <span class="chatIcon"></span>
+              <span class="chat">125</span>
+            </span>
+          </a>
+          <div class="flexBetween">
+            <p class="flexCol">
+              <span>간단하면서도 그리운맛</span>
+              <span class="headlineText">김치볶음밥</span>
+            </p>
+            <span class="bookmark"></span>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="allDishes cooklist">
+      <div class="allDishesTitle flexBetween">
+        <p class="largeTitle">요리/조리</p>
+        <div class="flexBetween">
+          <div class="collectBtn flexCenter">
+            <span>구독셰프모아보기</span>
+            <img src="/img/icon/check.png" alt="구독셰프모아보기 체크 아이콘">
+          </div>
+          <span class="filterBtn flexCenter">
+            <img src="/img/icon/filter.png" alt="인기순 필터 아이콘">
+            <span>인기순</span>
+          </span>
+        </div>
+      </div>
+      <ul class="flexRow flexBetween">
+        <!-- <li class="cooklistPage">
+          <a href="#none">
+            <span class="user flexBetween">
+              <span class="userIcon"></span>
+              <span class="userName">다이어트레시피왕</span>
+              <span class="reaction">
+                <span class="viewIcon"></span>
+                <span class="view">315</span>
+                <span class="heartIcon"></span>
+                <span class="heart">4</span>
+                <span class="chatIcon"></span>
+                <span class="chat">125</span>
+              </span>
+            </span>
+          </a>
+          <div class="flexBetween">
+            <p class="flexCol">
+              <span>간단하면서도 그리운맛</span>
+              <span class="headlineText">김치볶음밥</span>
+            </p>
+            <span class="bookmark"></span>
+          </div>
+        </li> -->
+      </ul>
+      <div id="pagination" class="flexCenter"></div>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+  <!-- script -->
+  <script src="/js/common/jquery-4.0.0.min.js"></script>
+  <script src="/js/common/pagination.min.js"></script>
+  <script src="/js/common/header.js"></script>
+  <script src="/js/common/footer.js"></script>
+  <script type="module" src="/js/pages/cooking.js"></script>
+</body>
+</html>

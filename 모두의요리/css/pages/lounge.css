@@ -1,0 +1,237 @@
+
+/* banner */
+.banner {
+  margin: 30px 0;
+  height: 230px;
+  padding: 70px 50px;
+  background-color: #FFEEF1;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.bannerText .smallText {
+  margin-bottom: 10px;
+}
+.banner img {
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+/* search */
+.search {
+  height: 60px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.search input {
+  width: 600px;
+  height: 100%;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 100px;
+  padding: 0 20px;
+}
+.search input::placeholder {
+  font-size: 15px;
+  color: var(--lightgray2);
+}
+.search .searchBtn {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: calc(50% - 290px);
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.searchBtn img {
+  display: inline-block;
+  width: 100%;
+  right: 100%;
+}
+/* popularWeek */
+.popularWeek {
+  margin-bottom: 85px;
+}
+.popularWeekTitle {
+  margin-bottom: 40px;
+}
+.popularWeekTitle span {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+}
+.popularWeekTitle .count {
+  color: var(--maincolor);
+  margin-left: 5px;
+  margin-right: auto;
+}
+.popularWeekTitle .all {
+  font-size: 14px;
+  font-weight: normal;
+  color: #6B7583;
+  width: auto;
+}
+.popularWeekTitle .all img {
+  height: 10px;
+  margin-left: 5px;
+}
+.popularWeek ul li {
+  height: 45px;
+  position: relative;
+}
+.popularWeek ul li a {
+  color: #000;
+}
+.popularWeek ul li::after {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid var(--lightgray2);
+  bottom: 0;
+  left: 0;
+}
+.popularWeek ul li.last::after {
+  display: none;
+}
+.popularWeek .postTitle {
+  color: #000;
+}
+.popularWeek .postTitle a {
+  padding: 10px;
+}
+.popularWeek ul span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6B7583;
+}
+.flexBetween .view img,
+.flexBetween .chat img,
+.flexBetween .heart img {
+  transform: scale(50%);
+}
+.popularWeek .date {
+  margin-left: 45px;
+  margin-right: 25px;
+  color: #000;
+}
+.popularWeek .postUser {
+  margin-right: 40px;
+}
+/* community */
+.community {
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+.topicTitle {
+  width: 100%;
+  height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.topicTitle > span {
+  color: #000;
+}
+.topicTitle button {
+  width: 105px;
+  height: 40px;
+  border: 1px solid #212B3A;
+  border-radius: 40px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.topicTitle .allBtn {
+  margin-left: 20px;
+  border: 1px solid var(--maincolor);
+}
+.topicTitle .allBtn a {
+  color: var(--maincolor);
+}
+.itemRecoBtn {
+  margin-right: auto;
+}
+article {
+  width: calc(50% - (25px / 2));
+}
+.topic {
+  width: 100%;
+  height: 60px;
+  background-color: #F6F6F6;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+.topic a {
+  width: auto;
+  font-size: 14px;
+  color: #6B7583;
+}
+.topic a img {
+  height: 10px;
+  margin-left: 5px;
+}
+article ul li {
+  height: 45px;
+  position: relative;
+  padding: 0 20px;
+}
+article ul li a {
+  color: #000;
+}
+article ul li::after {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: var(--lightgray2);
+  bottom: 0;
+  left: 0;
+}
+article ul li.last::after {
+  display: none;
+}
+article .postTitle {
+  color: #000;
+}
+article .postTitle a {
+  padding: 10px;
+}
+article ul span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6B7583;
+}
+article .date {
+  color: var(--lightgray2);
+}
+article .postUser {
+  margin-right: 35px;
+  color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
